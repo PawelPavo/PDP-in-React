@@ -1,0 +1,11 @@
+.review {
+    text-decoration: none;
+    color: #0D95A5;
+    font-weight: 700;
+}
+
+.review:hover {
+    text-decoration: none;
+    color: #0e2d52;
+    font-weight: 700;
+}

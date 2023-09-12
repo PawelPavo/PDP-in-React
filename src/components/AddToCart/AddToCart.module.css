@@ -1,0 +1,51 @@
+
+:root {
+    --dark_blue: #0e2d52;
+    --white: #ffffff;
+    --light_blue: #0D95A5;
+  }
+
+.add_to_cart {
+    background-color: #fa6100 !important;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 0%;
+}
+
+.add_to_cart:hover {
+    background-color: #ffffff !important;
+    color: #fa6100;
+    font-weight: 700;
+    border: 1px solid #fa6100;
+}
+
+.add_to_cart:focus-visible {      
+    outline: 2px solid black !important;
+}
+
+.autoship_price {
+    color: #a41f35 !important;
+    font-weight: 700;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--dark_blue);
+    font-weight: 700;
+}
+
+
+.link:hover {
+    text-decoration: none;
+    color: var(--light_blue);
+    font-weight: 700;
+}
+
+.opacity_custom {
+    opacity: 0.65;
+}
+
+.opacity_custom_og {
+    opacity: 0.65;
+    text-decoration: line-through;
+}
