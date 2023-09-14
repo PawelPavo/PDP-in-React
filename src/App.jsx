@@ -40,7 +40,7 @@ const App = () => {
   return (
     <>
       <div className="container border mb-3">
-        <h1>This is nav</h1>
+        <h1>This is nav .. Hi Nicole</h1>
       </div>
       <div className="banner text-center no-gutters">
         <p>FREE SHIPPING on orders $50+</p>
@@ -126,3 +126,5 @@ const App = () => {
 };
 
 export default App;
+
+
