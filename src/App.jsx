@@ -1,9 +1,10 @@
-import { React, useState } from 'react';
+import { React, useState, useEffect } from 'react';
 import ProductImageCard from './components/MainProdImageCard/ProductImageCard.jsx';
 import ReviewStars from './components/ReviewStars/ReviewStars.jsx';
 import AddToCartDesktop from './components/AddToCart/AddToCartDesktop.jsx';
 import AddToCartMobile from './components/AddToCart/AddToCartMobile.jsx';
 import SupplementsByHealhGoal from './components/SupplementsByHealthGoal/SupplementsByHealthGoal.jsx';
+import NavBar from './components/NavBar/NavBar.jsx';
 
 
 
@@ -13,7 +14,25 @@ const App = () => {
   const [daySupply] = useState(60)
   const [counter, setCounter] = useState(1);
   const [autoshipActive, setAutoshipActive] = useState(false)
+  const [login, setLogin] = useState(false)
+  const [cartItems, setCartItems] = useState(0)
+  const [greeting, setGreeting] = useState("Hello")
 
+  var today = new Date()
+  var curHr = today.getHours()
+
+  useEffect(()=>{
+      if (curHr < 12) {
+          setGreeting('Good Morning')
+      } else if (curHr < 18) {
+          setGreeting('Good Afternoon')
+      } else {
+          setGreeting('Good Evening')
+      }
+}, [])
+  const handleLogin =()=>{
+    setLogin(!login)
+  }
 
   const changeAutoship = () => {
       setAutoshipActive(!autoshipActive)
@@ -34,14 +53,13 @@ const App = () => {
   }
 
   const addToCart = () => {
+    setCartItems(counter)
     console.log(counter + " item(s) added")
   }
 
   return (
     <>
-      <div className="container border mb-3">
-        <h1>This is nav .. Hi Nicole</h1>
-      </div>
+<NavBar login={login} handleLogin={handleLogin} cartItems={cartItems} greeting={greeting}/>
       <div className="banner text-center no-gutters">
         <p>FREE SHIPPING on orders $50+</p>
       </div>

@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nothing+You+Could+Do&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300&display=swap');
 
 :root {
   --dark_blue: #0e2d52;
   --white: #ffffff;
+  --orange: #FF691F;
+  --teal: #0D95A5;
 }
 
 body {
@@ -13,6 +16,7 @@ body {
 p {
   font-size: 1rem;
 }
+
 
 .dark-blue {
   color: var(--dark_blue);
@@ -43,6 +47,10 @@ img {
   font-weight: 700;
 }
 
+.icon_color {
+  color: var(--orange) !important;
+}
+
 @keyframes inAnimation {
   0% {
     opacity: 0;
@@ -67,5 +75,104 @@ img {
 
 }
  
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
 
 
+
+.my-warning{
+  border: 1px solid var(--orange) !important;
+  background-color: var(--orange);
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.my-warning:hover{
+  color: var(--dark_blue) ;
+  border: 1px solid var(--orange) !important;
+}
+
+.my-menu {
+  color: var(--dark_blue) ;
+  border: 1px solid var(--dark_blue) !important;
+  transition: 0.3s;
+}
+
+.my-menu:hover{
+  color: var(--white);
+  border: 1px solid var(--dark_blue) !important;
+  background-color: var(--dark_blue);
+}
+
+.my-search {
+  color: var(--white);
+  border: 1px solid var(--dark_blue) !important;
+  background-color: var(--dark_blue);
+  transition: 0.3s;
+}
+
+.my-search:hover{
+  color: var(--dark_blue) ;
+  border: 1px solid var(--dark_blue) !important;
+  background-color: var(--white);
+}
+
+.exposed-menu span:hover {
+  color: var(--teal) !important;
+  transition: 0.3s;
+  cursor: pointer;
+  text-shadow: 0 0 0.5px var(--teal);
+}
+
+.offcanvas_background {
+  background-color: var(--dark_blue) !important;
+}
+
+.close-offcanvas {
+  color: var(--white) !important;
+  transition: 0.3s;
+  cursor: pointer;
+
+}
+
+.close-offcanvas :hover {
+  color: var(--orange) !important;
+  transition: 0.3s;
+  cursor: pointer;
+
+}
+
+.my-offcanvas-title {
+  color: var(--white);
+  border: solid 1px var(--white);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.my-offcanvas-title:hover {
+  color: var(--dark_blue);
+  border: solid 1px var(--white);
+  background-color: var(--white);
+  transition: 0.3s;  
+}
+
+.my-warning-login {
+  border: 1px solid var(--orange) !important;
+  background-color: var(--white);
+  color: var(--dark_blue);
+  transition: 0.3s;
+}
+
+.my-warning-login:hover{
+  color: var(--white) ;
+  background-color: var(--orange);
+}
+
+.login-title {
+  font-family: "Fuggles" !important;
+  font-size: 8vh !important;
+  color: var(--dark_blue);
+}

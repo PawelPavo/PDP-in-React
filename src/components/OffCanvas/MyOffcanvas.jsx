@@ -1,0 +1,31 @@
+import React from "react";
+
+
+const MyOffcanvs = (props) => {
+
+
+
+    return (
+        <>
+            <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div className="offcanvas-header offcanvas_background">
+                    {props.login ?
+                        <h6 className="offcanvas-title my-offcanvas-title rounded-5 px-4 py-1" id="offcanvasExampleLabel" data-bs-toggle="modal" data-bs-target="#loginModal">{props.greeting}, Alexandra</h6>
+                        :
+                        <h6 className="offcanvas-title my-offcanvas-title rounded-5 px-4 py-1" id="offcanvasExampleLabel" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In/Join</h6>
+                    }
+                    <div className="close-offcanvas" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-xmark fs-4 close-offcanvas"></i>
+                    </div>
+                </div>
+                <div className="offcanvas-body">
+                    <div>
+                        This is standard menu.
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default MyOffcanvs;

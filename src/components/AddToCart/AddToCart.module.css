@@ -3,20 +3,22 @@
     --dark_blue: #0e2d52;
     --white: #ffffff;
     --light_blue: #0D95A5;
+    --orange: #FF691F;
   }
 
 .add_to_cart {
-    background-color: #fa6100 !important;
+    background-color: var(--orange) !important;
     color: #ffffff;
     font-weight: 700;
     border-radius: 0%;
+    transition: 0.5s;
 }
 
 .add_to_cart:hover {
     background-color: #ffffff !important;
-    color: #fa6100;
+    color: var(--orange);
     font-weight: 700;
-    border: 1px solid #fa6100;
+    border: 1px solid var(--orange);
 }
 
 .add_to_cart:focus-visible {      

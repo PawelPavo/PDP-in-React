@@ -69,22 +69,18 @@ const AddToCartMobile = (props) => {
                 </div>
                 :""}
                 <div className="col-4 my-auto bg-light">
-                    <div className="input-group input-group-sm">
-                        <button id="btnDecreaseMobile" className="btn btn-outline-secondary rounded rounded-end-0 border-secondary" type="button" onClick={props.decrease}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="currentColor" className="bi bi-dash-lg" viewBox="0 0 16 16">
-                                <path fillRule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"></path>
-                            </svg>
+                    <div className="input-group input-group-sm shadow-sm rounded">
+                        <button id="btnDecreaseMobile" className="btn my-menu rounded rounded-end-0 border-secondary" type="button" onClick={props.decrease}>
+                        <i class="fa-solid fa-minus"></i>
                         </button>
                         <input id="qtyInputMobile" type="text" className="form-control rounded-0 text-center border border-secondary border-start-0 border-end-0" onChange={props.manualQtyInput} value={props.counter} aria-label="Increase or decrease quantity" />
-                        <button id="btnIncreaseMobile" className="btn btn-outline-secondary rounded rounded-start-0 border-secondary" type="button" onClick={props.increase}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="currentColor" className="bi bi-plus-lg" viewBox="0 0 16 16">
-                                <path fillRule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"></path>
-                            </svg>
+                        <button id="btnIncreaseMobile" className="btn my-menu rounded rounded-start-0 border-secondary" type="button" onClick={props.increase}>
+                        <i class="fa-solid fa-plus"></i>
                         </button>
                     </div>
                 </div>
                 <div className="col-8">
-                    <div onClick={props.addToCart} className={`btn w-100 rounded ${styles.add_to_cart}`}>{props.autoshipActive ? "Subscribe to Autoship" : "Add to Cart"}</div>
+                    <div onClick={props.addToCart} className={`btn w-100 rounded shadow ${styles.add_to_cart}`}>{props.autoshipActive ? "Subscribe to Autoship" : "Add to Cart"}</div>
                 </div>
             </div>
 
