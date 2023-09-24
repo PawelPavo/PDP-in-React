@@ -22,6 +22,10 @@ p {
   color: var(--dark_blue);
 }
 
+.orange {
+  color: var(--orange);
+}
+
 img {
   max-width: 120px; 
   height: auto; 

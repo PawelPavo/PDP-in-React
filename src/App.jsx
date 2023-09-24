@@ -29,7 +29,7 @@ const App = () => {
       } else {
           setGreeting('Good Evening')
       }
-}, [])
+}, [curHr])
   const handleLogin =()=>{
     setLogin(!login)
   }
