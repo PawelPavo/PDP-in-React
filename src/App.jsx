@@ -22,24 +22,24 @@ const App = () => {
   var today = new Date()
   var curHr = today.getHours()
 
-  useEffect(()=>{
-      if (curHr < 12) {
-          setGreeting('Good Morning')
-      } else if (curHr < 18) {
-          setGreeting('Good Afternoon')
-      } else {
-          setGreeting('Good Evening')
-      }
-    }, [curHr])
+  useEffect(() => {
+    if (curHr < 12) {
+      setGreeting('Good Morning')
+    } else if (curHr < 18) {
+      setGreeting('Good Afternoon')
+    } else {
+      setGreeting('Good Evening')
+    }
+  }, [curHr])
 
-    const onSubmnit = (e) => {
-      e.preventDefault()
-      setUser(e.target.value)
+  const onSubmnit = (e) => {
+    e.preventDefault()
+    setUser(e.target.value)
   }
 
-  const handleLogin =()=>{
+  const handleLogin = () => {
     setLogin(!login)
-    if (user.search("@")=== -1 &&  user != String("")) {
+    if (user.search("@") === -1 && user != String("")) {
       setUser(user)
     } else if (user === String("")) {
       setUser("Customer")
@@ -48,13 +48,13 @@ const App = () => {
     }
   }
 
-  const handleLogOut =()=>{
+  const handleLogOut = () => {
     setLogin(!login)
     setUser("")
   }
 
   const changeAutoship = () => {
-      setAutoshipActive(!autoshipActive)
+    setAutoshipActive(!autoshipActive)
   }
 
   const increase = () => {
@@ -78,7 +78,7 @@ const App = () => {
 
   return (
     <>
-<NavBar login={login} handleLogin={handleLogin} cartItems={cartItems} greeting={greeting} user={user} onSubmnit={onSubmnit} handleLogOut={handleLogOut}/>
+      <NavBar login={login} handleLogin={handleLogin} cartItems={cartItems} greeting={greeting} user={user} onSubmnit={onSubmnit} handleLogOut={handleLogOut} />
       <div className="banner text-center no-gutters">
         <p>FREE SHIPPING on orders $50+</p>
       </div>
@@ -122,16 +122,26 @@ const App = () => {
                 </div>
                 {/* /Mobile Add To Cart */}
                 <p>Many of us don't get enough vitamin D from sunshine and diet alone—but we need this nutrient for healthy bones and a strong immune system. Our high-potency supplement fills in the gaps.</p>
+                <div className="row">
+              <div className="accordion" id="accordionFlushExample">
+                <div className="accordion-item shadow-sm" >
+                  <h2 className="accordion-header">
+                    <button className="accordion-button collapsed fw-light fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Available versions:
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div className="row p-3">
+                    <SupplementsByHealhGoal />
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
               </div>
               {/* /Details */}
-
             </div>
-
-          <div className="row border">
-            
-            <SupplementsByHealhGoal />
-          </div>
-
           </div>
           {/* /Main Col 9 */}
 
@@ -155,6 +165,12 @@ const App = () => {
 
           </div>
         </div>
+        <div>Hello</div>
+        <div>Hello</div>
+        <div>Hello</div>
+        <div>Hello</div>
+
+        <div>Hello</div>
         {/* /Main Col 9 */}
 
       </div>

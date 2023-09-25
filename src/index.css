@@ -188,3 +188,11 @@ img {
 .sign-in-tab-text:hover {
   color: var(--orange);
 }
+
+.accordion {
+  --bs-accordion-active-bg: var(--white);
+}
+
+.accordion-button:focus {
+  box-shadow:  0 0 0 1px var(--dark_blue);
+}
