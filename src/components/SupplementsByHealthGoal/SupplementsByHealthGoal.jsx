@@ -7,10 +7,12 @@ const versions = [
         unit: "25 mcg (1000IU)",
         items:[
         {
+            id: 1,
             count: "90 softgels",
             price: "5.25"
         },
-        {
+        {   
+            id: 2,
             count: "250 softgels",
             price: "9.75"
         }]

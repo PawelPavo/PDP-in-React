@@ -7,8 +7,8 @@ const NavBar = (props) => {
         <>
             <div className="container">
                 <div className="row mb-2 mt-3">
-                    <div class="col-2">
-                        <a class="" href="#">
+                    <div className="col-2">
+                        <a href="#">
                             <img src="https://www.lifeextension.com/-/media/project/lifeextension/images/logo/le-logo-svg.svg" className="img-fluid d-none d-lg-block" alt="LE Logo" style={{ width: "20vh", height: "auto" }} />
                             <img src="https://www.lifeextension.com/-/media/project/lifeextension/images/logo/le-logo-svg-no-tag.svg" className="p-1 d-lg-none" alt="LE Logo" style={{ width: "15vh", height: "auto" }} />
                         </a>
@@ -19,25 +19,25 @@ const NavBar = (props) => {
                             <div className="btn btn-sm  rounded-5 shadow-sm dark-blue  mx-1 my-menu" data-bs-toggle="modal" data-bs-target="#loginModal">
                                 {!props.login ?
                                     <>
-                                        <i class="fa-regular fa-user mobile"></i> <span className="menu">Sign In</span>
+                                        <i className="fa-regular fa-user mobile"></i> <span className="menu">Sign In</span>
                                     </>
                                     :
                                     <>
-                                        <span style={{fontSize:"11px"}} className="">Alexandra <i class="fa-solid fa-chevron-right"></i></span>
+                                        <span style={{fontSize:"11px"}} className="">Alexandra <i className="fa-solid fa-chevron-right"></i></span>
                                     </>
                                 }
                             </div>
                             <div className="btn btn-sm  rounded-5 shadow-sm dark-blue my-menu">
-                                <i class="fa-solid fa-phone"></i>
+                                <i className="fa-solid fa-phone"></i>
                             </div>
                             <div className="btn btn-sm rounded-5 shadow-sm dark-blue mx-2 my-menu">
-                                <i class="fa-solid fa-tag"></i>
+                                <i className="fa-solid fa-tag"></i>
                             </div>
                             <div className="btn btn-sm rounded-5 shadow dark-blue my-warning position-relative">
-                                <small><i class="fa-solid fa-cart-shopping"></i></small>
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
+                                <small><i className="fa-solid fa-cart-shopping"></i></small>
+                                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
                                     {props.cartItems}
-                                    <span class="visually-hidden">unread messages</span>
+                                    <span className="visually-hidden">unread messages</span>
                                 </span>
                             </div>
                         </div>
@@ -46,13 +46,13 @@ const NavBar = (props) => {
                         <div className="row">
                             <div className="col-lg-8 my-auto">
                                 <div className="row">
-                                    <div class="input-group">
+                                    <div className="input-group">
                                         <div className="col-2 my-auto dark-blue text-center fs-6 my-search rounded-5 me-md-5 me-3 shadow-sm p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                                            <i class="fa-solid fa-bars"></i> <span className="menu">Menu
+                                            <i className="fa-solid fa-bars"></i> <span className="menu">Menu
                                             </span>
                                         </div>
-                                        <input type="text" class="form-control rounded-start-5 border-dark" placeholder="Search LE Supplements" aria-label="Recipient's username" aria-describedby="button-addon2" />
-                                        <button class="btn btn-outline-secondary rounded-end-5 my-search" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        <input type="text" className="form-control rounded-start-5 border-dark" placeholder="Search LE Supplements" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                                        <button className="btn btn-outline-secondary rounded-end-5 my-search" type="button" id="button-addon2"><i className="fa-solid fa-magnifying-glass"></i></button>
                                     </div>
                                 </div>
                                 <div className="row justify-content-end mt-2">
@@ -70,24 +70,24 @@ const NavBar = (props) => {
                                     <div className="btn btn-sm rounded-5 shadow-sm px-2 my-menu" data-bs-toggle="modal" data-bs-target="#loginModal">
                                         {!props.login ?
                                             <>
-                                                <i class="fa-regular fa-user"></i> <span className="menu">Sign In</span>
+                                                <i className="fa-regular fa-user"></i> <span className="menu">Sign In</span>
                                             </>
                                             :
                                             <>
-                                                <i class="fa-regular fa-user"></i> <span className="menu">Hello, Alexandra <i class="fa-solid fa-chevron-right"></i></span>
+                                                <i className="fa-regular fa-user"></i> <span className="menu">Hello, Alexandra <i className="fa-solid fa-chevron-right"></i></span>
                                             </>}
                                     </div>
                                     <div className="btn btn-sm rounded-5 shadow-sm my-menu">
-                                        <i class="fa-solid fa-phone"></i>
+                                        <i className="fa-solid fa-phone"></i>
                                     </div>
                                     <div className="btn btn-sm rounded-5 shadow-sm my-menu">
-                                        <i class="fa-solid fa-tag"></i>
+                                        <i className="fa-solid fa-tag"></i>
                                     </div>
                                     <div className="btn btn-sm rounded-5 shadow my-warning position-relative ">
-                                        <small><i class="fa-solid fa-cart-shopping"></i></small>
-                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
+                                        <small><i className="fa-solid fa-cart-shopping"></i></small>
+                                        <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
                                             {props.cartItems}
-                                            <span class="visually-hidden">unread messages</span>
+                                            <span className="visually-hidden">unread messages</span>
                                         </span>
                                     </div>
                                 </div>

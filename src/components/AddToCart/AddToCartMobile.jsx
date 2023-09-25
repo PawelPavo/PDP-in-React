@@ -71,11 +71,11 @@ const AddToCartMobile = (props) => {
                 <div className="col-4 my-auto bg-light">
                     <div className="input-group input-group-sm shadow-sm rounded">
                         <button id="btnDecreaseMobile" className="btn my-menu rounded rounded-end-0 border-secondary" type="button" onClick={props.decrease}>
-                        <i class="fa-solid fa-minus"></i>
+                        <i className="fa-solid fa-minus"></i>
                         </button>
                         <input id="qtyInputMobile" type="text" className="form-control rounded-0 text-center border border-secondary border-start-0 border-end-0" onChange={props.manualQtyInput} value={props.counter} aria-label="Increase or decrease quantity" />
                         <button id="btnIncreaseMobile" className="btn my-menu rounded rounded-start-0 border-secondary" type="button" onClick={props.increase}>
-                        <i class="fa-solid fa-plus"></i>
+                        <i className="fa-solid fa-plus"></i>
                         </button>
                     </div>
                 </div>

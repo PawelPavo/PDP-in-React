@@ -26,7 +26,7 @@ const AddToWishListBtnGroup = (props) => {
                                 <i className="fa-solid fa-heart text-danger" onClick={updateLike} data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
                             </button>
                             <button className="btn btn-outline-secondary btn-sm rounded-end" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Choose a Wish List <i class="fa-solid fa-chevron-down"></i>
+                                Choose a Wish List <i className="fa-solid fa-chevron-down"></i>
 
                             </button>
                             <ul className="dropdown-menu">
@@ -47,7 +47,7 @@ const AddToWishListBtnGroup = (props) => {
                                 </i>
                             </button>
                             <button className="btn btn-outline-secondary btn-sm rounded-end" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Choose a Wish List <i class="fa-solid fa-chevron-down"></i>
+                                Choose a Wish List <i className="fa-solid fa-chevron-down"></i>
                             </button>
                             <ul className="dropdown-menu">
                                 <li className="dropdown-item" onClick={updateLike} data-bs-toggle="modal" data-bs-target="#exampleModal" value="My Favorites">My Favorites</li>
