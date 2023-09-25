@@ -23,7 +23,7 @@ const NavBar = (props) => {
                                     </>
                                     :
                                     <>
-                                        <span style={{fontSize:"11px"}} className="">Alexandra <i className="fa-solid fa-chevron-right"></i></span>
+                                        <span style={{fontSize:"11px"}} className="">{props.user} <i className="fa-solid fa-chevron-right"></i></span>
                                     </>
                                 }
                             </div>
@@ -74,7 +74,7 @@ const NavBar = (props) => {
                                             </>
                                             :
                                             <>
-                                                <i className="fa-regular fa-user"></i> <span className="menu">Hello, Alexandra <i className="fa-solid fa-chevron-right"></i></span>
+                                                <i className="fa-regular fa-user"></i> <span className="menu">Hello, {props.user} <i className="fa-solid fa-chevron-right"></i></span>
                                             </>}
                                     </div>
                                     <div className="btn btn-sm rounded-5 shadow-sm my-menu">
@@ -100,8 +100,8 @@ const NavBar = (props) => {
                     </div>
                 </div>
             </div>
-            <MyOffcanvs login={props.login} handleLogin={props.handleLogin} greeting={props.greeting}/>
-            <LoginModal greeting={props.greeting} login={props.login} handleLogin={props.handleLogin} cartItems={props.cartItems}/>
+            <MyOffcanvs login={props.login} handleLogin={props.handleLogin} greeting={props.greeting} user={props.user}/>
+            <LoginModal greeting={props.greeting} login={props.login} handleLogin={props.handleLogin} cartItems={props.cartItems} user={props.user} onSubmnit={props.onSubmnit} handleLogOut={props.handleLogOut}/>
         </>
     )
 };

@@ -17,6 +17,7 @@ const App = () => {
   const [login, setLogin] = useState(false)
   const [cartItems, setCartItems] = useState(0)
   const [greeting, setGreeting] = useState("Hello")
+  const [user, setUser] = useState("")
 
   var today = new Date()
   var curHr = today.getHours()
@@ -29,9 +30,27 @@ const App = () => {
       } else {
           setGreeting('Good Evening')
       }
-}, [curHr])
+    }, [curHr])
+
+    const onSubmnit = (e) => {
+      e.preventDefault()
+      setUser(e.target.value)
+  }
+
   const handleLogin =()=>{
     setLogin(!login)
+    if (user.search("@")=== -1 &&  user != String("")) {
+      setUser(user)
+    } else if (user === String("")) {
+      setUser("Customer")
+    } else {
+      setUser(user.substring(0, user.indexOf("@")))
+    }
+  }
+
+  const handleLogOut =()=>{
+    setLogin(!login)
+    setUser("")
   }
 
   const changeAutoship = () => {
@@ -59,7 +78,7 @@ const App = () => {
 
   return (
     <>
-<NavBar login={login} handleLogin={handleLogin} cartItems={cartItems} greeting={greeting}/>
+<NavBar login={login} handleLogin={handleLogin} cartItems={cartItems} greeting={greeting} user={user} onSubmnit={onSubmnit} handleLogOut={handleLogOut}/>
       <div className="banner text-center no-gutters">
         <p>FREE SHIPPING on orders $50+</p>
       </div>

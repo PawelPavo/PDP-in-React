@@ -1,6 +1,9 @@
-import React from "react";
+import React  from "react";
 
 const LoginModal = (props) => {
+
+
+
     return (
         <>
             <div className="modal fade" id="loginModal" tabIndex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
@@ -33,7 +36,7 @@ const LoginModal = (props) => {
                                                     <div className="tab-pane fade show active" id="sign-in-tab-pane" role="tabpanel" aria-labelledby="sign-in-tab" tabIndex="0">
                                                         <div className="card-body">
                                                             <div className="form-floating mb-3">
-                                                                <input type="email" className="form-control rounded-4" id="floatingInput" placeholder="name@example.com" />
+                                                                <input type="email" className="form-control rounded-4" id="floatingInput" placeholder="name@example.com" onChange={props.onSubmnit} value={props.user}/>
                                                                 <label htmlFor="floatingInput">Email address</label>
                                                             </div>
                                                             <div className="form-floating">
@@ -45,7 +48,7 @@ const LoginModal = (props) => {
                                                     <div className="tab-pane fade show" id="register-tab-pane" role="tabpanel" aria-labelledby="register-tab" tabIndex="0">
                                                         <div className="card-body">
                                                             <div className="form-floating mb-3">
-                                                                <input type="text" className="form-control rounded-4" id="floatingInputName" placeholder="Nomen Nescio" />
+                                                                <input type="text" className="form-control rounded-4" id="floatingInputName" placeholder="Nomen Nescio" onChange={props.onSubmnit} value={props.user}/>
                                                                 <label htmlFor="floatingInputName">Name</label>
                                                             </div>
                                                             <div className="form-floating mb-3">
@@ -95,8 +98,6 @@ const LoginModal = (props) => {
                                             }
                                         </div>
                                     </div>
-
-
                                 </>
                             }
                         </div>
@@ -104,7 +105,7 @@ const LoginModal = (props) => {
                             {!props.login ?
                                 <button type="button" className="btn my-warning-login rounded-5 shadow px-5" data-bs-dismiss="modal" onClick={props.handleLogin}>Sign In</button>
                                 :
-                                <button type="button" className="btn my-warning-login rounded-5 shadow px-5" data-bs-dismiss="modal" onClick={props.handleLogin}>Sign Out</button>
+                                <button type="button" className="btn my-warning-login rounded-5 shadow px-5" data-bs-dismiss="modal" onClick={props.handleLogOut}>Sign Out</button>
                             }
                         </div>
                     </div>
