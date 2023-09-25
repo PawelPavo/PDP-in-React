@@ -34,11 +34,11 @@ const LoginModal = (props) => {
                                                         <div className="card-body">
                                                             <div className="form-floating mb-3">
                                                                 <input type="email" className="form-control rounded-4" id="floatingInput" placeholder="name@example.com" />
-                                                                <label forhtml="floatingInput">Email address</label>
+                                                                <label htmlFor="floatingInput">Email address</label>
                                                             </div>
                                                             <div className="form-floating">
                                                                 <input type="password" className="form-control rounded-4" id="floatingPassword" placeholder="Password" />
-                                                                <label forhtml="floatingPassword">Password</label>
+                                                                <label htmlFor="floatingPassword">Password</label>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -46,15 +46,15 @@ const LoginModal = (props) => {
                                                         <div className="card-body">
                                                             <div className="form-floating mb-3">
                                                                 <input type="text" className="form-control rounded-4" id="floatingInputName" placeholder="Nomen Nescio" />
-                                                                <label forhtml="floatingInputName">Name</label>
+                                                                <label htmlFor="floatingInputName">Name</label>
                                                             </div>
                                                             <div className="form-floating mb-3">
                                                                 <input type="email" className="form-control rounded-4" id="floatingInputEmail" placeholder="name@example.com" />
-                                                                <label forhtml="floatingInputEmail">Email address</label>
+                                                                <label htmlFor="floatingInputEmail">Email address</label>
                                                             </div>
                                                             <div className="form-floating">
                                                                 <input type="password" className="form-control rounded-4" id="floatingPasswordSignUp" placeholder="Password" />
-                                                                <label forhtml="floatingPasswordSignUp">Password</label>
+                                                                <label htmlFor="floatingPasswordSignUp">Password</label>
                                                             </div>
                                                         </div>
                                                     </div>
