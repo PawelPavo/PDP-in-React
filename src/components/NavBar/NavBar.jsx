@@ -10,13 +10,13 @@ const NavBar = (props) => {
                     <div className="col-2">
                         <a href="#">
                             <img src="https://www.lifeextension.com/-/media/project/lifeextension/images/logo/le-logo-svg.svg" className="img-fluid d-none d-lg-block" alt="LE Logo" style={{ width: "20vh", height: "auto" }} />
-                            <img src="https://www.lifeextension.com/-/media/project/lifeextension/images/logo/le-logo-svg-no-tag.svg" className="p-1 d-lg-none" alt="LE Logo" style={{ width: "15vh", height: "auto" }} />
+                            <img src="https://www.lifeextension.com/-/media/project/lifeextension/images/logo/le-logo-svg-no-tag.svg" className="p-1 d-lg-none" alt="LE Logo" style={{ width: "30vw", height: "auto" }} />
                         </a>
                     </div>
                     <div className="col-10 dark-blue fs-5 my-auto d-lg-none">
                         <div className="d-flex justify-content-end me-2">
                             <img src="https://www.lifeextension.com/-/media/lifeextension/seals/ftr-consumerlab-seal-2021.png" alt="#1 Rated Catalog/Internet Merchant" style={{ width: "30px" }} />
-                            <div className="btn btn-sm  rounded-5 shadow-sm dark-blue  mx-1 my-menu" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <div className="btn btn-sm  rounded-5 shadow-sm dark-blue  mx-2 my-menu" data-bs-toggle="modal" data-bs-target="#loginModal">
                                 {!props.login ?
                                     <>
                                         <i className="fa-regular fa-user mobile"></i> <span className="menu">Sign In</span>
