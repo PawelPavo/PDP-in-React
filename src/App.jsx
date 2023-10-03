@@ -5,6 +5,7 @@ import AddToCartDesktop from './components/AddToCart/AddToCartDesktop.jsx';
 import AddToCartMobile from './components/AddToCart/AddToCartMobile.jsx';
 import SupplementsByHealhGoal from './components/SupplementsByHealthGoal/SupplementsByHealthGoal.jsx';
 import NavBar from './components/NavBar/NavBar.jsx';
+import Overview from './components/Body/Overview.jsx';
 
 
 
@@ -39,7 +40,7 @@ const App = () => {
 
   const handleLogin = () => {
     setLogin(!login)
-    if (user.search("@") === -1 && user != String("")) {
+    if (user.search("@") === -1 && user !== String("")) {
       setUser(user)
     } else if (user === String("")) {
       setUser("Customer")
@@ -78,9 +79,11 @@ const App = () => {
 
   return (
     <>
+      <div className="sticky-top bg-white pt-2">
       <NavBar login={login} handleLogin={handleLogin} cartItems={cartItems} greeting={greeting} user={user} onSubmnit={onSubmnit} handleLogOut={handleLogOut} />
       <div className="banner text-center no-gutters">
         <p>FREE SHIPPING on orders $50+</p>
+      </div>
       </div>
       <div className="container">
         <div className="row mx-md-5">
@@ -142,6 +145,7 @@ const App = () => {
               </div>
               {/* /Details */}
             </div>
+            <Overview></Overview>
           </div>
           {/* /Main Col 9 */}
 
@@ -149,7 +153,7 @@ const App = () => {
           <div className="col-md-3">
 
             {/* /Desktop Only Add To Cart */}
-            <div className="row d-none d-md-block">
+            <div className="row d-none d-md-block make-me-sticky">
               <AddToCartDesktop
                 counter={counter}
                 daySupply={daySupply}
@@ -162,15 +166,10 @@ const App = () => {
               />
             </div>
             {/* /Desktop Only Add To Cart */}
-
+  
           </div>
         </div>
-        <div>Hello</div>
-        <div>Hello</div>
-        <div>Hello</div>
-        <div>Hello</div>
-
-        <div>Hello</div>
+        
         {/* /Main Col 9 */}
 
       </div>

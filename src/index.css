@@ -17,6 +17,10 @@ p {
   font-size: 1rem;
 }
 
+.make-me-sticky {
+  position: sticky;
+  top: 150px;
+}
 
 .dark-blue {
   color: var(--dark_blue);
@@ -190,9 +194,18 @@ img {
 }
 
 .accordion {
-  --bs-accordion-active-bg: var(--white);
+  --bs-accordion-active-bg: #f6f6f6;
+}
+
+.accordion-button {
+  color: var(--dark_blue);
 }
 
 .accordion-button:focus {
-  box-shadow:  0 0 0 1px var(--dark_blue);
+  box-shadow: inset 0 1px 1px var(--dark_blue), 0 0 8px var(--dark_blue);
+  color: var(--teal);
+}
+
+.search:focus {
+  box-shadow: inset 0 1px 1px var(--dark_blue), 0 0 8px var(--dark_blue);       
 }

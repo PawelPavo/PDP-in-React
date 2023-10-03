@@ -5,7 +5,7 @@ import LoginModal from "../Modal/LoginInModal";
 const NavBar = (props) => {
     return (
         <>
-            <div className="container">
+            <div className="container ">
                 <div className="row mb-2 mt-3">
                     <div className="col-2">
                         <a href="#">
@@ -51,7 +51,7 @@ const NavBar = (props) => {
                                             <i className="fa-solid fa-bars"></i> <span className="menu">Menu
                                             </span>
                                         </div>
-                                        <input type="text" className="form-control rounded-start-5 border-dark" placeholder="Search LE Supplements" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                                        <input type="text" className="form-control rounded-start-5 border-dark search" placeholder="Search LE Supplements" aria-label="Recipient's username" aria-describedby="button-addon2" />
                                         <button className="btn btn-outline-secondary rounded-end-5 my-search" type="button" id="button-addon2"><i className="fa-solid fa-magnifying-glass"></i></button>
                                     </div>
                                 </div>
