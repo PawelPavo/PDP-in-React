@@ -101,7 +101,7 @@ const NavBar = (props) => {
                 </div>
             </div>
             <MyOffcanvs login={props.login} handleLogin={props.handleLogin} greeting={props.greeting} user={props.user}/>
-            <LoginModal greeting={props.greeting} login={props.login} handleLogin={props.handleLogin} cartItems={props.cartItems} user={props.user} onSubmnit={props.onSubmnit} handleLogOut={props.handleLogOut}/>
+
         </>
     )
 };

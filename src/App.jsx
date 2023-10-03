@@ -6,6 +6,7 @@ import AddToCartMobile from './components/AddToCart/AddToCartMobile.jsx';
 import SupplementsByHealhGoal from './components/SupplementsByHealthGoal/SupplementsByHealthGoal.jsx';
 import NavBar from './components/NavBar/NavBar.jsx';
 import Overview from './components/Body/Overview.jsx';
+import LoginModal from "./components/Modal/LoginInModal.jsx"
 
 
 
@@ -171,7 +172,7 @@ const App = () => {
         </div>
         
         {/* /Main Col 9 */}
-
+        <LoginModal greeting={greeting} login={login} handleLogin={handleLogin} cartItems={cartItems} user={user} onSubmnit={onSubmnit} handleLogOut={handleLogOut}/>
       </div>
     </>
   );
