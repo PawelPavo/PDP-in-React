@@ -47,12 +47,12 @@ const NavBar = (props) => {
                             <div className="col-lg-8 my-auto">
                                 <div className="row">
                                     <div className="input-group">
-                                        <div className="col-2 my-auto dark-blue text-center fs-6 my-search rounded-5 me-md-5 me-3 shadow-sm p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                        <div className="col-2 my-auto dark-blue text-center fs-5 my-search rounded me-md-5 me-3 shadow-sm p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                                             <i className="fa-solid fa-bars"></i> <span className="menu">Menu
                                             </span>
                                         </div>
-                                        <input type="text" className="form-control rounded-start-5 border-dark search" placeholder="Search LE Supplements" aria-label="Recipient's username" aria-describedby="button-addon2" />
-                                        <button className="btn btn-outline-secondary rounded-end-5 my-search" type="button" id="button-addon2"><i className="fa-solid fa-magnifying-glass"></i></button>
+                                        <input type="text" className="form-control rounded-start border-dark search" placeholder="Search LE Supplements" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                                        <button className="btn btn-outline-secondary rounded-end my-search" type="button" id="button-addon2"><i className="fa-solid fa-magnifying-glass"></i></button>
                                     </div>
                                 </div>
                                 <div className="row justify-content-end mt-2">
@@ -67,7 +67,7 @@ const NavBar = (props) => {
                             </div>
                             <div className="col-sm-3 dark-blue text-end fs-5 my-auto d-none d-lg-block">
                                 <div className="d-flex justify-content-around">
-                                    <div className="btn btn-sm rounded-5 shadow-sm px-2 my-menu" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                    <div className="btn btn-sm px-2 signIn-menu rounded-2" data-bs-toggle="modal" data-bs-target="#loginModal">
                                         {!props.login ?
                                             <>
                                                 <i className="fa-regular fa-user"></i> <span className="menu">Sign In</span>

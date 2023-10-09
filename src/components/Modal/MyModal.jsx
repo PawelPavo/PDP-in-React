@@ -19,12 +19,12 @@ const MyModal = (props) => {
             </div>
             <div className="modal-body">
               <h2 className="text-start dark-blue">Vitamin D3</h2>
-              <div className="row">
-                <div className="col-md-6">
-                  <button type="button" className={`btn btn-sm rounded w-100 mt-2 ${styles.view_lists_btn}`} data-bs-dismiss="modal"><small>View Wish Lists</small></button>
+              <div className="row justify-content-center">
+                <div className="col-md-4">
+                  <button type="button" className={`btn rounded w-100 mt-2 ${styles.view_lists_btn}`} data-bs-dismiss="modal"><small>View Wish Lists</small></button>
                 </div>
-                <div className="col-md-6">
-                  <button type="button" className={`btn btn-sm rounded w-100 mt-2 ${styles.add_to_list}`} data-bs-dismiss="modal"><small>Continue Shopping</small></button>
+                <div className="col-5 ">
+                  <button type="button" className={`btn my-warning rounded w-100 mt-2 ${styles.add_to_list}`} data-bs-dismiss="modal"><small>Continue Shopping</small></button>
                 </div>
               </div>
             </div>

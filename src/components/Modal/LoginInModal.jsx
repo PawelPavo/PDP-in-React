@@ -1,4 +1,5 @@
 import React  from "react";
+import image from "../../Images/Add to Cart-amico.svg"
 
 const LoginModal = (props) => {
 
@@ -74,26 +75,28 @@ const LoginModal = (props) => {
                                             Account Options:
                                         </div>
                                         <div className="col-md-5">
-                                            <ul className="list-group list-group-flush p-0 border shadow-sm rounded-5 dark-blue p-3">
-                                                <li className="list-group-item list-group-item-action border-0 rounded-5">My Life Extension</li>
-                                                <li className="list-group-item list-group-item-action border-0 rounded-5">LE Dollars</li>
-                                                <li className="list-group-item list-group-item-action border-0 rounded-5">Autoship & Save</li>
-                                                <li className="list-group-item list-group-item-action border-0 rounded-5">Order History & Reorder</li>
-                                                <li className="list-group-item list-group-item-action border-0 rounded-5">Shipping Addresses</li>
+                                            <ul className="list-group list-group-flush p-0 border shadow-sm rounded dark-blue p-3">
+                                                <li className="list-group-item list-group-item-action border-0 rounded">My Life Extension</li>
+                                                <li className="list-group-item list-group-item-action border-0 rounded">LE Dollars</li>
+                                                <li className="list-group-item list-group-item-action border-0 rounded">Autoship & Save</li>
+                                                <li className="list-group-item list-group-item-action border-0 rounded">Order History & Reorder</li>
+                                                <li className="list-group-item list-group-item-action border-0 rounded">Shipping Addresses</li>
                                             </ul>
                                         </div>
                                         <div className="col-md-6 text-center mt-3 my-md-auto">
                                             {props.cartItems === 0 ?
                                                 <>
-                                                    <h5 className="mb-3">Your cart is empty.</h5>
-                                                    <a href="#" className="btn my-warning rounded-5 btn-sm px-4 shadow-sm">Shop Now</a>
+                                                    <img src={image} alt="Shopping for Life Extension prodducts" />
+
+                                                    <h5 className="my-3">Your cart is empty.</h5>
+                                                    <a href="#" className="btn my-warning rounded btn-sm px-4 shadow-sm">Shop Now</a>
                                                 </>
                                                 :
                                                 <>
                                                     <h5 className="mb-3">You have <span className="orange"> {props.cartItems} </span> item(s) in your cart.</h5>
-                                                    <a href="#" className="btn my-warning rounded-5 btn-sm px-4 shadow-sm">View Cart</a><br />
+                                                    <a href="#" className="btn my-warning rounded btn-sm px-4 shadow-sm">View Cart</a><br />
                                                     <div className="my-2">OR</div>
-                                                    <a href="#" className="btn my-menu rounded-5 btn-sm">Continue Shopping</a>
+                                                    <a href="#" className="btn my-menu rounded btn-sm">Continue Shopping</a>
                                                 </>
                                             }
                                         </div>
@@ -103,9 +106,9 @@ const LoginModal = (props) => {
                         </div>
                         <div className="modal-footer">
                             {!props.login ?
-                                <button type="button" className="btn my-warning-login rounded-5 shadow px-5" data-bs-dismiss="modal" onClick={props.handleLogin}>Sign In</button>
+                                <button type="button" className="btn my-warning-login rounded shadow px-5" data-bs-dismiss="modal" onClick={props.handleLogin}>Sign In</button>
                                 :
-                                <button type="button" className="btn my-warning-login rounded-5 shadow px-5" data-bs-dismiss="modal" onClick={props.handleLogOut}>Sign Out</button>
+                                <button type="button" className="btn my-warning-login rounded shadow px-5" data-bs-dismiss="modal" onClick={props.handleLogOut}>Sign Out</button>
                             }
                         </div>
                     </div>

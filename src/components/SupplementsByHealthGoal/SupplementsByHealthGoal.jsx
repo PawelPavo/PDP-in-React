@@ -36,7 +36,7 @@ const SupplementsByHealhGoal = () => {
         <>
                 {versions.map(version => (
                     <>
-                        <div className="row mt-2 ms-2 dark-blue fw-bold">
+                        <div className="row mt-2 ms-2 fw-bold">
                             {version.unit}
                         </div>
                         {version.items.map(item => (

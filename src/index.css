@@ -109,6 +109,17 @@ img {
   transition: 0.3s;
 }
 
+.signIn-menu {
+  color: var(--dark_blue) ;
+  transition: 0.3s;
+}
+
+.signIn-menu:hover {
+  box-shadow: inset 300px 0 0 0 var(--dark_blue);
+  color: white;
+  transition: 0.9s;
+}
+
 .my-menu:hover{
   color: var(--white);
   border: 1px solid var(--dark_blue) !important;
@@ -168,15 +179,15 @@ img {
 }
 
 .my-warning-login {
-  border: 1px solid var(--orange) !important;
+  border: 1px solid var(--teal) !important;
   background-color: var(--white);
-  color: var(--dark_blue);
+  color: var(--teal);
   transition: 0.3s;
 }
 
 .my-warning-login:hover{
   color: var(--white) ;
-  background-color: var(--orange);
+  background-color: var(--teal);
 }
 
 .login-title {
@@ -197,15 +208,10 @@ img {
   --bs-accordion-active-bg: #f6f6f6;
 }
 
-.accordion-button {
-  color: var(--dark_blue);
-}
+  .accordion-button {
+    color: var(--dark_blue);
+  }
 
-.accordion-button:focus {
-  box-shadow: inset 0 1px 1px var(--dark_blue), 0 0 8px var(--dark_blue);
-  color: var(--teal);
-}
-
-.search:focus {
-  box-shadow: inset 0 1px 1px var(--dark_blue), 0 0 8px var(--dark_blue);       
-}
+  .accordion-button:focus {
+    box-shadow: inset 1px 1px 1px var(--dark_blue),1px 1px 1px 1px var(--dark_blue);
+  }

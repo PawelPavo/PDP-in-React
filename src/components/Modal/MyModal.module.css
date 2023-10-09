@@ -2,35 +2,35 @@
     --dark_blue: #0e2d52;
     --white: #ffffff;
     --light_blue: #0D95A5;
+    --orange: #fa6100; 
   }
 
 .add_to_list {
-    background-color: #fa6100 !important;
-    color: #ffffff;
-    font-weight: 700;
-}
-
-.add_to_list:hover {
-    background-color: #ffffff !important;
-    color: #fa6100;
-    font-weight: 700;
-    border: 1px solid #fa6100;
-}
-
-.add_to_list:focus-visible {
-    outline: 2px solid black !important;
-            }
-
-.view_lists_btn {
     background-color: var(--white) !important;
     color: var(--dark_blue);
     font-weight: 700;
     border: 1px solid var(--dark_blue);
+
+}
+
+.add_to_list:hover {
+    background-color: var(--dark_blue) !important;
+    color: var(--white);
+    border: 1px solid var(--dark_blue);
+}
+
+.add_to_list:focus-visible {
+    outline: 2px solid black !important;
+ }
+
+.view_lists_btn {
+    color: var(--teal);
+    font-weight: 700;
+    /* border: 1px solid var(--dark_blue); */
 }
 
 .view_lists_btn:hover {
-    background-color: var(--dark_blue) !important;
-    color: var(--white);
+    color: var(--dark_blue);
     font-weight: 700;
 }
 
