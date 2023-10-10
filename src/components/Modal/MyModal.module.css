@@ -16,7 +16,7 @@
 .add_to_list:hover {
     background-color: var(--dark_blue) !important;
     color: var(--white);
-    border: 1px solid var(--dark_blue);
+    border: 1px solid var(--dark_blue) !important;
 }
 
 .add_to_list:focus-visible {

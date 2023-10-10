@@ -22,10 +22,10 @@ const AddToWishListBtnGroup = (props) => {
                 {like ?
                     <>
                         <div className="btn-group">
-                            <button type="button" className="border border-secondary rounded-start bg-light">
+                            <button type="button" className="border rounded-start bg-light">
                                 <i className="fa-solid fa-heart text-danger" onClick={updateLike} data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
                             </button>
-                            <button className="btn btn-outline-secondary btn-sm rounded-end" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button className="btn btn-outline border btn-sm rounded-end" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Choose a Wish List <i className="fa-solid fa-chevron-down"></i>
 
                             </button>
@@ -42,7 +42,7 @@ const AddToWishListBtnGroup = (props) => {
                     :
                     <>
                         <div className="btn-group">
-                            <button type="button" className="border border-secondary rounded-start bg-light">
+                            <button type="button" className="border  rounded-start bg-light">
                                 <i className="fa-regular fa-heart text-danger" onClick={updateLike} data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 </i>
                             </button>

@@ -24,7 +24,7 @@ const MyModal = (props) => {
                   <button type="button" className={`btn rounded w-100 mt-2 ${styles.view_lists_btn}`} data-bs-dismiss="modal"><small>View Wish Lists</small></button>
                 </div>
                 <div className="col-5 ">
-                  <button type="button" className={`btn my-warning rounded w-100 mt-2 ${styles.add_to_list}`} data-bs-dismiss="modal"><small>Continue Shopping</small></button>
+                  <button type="button" className={`btn rounded w-100 mt-2 ${styles.add_to_list}`} data-bs-dismiss="modal"><small>Continue Shopping</small></button>
                 </div>
               </div>
             </div>
