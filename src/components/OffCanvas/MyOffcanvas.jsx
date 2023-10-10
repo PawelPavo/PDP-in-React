@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 
 const MyOffcanvs = (props) => {
 
@@ -19,8 +19,8 @@ const MyOffcanvs = (props) => {
                     </div>
                 </div>
                 <div className="offcanvas-body">
-                    <div>
-                        This is standard menu.
+                    <div data-bs-dismiss="offcanvas" aria-label="Close">
+                    <Link to="/" >Back to PDP</Link>
                     </div>
                 </div>
             </div>

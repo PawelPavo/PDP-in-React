@@ -1,6 +1,7 @@
 import React from "react";
 import MyOffcanvs from "../OffCanvas/MyOffcanvas";
-import LoginModal from "../Modal/LoginInModal";
+import {Link} from "react-router-dom"
+
 
 const NavBar = (props) => {
     return (
@@ -83,13 +84,16 @@ const NavBar = (props) => {
                                     <div className="btn btn-sm rounded-5 shadow-sm my-menu">
                                         <i className="fa-solid fa-tag"></i>
                                     </div>
+                                    <Link to="/cart">
                                     <div className="btn btn-sm rounded-5 shadow my-warning position-relative ">
+                                        
                                         <small><i className="fa-solid fa-cart-shopping"></i></small>
                                         <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
                                             {props.cartItems}
                                             <span className="visually-hidden">unread messages</span>
                                         </span>
                                     </div>
+                                    </Link>
                                 </div>
                                 <div className="mt-2 text-center">
                                     <div style={{ fontSize: "12px" }}>#1 Rated Catalog/Internet Merchant <img src="https://www.lifeextension.com/-/media/lifeextension/seals/ftr-consumerlab-seal-2021.png" alt="#1 Rated Catalog/Internet Merchant" style={{ width: "25px" }} /></div>
