@@ -1,5 +1,4 @@
 import React  from "react";
-import image from "../../Images/Add to Cart-amico.svg"
 
 const LoginModal = (props) => {
 
@@ -86,8 +85,6 @@ const LoginModal = (props) => {
                                         <div className="col-md-6 text-center mt-3 my-md-auto">
                                             {props.cartItems === 0 ?
                                                 <>
-                                                    <img src={image} alt="Shopping for Life Extension prodducts" />
-
                                                     <h5 className="my-3">Your cart is empty.</h5>
                                                     <a href="#" className="btn my-warning rounded btn-sm px-4 shadow-sm">Shop Now</a>
                                                 </>

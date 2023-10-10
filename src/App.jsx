@@ -1,8 +1,10 @@
 import { React, useState, useEffect } from 'react';
-import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 import NavBar from './components/NavBar/NavBar.jsx';
 import PDP from './Views/PDP.jsx';
 import Cart from './Views/Cart.jsx';
+import LoginModal from "./components/Modal/LoginInModal.jsx"
+
 
 
 
@@ -76,6 +78,8 @@ const App = () => {
 
   return (
     <BrowserRouter>
+            <LoginModal greeting={greeting} login={login} handleLogin={handleLogin} cartItems={cartItems} user={user} onSubmnit={onSubmnit} handleLogOut={handleLogOut}/>
+
       <div className="sticky-top bg-white pt-2">
       <NavBar login={login} handleLogin={handleLogin} cartItems={cartItems} greeting={greeting} user={user} onSubmnit={onSubmnit} handleLogOut={handleLogOut} />
       <div className="banner text-center no-gutters">
@@ -100,7 +104,7 @@ const App = () => {
             autoshipActive={autoshipActive}
             changeAutoship={changeAutoship}/>
         }/>
-      <Route path="/cart" element={<Cart/>}/>
+      <Route path="/cart" element={<Cart cartItems={cartItems}/>}/>
       </Routes>
     </BrowserRouter>
   );

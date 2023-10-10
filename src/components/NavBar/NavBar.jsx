@@ -34,6 +34,7 @@ const NavBar = (props) => {
                             <div className="btn btn-sm rounded-5 shadow-sm dark-blue mx-2 my-menu">
                                 <i className="fa-solid fa-tag"></i>
                             </div>
+                            <Link to="/cart">
                             <div className="btn btn-sm rounded-5 shadow dark-blue my-warning position-relative">
                                 <small><i className="fa-solid fa-cart-shopping"></i></small>
                                 <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
@@ -41,6 +42,7 @@ const NavBar = (props) => {
                                     <span className="visually-hidden">unread messages</span>
                                 </span>
                             </div>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-lg-10 my-auto mt-2">
