@@ -4,6 +4,7 @@ import NavBar from './components/NavBar/NavBar.jsx';
 import PDP from './Views/PDP.jsx';
 import Cart from './Views/Cart.jsx';
 import LoginModal from "./components/Modal/LoginInModal.jsx"
+import SignUp from './Views/SignUp.jsx';
 
 
 
@@ -105,6 +106,7 @@ const App = () => {
             changeAutoship={changeAutoship}/>
         }/>
       <Route path="/cart" element={<Cart cartItems={cartItems}/>}/>
+      <Route path="/sign-up" element={<SignUp />}></Route>
       </Routes>
     </BrowserRouter>
   );

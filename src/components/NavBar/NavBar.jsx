@@ -29,10 +29,10 @@ const NavBar = (props) => {
                                 }
                             </div>
                             <div className="btn btn-sm  rounded-5 shadow-sm dark-blue my-menu">
-                                <i className="fa-solid fa-phone"></i>
+                                <i className="fa-solid fa-phone pt-1"></i>
                             </div>
                             <div className="btn btn-sm rounded-5 shadow-sm dark-blue mx-2 my-menu">
-                                <i className="fa-solid fa-tag"></i>
+                                <i className="fa-solid fa-tag pt-1"></i>
                             </div>
                             <Link to="/cart">
                             <div className="btn btn-sm rounded-5 shadow dark-blue my-warning position-relative">
@@ -81,10 +81,10 @@ const NavBar = (props) => {
                                             </>}
                                     </div>
                                     <div className="btn btn-sm rounded-5 shadow-sm my-menu">
-                                        <i className="fa-solid fa-phone"></i>
+                                        <i className="fa-solid fa-phone pt-1"></i>
                                     </div>
                                     <div className="btn btn-sm rounded-5 shadow-sm my-menu">
-                                        <i className="fa-solid fa-tag"></i>
+                                        <i className="fa-solid fa-tag pt-1"></i>
                                     </div>
                                     <Link to="/cart">
                                     <div className="btn btn-sm rounded-5 shadow my-warning position-relative ">
