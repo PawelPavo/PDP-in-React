@@ -55,9 +55,9 @@ const PDP = (props) => {
                 <p>Many of us don't get enough vitamin D from sunshine and diet alone—but we need this nutrient for healthy bones and a strong immune system. Our high-potency supplement fills in the gaps.</p>
                 <div className="row">
               <div className="accordion" id="accordionFlushExample">
-                <div className="accordion-item shadow-sm" >
+                <div className="accordion-item rounded-0 border-start-0 border-end-0 py-1" >
                   <h2 className="accordion-header">
-                    <button className="accordion-button collapsed fw-light fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <button className="accordion-button collapsed fw-light fs-5 rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     Available versions:
                     </button>
                   </h2>

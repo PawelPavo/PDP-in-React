@@ -15,7 +15,7 @@ const mountedStyle = {
 const AddToCartDesktop = (props) => {
     return (
         <>
-            <div className="card bg-light rounded shadow-sm">
+            <div className="card bg-light rounded-0 shadow-sm">
                 <div className="card-body p-0 pt-3">
                     <p className={`card-title dark-blue text-end fs-5 m-0 ${props.autoshipActive ? styles.opacity_custom_og : ""}`}><span>Price:</span> <span className="fw-bold">$7.50</span></p>
                     {props.autoshipActive ?

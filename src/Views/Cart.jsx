@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import image from "../Images/Add to Cart-amico.svg"
+import EmptyCart from "../components/Cart/EmptyCart";
 
 const Cart = (props) => {
 
@@ -30,7 +30,7 @@ const Cart = (props) => {
             <div class="container">
                 <div class="row mt-4 border mb-2 border-end-0 border-start-0 border-top-0 border-2">
                     <div class="col py-2 ps-4">
-                        <h2 class="my-cart text-uppercase p-0 m-0">My Cart</h2>
+                        <h2 class="my-cart fs-1 p-0 m-0">My Cart</h2>
                     </div>
                 </div>
                 <div class="row mt-3">
@@ -478,7 +478,7 @@ const Cart = (props) => {
                         </div>
                     </div>
                     {/* <!-- Card 3 --> */}
-                    {/* <hr class="m-0 p-0"> */}
+                    <hr class="m-0 p-0"/>
                     <div class="card border-0 mb-2">
                         <div class="row justify-content-center">
                             <div class="col-2 my-auto">
@@ -506,29 +506,9 @@ const Cart = (props) => {
             </div>
             </>
     :
-            <div className="container">
-                
-                <div className="row justify-content-center mt-5">
-                    <div className="col-md-6">
-                        <div className="card border-0" >
-                            <div className="row g-0 justify-content-center">
-                                <div className="col-4">
-                                    <img src={image} class="img-fluid rounded-start" alt="Keep Shopping" />
-                                </div>
-                                <div class="col-md-6 my-auto">
-                                    <div className="card-body text-center">
-                                
-                                                <h5 className="my-3">Your cart is empty.</h5>
-                                                <a href="/" className="btn my-warning rounded btn-sm px-4 shadow-sm">Shop Now</a>
-                                          
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <EmptyCart addToCart={props.addToCart} />
+
         }
         </>
     )

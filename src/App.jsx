@@ -105,7 +105,7 @@ const App = () => {
             autoshipActive={autoshipActive}
             changeAutoship={changeAutoship}/>
         }/>
-          <Route path="/cart" element={<CartRoute cartItems={cartItems}/>}/>
+          <Route path="/cart" element={<CartRoute cartItems={cartItems} addToCart={addToCart}/>}/>
       <Route path="/sign-up" element={<SignUp />}></Route>
       </Routes>
     </BrowserRouter>

@@ -207,24 +207,20 @@ img {
 }
 
 .accordion {
-  --bs-accordion-active-bg: #f6f6f6;
+  --bs-accordion-active-bg: white;
 }
 
 .bottom-offCanvas {
   height: 65% !important;
 }
 
-  .accordion-button {
+  /* .accordion-button {
     color: var(--dark_blue);
-  }
+  } */
 
   .accordion-button:focus {
-    box-shadow: inset 1px 1px 1px var(--dark_blue),1px 1px 1px 1px var(--dark_blue);
+    box-shadow: inset 0px 0px 0px var(--dark_blue),0px 0px 0px 0px var(--dark_blue);
   }
-
-
-  /*  */
-
 
 #card {
     background-color: #E6F6F7 !important;
