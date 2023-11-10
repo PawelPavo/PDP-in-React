@@ -28,9 +28,9 @@ const Cart = (props) => {
         {props.cartItems != 0 ?
         <>
             <div class="container">
-                <div class="row mt-4 border mb-2 border-end-0 border-start-0 border-top-0 border-2">
-                    <div class="col py-2 ps-4">
-                        <h2 class="my-cart fs-1 p-0 m-0">My Cart</h2>
+            <div class="row mt-4 border border-end-0 border-start-0 border-top-0 border-2">
+                    <div class="col">
+                        <h2 class="my-cart p-0 m-0 fs-1">My Cart</h2>
                     </div>
                 </div>
                 <div class="row mt-3">

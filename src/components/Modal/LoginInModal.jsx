@@ -1,5 +1,5 @@
 import React  from "react";
-
+import { Link } from "react-router-dom";
 const LoginModal = (props) => {
 
 
@@ -91,9 +91,14 @@ const LoginModal = (props) => {
                                                 :
                                                 <>
                                                     <h5 className="mb-3">You have <span className="orange"> {props.cartItems} </span> item(s) in your cart.</h5>
-                                                    <a href="#" className="btn my-warning rounded btn-sm px-4 shadow-sm">View Cart</a><br />
+                                                   <Link to="/cart">
+                                                    <div className="btn my-warning rounded btn-sm px-4 shadow-sm" data-bs-dismiss="modal">View Cart</div>
+                                                    </Link>
+                                                    <br />
                                                     <div className="my-2">OR</div>
-                                                    <a href="#" className="btn my-menu rounded btn-sm">Continue Shopping</a>
+                                                    <Link to="/">
+                                                    <div className="btn my-menu rounded btn-sm" data-bs-dismiss="modal">Continue Shopping</div>
+                                                    </Link>
                                                 </>
                                             }
                                         </div>
