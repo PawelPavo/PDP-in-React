@@ -43,7 +43,7 @@ const PDP = (props) => {
                   <AddToCartMobile
                     counter={props.counter}
                     daySupply={props.daySupply}
-                    increase={props.sincrease}
+                    increase={props.increase}
                     decrease={props.decrease}
                     manualQtyInput={props.manualQtyInput}
                     addToCart={props.addToCart}
