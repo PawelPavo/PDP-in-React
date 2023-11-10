@@ -210,6 +210,10 @@ img {
   --bs-accordion-active-bg: #f6f6f6;
 }
 
+.bottom-offCanvas {
+  height: 65% !important;
+}
+
   .accordion-button {
     color: var(--dark_blue);
   }

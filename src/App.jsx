@@ -2,7 +2,6 @@ import { React, useState, useEffect } from 'react';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import NavBar from './components/NavBar/NavBar.jsx';
 import PDP from './Views/PDP.jsx';
-import Cart from './Views/Cart.jsx';
 import LoginModal from "./components/Modal/LoginInModal.jsx"
 import SignUp from './Views/SignUp.jsx';
 import CartRoute from './components/Loader.js';

@@ -5,7 +5,7 @@ function CartRoute(props) {
     const [show, setShow] = React.useState(true);
 
     React.useEffect(() => {
-        let showTimer = setTimeout(() => setShow(false), 5000);
+        let showTimer = setTimeout(() => setShow(false), 1000);
         return () => {
             clearTimeout(showTimer);
         };
