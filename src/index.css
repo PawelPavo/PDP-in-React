@@ -91,6 +91,18 @@ img {
   }
 }
 
+.my-warning-reverse {
+  border: 1px solid var(--orange) !important;
+  background-color: var(--white);
+  color: var(--dark_blue);
+  transition: 0.3s;
+}
+
+.my-warning-reverse:hover{
+  color: var(--white) ;
+  border: 1px solid var(--orange) !important;
+  background-color: var(--orange);
+}
 
 
 .my-warning{

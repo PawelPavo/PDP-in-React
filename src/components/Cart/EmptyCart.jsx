@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../../Images/Add to Cart-amico.svg"
 
 
 
@@ -16,13 +15,10 @@ const EmptyCart = (props) => {
                     <div className="col-lg-9">
                         <div className="card border-0" >
                             <div className="row g-0 justify-content-center">
-                                <div className="col-4">
-                                    <img src={image} class="img-fluid rounded-start" alt="Keep Shopping" style={{width:"200px"}}/>
-                                </div>
                                 <div class="col-md-6 my-auto">
                                     <div className="card-body text-center">
-                                        <h3 className="my-3"><em>Your cart is empty.</em></h3>
-                                        <a href="/" className="btn my-warning rounded px-4 shadow-sm">Start Shopping</a>
+                                        <h3 className="my-3 fw-light fs-2"><em>Your cart is empty.</em></h3>
+                                        <a href="/" className="btn my-warning-reverse rounded px-4 shadow-sm">Start Shopping</a>
                                     </div>
                                     <p> Choose from popular categories like <a href="/" className="text-decoration-none">Energy</a>, <a href="/" className="text-decoration-none">Heart</a>, <a href="/" className="text-decoration-none">Brain</a> and <a href="/" className="text-decoration-none">more</a>. </p>
                                 </div>
