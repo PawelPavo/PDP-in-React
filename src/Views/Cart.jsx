@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import EmptyCart from "../components/Cart/EmptyCart";
+import BuyAgain from "../components/Carousel/BuyAgian";
 
 const Cart = (props) => {
 
@@ -36,7 +37,7 @@ const Cart = (props) => {
                 <div class="row mt-3">
                     {/* <!-- Start body col --> */}
                     <div class="col-lg-8">
-                        <div class="card mb-3 shadow-sm border-0 rounded-0" id="card">
+                        <div class="card mb-3 shadow-sm border-0 rounded-0 py-2" id="card">
                             <div class="row g-0">
                                 <div class="col-lg-5 my-auto px-3">
                                     <div class="d-flex justify-content-center">
@@ -49,40 +50,47 @@ const Cart = (props) => {
                                             <p class="text-uppercase rewards_style p-0 m-0">Rewards</p>
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <p class="text-center fs-5 p-0 m-0" id="done">
-
-                                            <span id="demo_2" class="fw-bold"></span>
-                                            {reachedFreeShipping ? <><small style={{ fontSize: "16px" }}>Your order ships</small> <span class='text-success fw-bold'>FREE</span>+<span class='my-cart fw-bold'>PREMIER</span></> :
-                                                <><span class="fw-bold"><span class="fw-bold">${freeShipping}</span>.00 </span>until <span class="free_shipping fw-bold">FREE SHIPPING</span></>
-                                            }
-                                        </p>
-                                        <div class="progress border border-secondary mt-2" role="progressbar"
-                                            aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                            <div id="progress_bar" class="progress-bar" style={{ width: `${freeShippingProgress}%` }}></div>
-                                        </div>
-                                        <p class="text-end me-2 fs-5">
-                                            <small>Subtotal:</small> <span class="">${subTotal}</span>
-                                            <span id="demo" class=""></span>
-                                            <span class="">.00</span>
-                                        </p>
+                                    <div className="row px-2">
+                                    <div class="col-9 my-auto p-0">
+                                                <div class="progress border border-secondary rounded-5" role="progressbar"
+                                                    aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style={{ height: "25px" }}>
+                                                    <div id="progress_bar" class="progress-bar text-end rounded-5" style={{ width: `${freeShippingProgress}%` }}>
+                                                        <span class="text-end me-2 py-2">
+                                                            <span class="fs-6">{reachedFreeShipping && "Free Shipping"} <i class="fa-solid fa-truck-fast"></i></span>
+                                                        </span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
                                     </div>
+                                        <div className="col-3  p-0 text-end">
+                                            <div className=" fs-5 text-center m-0 p-0">${subTotal}.00 </div>
+                                        </div>
+                                    </div>
+                                            <p class="text-center fs-5 p-0 m-0 mt-3" id="done">
+                                                <span id="demo_2" class="fw-bold"></span>
+                                                {reachedFreeShipping ? <><small style={{ fontSize: "16px" }}>Your order ships</small> <span class='text-success fw-bold'>FREE</span>+<span class='my-cart fw-bold'>PREMIER</span></> :
+                                                    <><span class="text-success">$</span><span class="fw-bold text-success"><span class="fw-bold">{freeShipping}</span>.00 </span>until <span class="free_shipping fst-italic">FREE SHIPPING</span></>
+                                                }
+                                            </p>
                                 </div>
                                 <div class="col-lg-7  my-auto ps-2" id="PR-col">
-                                    <div class="card-body pr-col ">
+                                    <div class="card-body pr-col mb-2">
                                         {reachedFreeShipping ? 
                                             <p class="pr-par">Activate <span class='fw-bold my-cart'>PREMIER</span> status at no extra cost to recieve <span class='fw-bold free_shipping'> $50 bonus</span> applied to this order. Get exclusive perks, Free Shipping, plus earn 4% LE Dollars back for 1 year.</p> :
-                                            <p class="pr-par" id="PR_par"><span class="free_shipping fw-bold">PLUS</span>
+                                            <p class="pr-par" id="PR_par"><span class="free_shipping fw-bold">PLUS </span>
                                                 qualify for <span class="free_shipping fw-bold">PREMIER</span> for even more
                                                 exclusive perks & 4% LE Dollars back for one year. <br /><a href="#"
                                                     class="fw-bold learn-more">Learn more <i class="fa-solid fa-circle-info "></i></a></p>}
                                         <div class="row justify-content-center">
-                                            <div class="col-7 text-center">
+                                            <div class="col-7 text-center mb-2">
                                                 <button tabindex="0" class="btn btn-white-orange fw-bold w-100">ACTIVATE
                                                     NOW</button>
                                             </div>
                                         </div>
+                                        <small className="fst-italic">Premier costs $49.95. You will receive a $50 instant credit upon activation.</small>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -274,7 +282,7 @@ const Cart = (props) => {
                                     </div>
                                     <div class="progress border border-secondary" role="progressbar" aria-label="Basic example"
                                         aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style={{ height: "10px" }}>
-                                        <div id="progress_bar" class="progress-bar" style={{ width: "60%" }}></div>
+                                        <div id="progress_bar" class="progress-bar rounded-5" style={{ width: "60%" }}></div>
                                     </div>
                                     <p class="me-2 m-0 p-0"><span class="fw-bold text-success">$5 off $20</span> plus Free
                                         Shipping</p>
@@ -410,7 +418,8 @@ const Cart = (props) => {
                         </div>
                     </div>
                 </div>
-
+                <hr/>
+                <BuyAgain />
             </div>
 
             {/* <!-- OffCanvas --> */}
@@ -429,7 +438,7 @@ const Cart = (props) => {
                         </div>
                         <div class="progress border border-secondary" role="progressbar" aria-label="Basic example"
                             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style={{ height: "10px" }}>
-                            <div id="progress_bar" class="progress-bar" style={{ width: "60%" }}></div>
+                            <div id="progress_bar" class="progress-bar rounded-5" style={{ width: "60%" }}></div>
                         </div>
                     </div>
                     {/* <!-- Card 1 --> */}
@@ -504,6 +513,7 @@ const Cart = (props) => {
                     <hr />
                 </div>
             </div>
+            
             </>
     :
 
