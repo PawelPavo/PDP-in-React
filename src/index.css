@@ -36,6 +36,10 @@ p {
   color: var(--orange);
 }
 
+.teal {
+  color: var(--teal) !important;
+}
+
 img {
   max-width: 120px; 
   height: auto; 
@@ -356,6 +360,19 @@ img {
 
 .pr-par {
     font-size: 18.66px;
+}
+
+.socialIcon {
+  color: var(--teal);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.socialIcon:hover {
+  color: #0e2d52;
+  outline: #0e2d52 solid 1px;
+  border-radius: 50%;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 992px) {

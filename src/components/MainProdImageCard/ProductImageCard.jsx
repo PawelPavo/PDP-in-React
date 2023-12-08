@@ -10,7 +10,7 @@ const ProductImageCard = (props) => {
         <>
             <div className="card border-0">
                 
-                <span className="m-2 position-absolute">
+                <span className="mt-2 position-absolute">
                 <AddToWishListBtnGroup />
                 </span>
                 <div className="text-center">
