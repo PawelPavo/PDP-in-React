@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./MyModal.module.css"
+import Cards from "../Carousel/WishListCards";
 
 const MyModal = (props) => {
   return (
@@ -16,17 +17,17 @@ const MyModal = (props) => {
               <button type="button" className="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body text-start">
-              <div className="row">
+              <div className="row py-3 bg-light">
                 <div className="col-md-8">
-                  <div class="card mb-2 p-3">
+                  <div class="card mb-2 p-3 shadow-sm">
                     <div class="row justify-content-center">
-                      <div class="col-2 my-auto">
+                      <div class="col-3 my-auto">
                         <div class="row">
                           <img src="https://www.lifeextension.com/-/media/lifeextension/products/small/01758.png"
-                            class="img-fluid rounded-start" alt="..." style={{ width: "75px" }} />
+                            class="img-fluid rounded-start" alt="..." style={{ width: "85px" }} />
                         </div>
                       </div>
-                      <div class="col-9 m-0 p-0">
+                      <div class="col-8 m-0 p-0">
                         <div class="card-body">
                           <h5 class="free_shipping">Vitamin D3</h5>
                           <p class="card-text">125 mcg (5000 IU), 60 capsules, #01758</p>
@@ -62,10 +63,13 @@ const MyModal = (props) => {
                   </div>
                 </div>
               </div>
-
+              <Cards></Cards>
             </div>
+            
           </div>
+         
         </div>
+        
       </div>
       <div className="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabIndex="-1">
         <div className="modal-dialog modal-dialog-centered">

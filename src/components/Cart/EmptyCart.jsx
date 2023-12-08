@@ -110,9 +110,7 @@ const EmptyCart = (props) => {
                     </div>
                     </div>
                     {/* <!-- Card 3 --> */}
-                    <div className="col-lg-4">
-
-                    
+                    <div className="col-lg-4">                    
                     <div class="card mb-2">
                         <div class="row justify-content-center">
                             <div class="col-2 my-auto">

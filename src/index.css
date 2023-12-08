@@ -95,6 +95,20 @@ img {
   }
 }
 
+.add_to_list {
+  background-color: var(--white) !important;
+  color: var(--dark_blue);
+  font-weight: 700;
+  border: 1px solid var(--dark_blue);
+
+}
+
+.add_to_list:hover {
+  background-color: var(--dark_blue) !important;
+  color: var(--white);
+  border: 1px solid var(--dark_blue) !important;
+}
+
 .my-warning-reverse {
   border: 1px solid var(--orange) !important;
   background-color: var(--white);
