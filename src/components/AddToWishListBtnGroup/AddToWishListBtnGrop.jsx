@@ -10,56 +10,20 @@ const AddToWishListBtnGroup = (props) => {
         setLike(!like)
         setValue(event.target.textContent)
     }
-
-    const setList = (event) => {
-        setValue(event.target.textContent)
-    }
-
     return (
         <>
             <div className="col-12 text-center">
 
-                {like ?
-                    <>
-                        <div className="btn-group">
-                            <button type="button" className="border rounded-start bg-light">
-                                <i className="fa-solid fa-heart text-danger" onClick={updateLike} data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-                            </button>
-                            <button className="btn btn-outline border btn-sm rounded-end" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Choose a Wish List <i className="fa-solid fa-chevron-down"></i>
+                <div className="btn-group">
+                    <div type="button" role="button" className="border-0">
+                        {like ?
+                            <i className="fa-solid fa-heart text-danger border p-2 rounded-5" onClick={updateLike} data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                            :
+                            <i className="fa-regular fa-heart text-danger border p-2 rounded-5" onClick={updateLike} data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                        }
+                    </div>
+                </div>
 
-                            </button>
-                            <ul className="dropdown-menu">
-                                <li className="dropdown-item" onClick={setList} data-bs-toggle="modal" data-bs-target="#exampleModal">My Favorites</li>
-                                <li className="dropdown-item" onClick={setList} data-bs-toggle="modal" data-bs-target="#exampleModal">Dad's List</li>
-                                <li className="dropdown-item" onClick={setList} data-bs-toggle="modal" data-bs-target="#exampleModal">Mom's List</li>
-                                <li><hr className="dropdown-divider" /></li>
-                                <li className="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalToggle2">Add New Wish List</li>
-                            </ul>
-                        </div>
-                        
-                    </>
-                    :
-                    <>
-                        <div className="btn-group">
-                            <button type="button" className="border  rounded-start bg-light">
-                                <i className="fa-regular fa-heart text-danger" onClick={updateLike} data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                </i>
-                            </button>
-                            <button className="btn btn-outline-secondary btn-sm rounded-end" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Choose a Wish List <i className="fa-solid fa-chevron-down"></i>
-                            </button>
-                            <ul className="dropdown-menu">
-                                <li className="dropdown-item" onClick={updateLike} data-bs-toggle="modal" data-bs-target="#exampleModal" value="My Favorites">My Favorites</li>
-                                <li className="dropdown-item" onClick={updateLike} data-bs-toggle="modal" data-bs-target="#exampleModal">Dad's List</li>
-                                <li className="dropdown-item" onClick={updateLike} data-bs-toggle="modal" data-bs-target="#exampleModal">Mom's List</li>
-                                <li><hr className="dropdown-divider" /></li>
-                                <li className="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalToggle2">Add New Wish List</li>
-                            </ul>
-                        </div>
-                        
-                    </>
-                }
             </div>
             <MyModal like={like} updateLike={updateLike} value={value}/>
         </>

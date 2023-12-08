@@ -2,31 +2,67 @@ import React from "react";
 import styles from "./MyModal.module.css"
 
 const MyModal = (props) => {
-
-
   return (
     <>
       <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div className="modal-dialog">
+        <div className="modal-dialog modal-lg">
           <div className="modal-content">
-            <div className="modal-header bg-light">
+            <div className="modal-header border-0">
               {props.like ?
-                <h1 className="modal-title fs-6 dark-blue" id="exampleModalLabel">Items added {props.value ? <> to: <span className="link"  data-bs-toggle="modal" data-bs-target="#exampleModal">{props.value}</span></> : <>to: <span className="link"  data-bs-toggle="modal" data-bs-target="#exampleModal">My Favorites</span></>}</h1>
+                <div>Add to List</div>
                 :
-                <h1 className="modal-title fs-6 dark-blue" id="exampleModalLabel">Item Removed</h1>
+                <div>Removed from List</div>
               }
               <button type="button" className="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div className="modal-body">
-              <h2 className="text-start dark-blue">Vitamin D3</h2>
-              <div className="row justify-content-center">
-                <div className="col-md-4">
-                  <button type="button" className={`btn rounded w-100 mt-2 ${styles.view_lists_btn}`} data-bs-dismiss="modal"><small>View Wish Lists</small></button>
+            <div className="modal-body text-start">
+              <div className="row">
+                <div className="col-md-8">
+                  <div class="card mb-2 p-3">
+                    <div class="row justify-content-center">
+                      <div class="col-2 my-auto">
+                        <div class="row">
+                          <img src="https://www.lifeextension.com/-/media/lifeextension/products/small/01758.png"
+                            class="img-fluid rounded-start" alt="..." style={{ width: "75px" }} />
+                        </div>
+                      </div>
+                      <div class="col-9 m-0 p-0">
+                        <div class="card-body">
+                          <h5 class="free_shipping">Vitamin D3</h5>
+                          <p class="card-text">125 mcg (5000 IU), 60 capsules, #01758</p>
+                          <div class="d-flex card-text text-end justify-content-between">
+                            {props.like ?
+                              <>
+                                <button className="btn btn-sm btn-outline-secondary rounded-end" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Choose a Wish List <i className="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <ul className="dropdown-menu">
+                                  <li className="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">My Favorites</li>
+                                  <li className="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">Dad's List</li>
+                                  <li className="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">Mom's List</li>
+                                  <li><hr className="dropdown-divider" /></li>
+                                  <li className="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalToggle2">Add New Wish List</li>
+                                </ul>
+                              </>
+                            :
+                            <><div className="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={props.updateLike}>Undo</div></>
+                            }
+                          </div>
+                          <button type="button" className={`btn rounded mt-2 p-0 ${styles.view_lists_btn}`} data-bs-dismiss="modal"><small>View Wish Lists</small></button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
-                <div className="col-5 ">
-                  <button type="button" className={`btn rounded w-100 mt-2 ${styles.add_to_list}`} data-bs-dismiss="modal"><small>Continue Shopping</small></button>
+                <div className="col-md-4 my-auto">
+                  <div className="row justify-content-center">
+                    <button type="button" className={`btn rounded w-75 mt-2 ${styles.add_to_list}`} data-bs-dismiss="modal"><small>Continue Shopping</small></button>
+                  </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
