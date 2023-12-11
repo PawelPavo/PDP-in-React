@@ -8,18 +8,18 @@ const MyModal = (props) => {
       <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog modal-lg">
           <div className="modal-content">
-            <div className="modal-header border-0">
-              {props.like ?
-                <div>Add to List</div>
-                :
-                <div>Removed from List</div>
-              }
+            <div className="modal-header border-0 bg-light">
               <button type="button" className="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div className="modal-body text-start">
-              <div className="row py-3 bg-light">
+            <div className="modal-body text-start py-0">
+              <div className="row bg-light shadow-sm rounded">
                 <div className="col-md-8">
-                  <div class="card mb-2 p-3 shadow-sm">
+              {props.like ?
+                <div className="my-cart fs-4">Add item to Wishlist</div>
+                :
+                <div className="my-cart fs-4">Remove item from Wishlist</div>
+              }
+                  <div class="card mb-2 p-3 ">
                     <div class="row justify-content-center">
                       <div class="col-3 my-auto">
                         <div class="row">
@@ -58,7 +58,7 @@ const MyModal = (props) => {
 
                 </div>
                 <div className="col-md-4 my-auto">
-                  <div className="row justify-content-center">
+                  <div className="row justify-content-center mb-3 mb-lg-0">
                     <button type="button" className={`btn rounded w-75 mt-2 ${styles.add_to_list}`} data-bs-dismiss="modal"><small>Continue Shopping</small></button>
                   </div>
                 </div>

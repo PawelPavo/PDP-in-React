@@ -3,8 +3,8 @@ import React from "react";
 const WishListCards = (props) => {
     return(
         <>
-                        <hr></hr>
-                <div className="row">
+                        
+                <div className="row mt-4">
                     <div class="row mb-2">
                         <div class="col">
                             <h2 class="my-cart p-0 m-0 fs-5">Inspired by your Wishlists</h2>
