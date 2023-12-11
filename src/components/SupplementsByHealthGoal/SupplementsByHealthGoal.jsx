@@ -1,59 +1,53 @@
 import React from "react";
 
-// const versions = [{name:"hello"},{name:"goodbye"}]
-
-const versions = [
-    {
-        unit: "25 mcg (1000IU)",
-        items: [
+const HealthGoals = [
             {
                 id: 1,
-                count: "90 softgels",
-                price: "5.25"
+                name: "Bone Health",
+                image: "https://www.lifeextension.com/-/media/lifeextension/icons/supplement-quizzes/bone-and-joint/bone.svg"
             },
             {
                 id: 2,
-                count: "250 softgels",
-                price: "9.75"
-            }]
-    },
-    {
-        unit: "50 mcg (2000IU)",
-        items: [
-            {
-                count: "29.57 liquid",
-                price: "21.00"
+                name: "Prostate",
+                image: "https://www.lifeextension.com/-/media/lifeextension/icons/health-basics/prostate_health.svg"
             },
             {
-                count: "29.57 liquid",
-                price: "21.00"
-            }]
-    }
+                id: 3,
+                name: "Immune Support",
+                image: "https://www.lifeextension.com/-/media/lifeextension/icons/health-basics/nasal_support.svg"
+            },
+            {
+                id: 4,
+                name: "Inflammation Health Support",
+                image: "https://www.lifeextension.com/-/media/lifeextension/icons/supplement-quizzes/inflammation/inflammation.svg"
+            },
+            {
+                id: 5,
+                name: "Ant-Aging & Longevity",
+                image: "https://www.lifeextension.com/-/media/lifeextension/icons/supplement-quizzes/longevity/longevity.svg"
+            }
+    
 ]
 
 const SupplementsByHealhGoal = () => {
     return (
         <>
-                {versions.map(version => (
+                {HealthGoals.map(HealthGoal => (
                     <>
-                        <div className="row mt-2 ms-2 fw-bold">
-                            {version.unit}
+                        <div className="col-6 mb-2 col-lg-4">
+                            <div className="border shadow-sm btn btn-sm btn-light rounded-5 w-100 h-100">
+                                <div className="row">
+                                    <div className="col-2 my-auto">
+                                    <img className="fs-6" src={HealthGoal.image} alt="" style={{width:"35px"}} />
+                                    </div>
+                                    <div className="col-10 my-auto text-start ps-4" style={{fontSize:"12px"}}>
+                                    {HealthGoal.name}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        {version.items.map(item => (
-                            <>
-                                <div className="col-md-6">
-                                <div className="btn btn-sm btn-outline-secondary w-100 mx-1 my-1 my-menu">
-                                    <span> {item.count}</span>
-                                    <span> $ {item.price}</span>
-                                </div>
-                                </div>
-
-                            </>
-                        ))}
-
                     </>
                 ))}
-            
         </>
     )
 };

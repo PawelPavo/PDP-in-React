@@ -6,6 +6,7 @@ import ReviewStars from '../components/ReviewStars/ReviewStars.jsx'
 import AddToCartDesktop from '../components/AddToCart/AddToCartDesktop.jsx';
 import AddToCartMobile from '../components/AddToCart/AddToCartMobile.jsx';
 import SupplementsByHealhGoal from '../components/SupplementsByHealthGoal/SupplementsByHealthGoal.jsx';
+import Versions from "../components/SupplementsByHealthGoal/Versions.jsx";
 
 const PDP = (props) => {
 
@@ -55,24 +56,28 @@ const PDP = (props) => {
                 <p>Many of us don't get enough vitamin D from sunshine and diet alone—but we need this nutrient for healthy bones and a strong immune system. Our high-potency supplement fills in the gaps.</p>
                 <div className="row">
               <div className="accordion" id="accordionFlushExample">
-                <div className="accordion-item rounded-0 border-start-0 border-end-0 py-1" >
+                <div className="accordion-item rounded-0 border-start-0 border-end-0" >
                   <h2 className="accordion-header">
-                    <button className="accordion-button collapsed fw-light fs-5 rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <button className="accordion-button collapsed fw-light fs-6 rounded-0 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     Available versions:
                     </button>
                   </h2>
                   <div id="flush-collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="row p-3">
-                    <SupplementsByHealhGoal />
-
+                    <Versions />
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </div>    
+            <div className="row mt-3 ms-2">
+                      <div className="row mb-1">Supplements by Health Goal:</div>
+                      <SupplementsByHealhGoal />
+                    </div>        
               </div>
               {/* /Details */}
             </div>
+
             <Overview></Overview>
           </div>
           {/* /Main Col 9 */}

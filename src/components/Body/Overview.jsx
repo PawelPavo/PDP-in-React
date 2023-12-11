@@ -4,12 +4,12 @@ import React from "react";
 const Overview = (props) => {
     return (
         <>
-<div className="row mt-4">
+<div className="row mt-lg-1 mt-3">
 <div className="accordion" id="accordionPanelsStayOpenExample">
-  <div className="accordion-item rounded-0 py-2">
+  <div className="accordion-item rounded-0 py-2 border-start-0 border-end-0">
     <h2 className="accordion-header">
       <button className="accordion-button fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-        Overview
+        Product Overview
       </button>
     </h2>
     <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse show">
@@ -26,7 +26,7 @@ const Overview = (props) => {
       </div>
     </div>
   </div>
-  <div className="accordion-item rounded-0 py-2">
+  <div className="accordion-item rounded-0 py-2 border-start-0 border-end-0">
     <h2 className="accordion-header">
       <button className="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
         Product Details
@@ -38,7 +38,7 @@ const Overview = (props) => {
       </div>
     </div>
   </div>
-  <div className="accordion-item rounded-0 py-2">
+  <div className="accordion-item rounded-0 py-2 border-start-0 border-end-0">
     <h2 className="accordion-header">
       <button className="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
         Supplement Facts
@@ -50,7 +50,7 @@ const Overview = (props) => {
       </div>
     </div>
   </div>
-  <div className="accordion-item rounded-0 py-2">
+  <div className="accordion-item rounded-0 py-2 border-start-0 border-end-0">
     <h2 className="accordion-header">
       <button className="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
         Review / Q&A
