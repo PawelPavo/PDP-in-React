@@ -20,7 +20,7 @@ const HealthGoals = [
         id: 4,
         name: "Once-Daily Dosing",
         image: "https://www.lifeextension.com/-/media/lifeextension/images/cb-svg-icons/one-daily-logo.svg"
-    },
+    }
 ]
 
 const FormulationIcons = () => {

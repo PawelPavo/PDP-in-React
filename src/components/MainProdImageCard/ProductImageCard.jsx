@@ -23,7 +23,7 @@ const ProductImageCard = (props) => {
             <div className="d-none d-lg-block mb-3">
                 <MyCarousel />
             </div>
-           
+
         </>
     )
 };

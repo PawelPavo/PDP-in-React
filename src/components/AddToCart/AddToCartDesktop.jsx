@@ -104,6 +104,7 @@ const AddToCartDesktop = (props) => {
                 <small className="my-1 pb-2">Always get the lowest price and <span className="fw-bold" style={{ color: "#a41f35" }}>FREE SHIPPING</span> with AutoShip. <span href="#" className={`{text-end m-0 fw-bold} ${styles.link}`}>Learn More</span></small>
 
             </div>
+            
         </>
     )
 };
