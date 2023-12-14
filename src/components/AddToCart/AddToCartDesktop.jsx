@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./AddToCart.module.css"
+import FormulationIcons from "../IconPills/FormulationIcons";
 
 const mountedStyle = {
     animation: "inAnimation 1s ease-in",

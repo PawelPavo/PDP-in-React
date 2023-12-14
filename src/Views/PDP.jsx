@@ -7,6 +7,8 @@ import AddToCartDesktop from '../components/AddToCart/AddToCartDesktop.jsx';
 import AddToCartMobile from '../components/AddToCart/AddToCartMobile.jsx';
 import SupplementsByHealhGoal from '../components/SupplementsByHealthGoal/SupplementsByHealthGoal.jsx';
 import Versions from "../components/SupplementsByHealthGoal/Versions.jsx";
+import FormulationIcons from "../components/IconPills/FormulationIcons.jsx";
+
 
 const PDP = (props) => {
 
@@ -54,6 +56,7 @@ const PDP = (props) => {
                 </div>
                 {/* /Mobile Add To Cart */}
                 <p>Many of us don't get enough vitamin D from sunshine and diet alone—but we need this nutrient for healthy bones and a strong immune system. Our high-potency supplement fills in the gaps.</p>
+                <FormulationIcons/>
                 <div className="row">
               <div className="accordion" id="accordionFlushExample">
                 <div className="accordion-item rounded-0 border-start-0 border-end-0" >

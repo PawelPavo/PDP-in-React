@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./AddToCart.module.css"
+import FormulationIcons from "../IconPills/FormulationIcons";
 
 const mountedStyle = {
     animation: "inAnimation 1s ease-in"
@@ -106,7 +107,9 @@ const AddToCartMobile = (props) => {
                     <div onClick={props.addToCart} className={`btn w-100 rounded shadow ${styles.add_to_cart}`}>{props.autoshipActive ? "Subscribe to Autoship" : "Add to Cart"}</div>
                 </div>
             </div>
+            
 
+            
         </>
     )
 };
