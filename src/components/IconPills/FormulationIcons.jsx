@@ -29,13 +29,13 @@ const FormulationIcons = () => {
         <div className="row justify-content-center mb-2">
                 {HealthGoals.map(HealthGoal => (
                     <>
-                        <div className="col-5 mb-2 col-lg-3">
-                            <div className="border btn btn-sm btn-outline-light text-dark rounded-2 w-100 h-100">
+                        <div className="col-5 mb-2 col-xl-3">
+                            <div className="border btn btn-sm my-outline-teal  text-dark rounded-2 w-100 h-100">
                                 <div className="row">
                                     <div className="col-2 my-auto">
                                     <img className="fs-6 ms-2" src={HealthGoal.image} alt="" style={{width:"20px"}} />
                                     </div>
-                                    <div className="col-10 my-auto text-start ps-4" style={{fontSize:"10px"}}>
+                                    <div className="col-10 my-auto text-start ps-4" style={{fontSize:"11px"}}>
                                     {HealthGoal.name}
                                     </div>
                                 </div>

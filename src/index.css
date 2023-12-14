@@ -8,6 +8,7 @@
   --white: #ffffff;
   --orange: #FF691F;
   --teal: #0D95A5;
+  --lightTeal: #e6f6f7;
 }
 
 body {
@@ -126,6 +127,16 @@ img {
   background-color: var(--orange);
 }
 
+.my-outline-teal {
+  background-color: var(--lightTeal);
+  transition: 0.3s;
+}
+
+.my-outline-teal:hover {
+  border: 1px solid var(--teal) !important;
+  background-color: #c0e1e2;;
+  transition: 0.3s;
+}
 
 .my-warning{
   border: 1px solid var(--orange) !important;
