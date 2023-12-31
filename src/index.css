@@ -24,6 +24,10 @@ p {
   font-size: 14px !important;
 }
 
+.text-extrs-small {
+  font-size: 12px !important;
+}
+
 .make-me-sticky {
   position: sticky;
   top: 150px;
@@ -64,6 +68,16 @@ img {
   text-decoration: none;
   color: #0e2d52;
   font-weight: 700;
+}
+
+.navlink {
+  text-decoration: none !important;
+  color: var(--dark_blue) !important;
+}
+
+.navlink:hover h5 {
+  text-decoration: none !important;
+  color: var(--teal)!important;
 }
 
 .icon_color {
@@ -386,6 +400,29 @@ img {
   padding: 5px;
 }
 
+.custom-dark {
+	background-color: #0e2d52;
+	color: white;
+}
+
+.custom-dark:hover{
+	background-color: white;
+	color: #0e2d52;
+	border: 1px solid #0e2d52;
+}
+
+.custom-ghost-teal {
+	background-color: white;
+	color: #0D95A5;
+	border: 1px solid #0D95A5;
+}
+
+.custom-ghost-teal:hover {
+	background-color: #0D95A5;
+	color: white;
+	border: 1px solid #0D95A5;
+}
+
 @media only screen and (max-width: 992px) {
     .pr-col {
         border-left: none;
@@ -395,3 +432,4 @@ img {
         padding-bottom: 100px;
     }
 }
+

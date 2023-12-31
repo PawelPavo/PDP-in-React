@@ -64,6 +64,7 @@ const NavBar = (props) => {
                                             <span>Best Sellers</span>
                                             <span>Sales</span>
                                             <span>Quizzes</span>
+                                            <Link to="/wellness" className="navlink"><span className="">Wellness Blog</span></Link>
                                         </div>
                                     </div>
                                 </div>

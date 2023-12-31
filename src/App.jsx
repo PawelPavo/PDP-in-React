@@ -5,6 +5,7 @@ import PDP from './Views/PDP.jsx';
 import LoginModal from "./components/Modal/LoginInModal.jsx"
 import SignUp from './Views/SignUp.jsx';
 import CartRoute from './components/Loader.js';
+import WellnessBlog from './Views/WellnessBlog.jsx';
 
 
 
@@ -107,6 +108,7 @@ const App = () => {
         }/>
           <Route path="/cart" element={<CartRoute cartItems={cartItems} addToCart={addToCart}/>}/>
       <Route path="/sign-up" element={<SignUp />}></Route>
+      <Route path="/wellness" element={<WellnessBlog />}></Route>
       </Routes>
     </BrowserRouter>
   );
