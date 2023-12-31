@@ -3,6 +3,7 @@ import React from "react";
 const HomePageBlogCard = (props) => {
     return (
         <>
+        
             <div className="col">
                 <a href="#" className="navlink">
                     <div className="card navlink h-100 border-top-0"><img src={props.image} className="img-fluid rounded shadow-sm" alt="..." />

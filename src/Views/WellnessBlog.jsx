@@ -33,17 +33,41 @@ const WellnessBlog = (props) => {
                     </a>
                 </div>
             </div>
-            <div class="col-lg-9">
-                <div class="row row-cols-1 row-cols-lg-4 g-4 mb-5 mx-2 mt-3">
+            <hr className="mx-3 my-4"/>
+            <div className="row px-lg-5">
+            <div class="col-lg-10">
+                <div class="row row-cols-1 row-cols-lg-4 g-2 mb-5">
                     <Nutrition />
                 </div>
-                <div class="row row-cols-1 row-cols-lg-4 g-4 mb-5 mx-2 mt-3">
+                <hr className="mx-3"/>
+                <div class="row row-cols-1 row-cols-lg-4 g-2 mb-5 mt-3">
                     <HealthyLiving />
                 </div>
-                <div class="row row-cols-1 row-cols-lg-4 g-4 mb-5 mx-2 mt-3">
+                <hr className="mx-3"/>
+                <div class="row row-cols-1 row-cols-lg-4 g-2 mb-5 mt-3">
                     <SelfCare />
                 </div>
+                <hr className="mx-3"/>
             </div>
+            <div className="col-lg-2">
+                        <div className="card bg-light">
+                            <div className="card-body">
+                            <div class="d-flex">
+                                        <img class="pe-2 mt-1"
+                                            src="https://www.lifeextension.com/-/media/lifeextension/icons/le-programs/just-icons/autoship_save.svg" alt=""
+                                            style={{ height: "70px" }} />
+                                        <div class="mt-3 mb-2">
+                                            <p class="roboto fs-4 text-uppercase p-0 m-0"
+                                                style={{ color: "#0D95A5", fontWeight: "500" }}>Autoship</p>
+                                            <p class="text-uppercase rewards_style p-0 m-0 fs-5">& Save</p>
+                                        </div>
+                                    </div>
+                                <p className="card-text">Guaranteed lowest prices & FREE shipping.</p>
+                                <a href="#" class="learn-more fw-bold fs-6" aria-label="Take the essentials quiz now">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
         </>
 
     )
