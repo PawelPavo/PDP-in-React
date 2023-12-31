@@ -36,15 +36,15 @@ const WellnessBlog = (props) => {
             <hr className="mx-3 my-4"/>
             <div className="row px-lg-5">
             <div class="col-lg-10">
-                <div class="row row-cols-1 row-cols-lg-4 g-2 mb-5">
+                <div class="row row-cols-1 row-cols-lg-4 g-2 mb-4">
                     <Nutrition />
                 </div>
                 <hr className="mx-3"/>
-                <div class="row row-cols-1 row-cols-lg-4 g-2 mb-5 mt-3">
+                <div class="row row-cols-1 row-cols-lg-4 g-2 mb-4 mt-3">
                     <HealthyLiving />
                 </div>
                 <hr className="mx-3"/>
-                <div class="row row-cols-1 row-cols-lg-4 g-2 mb-5 mt-3">
+                <div class="row row-cols-1 row-cols-lg-4 g-2 mb-4 mt-3">
                     <SelfCare />
                 </div>
                 <hr className="mx-3"/>
