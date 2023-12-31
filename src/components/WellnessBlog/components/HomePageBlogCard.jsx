@@ -5,7 +5,7 @@ const HomePageBlogCard = (props) => {
         <>
             <div className="col">
                 <a href="#" className="navlink">
-                    <div className="card navlink h-100"><img src={props.image} className="img-fluid" alt="..." />
+                    <div className="card navlink h-100 border-top-0"><img src={props.image} className="img-fluid rounded shadow-sm" alt="..." />
                         <div className="card-body"> <span className="w-75 mt-4 position-absolute top-0 start-50 translate-middle bg-white border border-dark text-dark py-1 px-3 rounded-5 text-center">
                             <div className="dark-blue"><i className="fa-solid fa-eye" ></i> {props.views} Views</div>
                         </span>

@@ -7,7 +7,7 @@ const WellnessBlog = (props) => {
     return (
         <>
         
-            <div className="row mx-5 p-3 rounded-5 shadow">
+            <div className="row mx-lg-5 p-3 rounded shadow-sm border">
             <div className="col-lg-3 my-auto">
             <div className="d-flex">
                 <img src="https://www.lifeextension.com/-/media/lifeextension/icons/le-programs/just-icons/wellness_guide.svg" class="img-fluid" alt="..." style={{ height: "85px" }} />
@@ -19,16 +19,15 @@ const WellnessBlog = (props) => {
                 </div>
                 <div className="col-lg-9">
                     <a href="" className="navlink">
-                    <div className="card mb-3 bg-light-blue border-0">
+                    <div className="card bg-light-blue border-0 rounded-3">
                         <div class="row g-0">
                             <div class="col-lg-7 my-auto">
                                 <div class="card-body">
-                                <div className="dark-blue fs-3 mb-3">What's New</div>
                                     <h5 class="card-title">How Does the Immune System Work?</h5>
                                     <p class="card-text">Your immune system is what keeps you keepin’ on—no matter what challenges life throws your way. This sounds simple…but it’s actually quite complicated, especially during the winter season when cooler weather keeps us indoors and crowded holiday gatherings come into play! Let’s explore the intricate network of cells, tissues, and organs that make up your immune system, and take a look at how everyday decisions - such as what time you go to bed and what you eat for breakfast - can affect your immune system health.</p>
                                 </div>
                             </div>
-                            <div class="col-md-5 my-auto"> <img src="https://www.lifeextension.com/-/media/lifeextension/wellness/lifestyle/how-does-immune-system-work/how-does-immune-system-work_promo.jpg" class="img-fluid rounded" alt="..." /> </div>
+                            <div class="col-lg-5 my-auto"> <img src="https://www.lifeextension.com/-/media/lifeextension/wellness/lifestyle/how-does-immune-system-work/how-does-immune-system-work_promo.jpg" class="img-fluid rounded" alt="..." /> </div>
                         </div>
                     </div>
                     </a>
