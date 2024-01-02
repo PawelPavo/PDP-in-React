@@ -25,7 +25,7 @@ p {
   font-size: 14px !important;
 }
 
-.text-extrs-small {
+.text-extra-small {
   font-size: 12px !important;
 }
 
@@ -354,8 +354,6 @@ img {
 }
 
 .btn-orange-white:focus-visible {
-
-   
     border: 2px solid black !important;
     transition: all ease-in .2s;
 }
