@@ -432,3 +432,28 @@ img {
     }
 }
 
+
+.blog-a {
+  text-decoration: none;
+  color: var(--dark_blue);
+}
+
+.blog-a:focus {
+  outline: auto 2px Highlight;
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.blog-a:hover {
+  text-decoration: overline solid var(--dark_blue) 3px;
+}
+
+.bottom-right {
+  position: absolute !important;
+  bottom: 8px;
+  right: 8px;
+}
+
+.over-the-image-container {
+  position: relative !important;
+  text-align: center !important;
+}

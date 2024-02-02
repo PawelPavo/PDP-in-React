@@ -3,6 +3,90 @@ import Nutrition from "../components/WellnessBlog/components/Nutrition";
 import HealthyLiving from "../components/WellnessBlog/components/HealthyLiving";
 import SelfCare from "../components/WellnessBlog/components/SelfCare";
 
+const NutritionSubCategories = [
+    {
+        id: 1,
+        title: "Antioxidants",
+    },
+    {
+        id: 2,
+        title: "Herbs & Spices",
+    },
+    {
+        id: 3,
+        title: "Recipes",
+    },
+    {
+        id: 4,
+        title: "Superfoods",
+    },
+    {
+        id: 5,
+        title: "Supplements",
+    },
+    {
+        id: 6,
+        title: "Vitamis",
+    }
+
+]
+
+const SelfcareSubCategories = [
+    {
+        id: 1,
+        title: "Beauty",
+    },
+    {
+        id: 2,
+        title: "Intimacy",
+    },
+    {
+        id: 3,
+        title: "Sleep & Relaxation",
+    },
+    {
+        id: 4,
+        title: "Menapause",
+    },
+    {
+        id: 5,
+        title: "Mental Health",
+    },
+    {
+        id: 6,
+        title: "Stress & Anxiety",
+    }
+
+]
+
+const HealthyLivingSubCategories = [
+    {
+        id: 1,
+        title: "Aging",
+    },
+    {
+        id: 2,
+        title: "Fitness",
+    },
+    {
+        id: 3,
+        title: "Lifestyle",
+    },
+    {
+        id: 4,
+        title: "Mind & Memory",
+    },
+    {
+        id: 5,
+        title: "Pet Health",
+    },
+    {
+        id: 6,
+        title: "Weight",
+    }
+
+]
+
 const WellnessBlog = (props) => {
     return (
         <>
@@ -17,40 +101,54 @@ const WellnessBlog = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-9">
-                    <a href="" className="navlink">
-                        <div className="card bg-light-blue border-0 rounded-3">
-                            <div class="row g-0">
-                                <div class="col-lg-7 my-auto">
-                                    <div class="card-body">
-                                        <h5 class="card-title">How Does the Immune System Work?</h5>
-                                        <p class="card-text">Your immune system is what keeps you keepin’ on—no matter what challenges life throws your way. This sounds simple…but it’s actually quite complicated, especially during the winter season when cooler weather keeps us indoors and crowded holiday gatherings come into play! Let’s explore the intricate network of cells, tissues, and organs that make up your immune system, and take a look at how everyday decisions - such as what time you go to bed and what you eat for breakfast - can affect your immune system health.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 my-auto"> <img src="https://www.lifeextension.com/-/media/lifeextension/wellness/lifestyle/how-does-immune-system-work/how-does-immune-system-work_promo.jpg" class="img-fluid rounded" alt="..." /> </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
             </div>
-            <hr className="mx-3 my-4" />
-            <div className="row px-lg-5">
-                <div class="col-lg-10">
-                    <div class="row row-cols-1 row-cols-lg-4 g-2 mb-4">
+            <div className="container mt-5">
+                <div className="row">
+                <div class="col-lg-9">
+                    <div className="row fw-bold" style={{ opacity: 0.15, fontSize: "50px" }}>Nutrition</div>
+                    <hr className="p-0 m-0"/>
+                    <div className="d-flex flex-wrap justify-content-around">
+                        {NutritionSubCategories.map(item => (
+                            <>
+                                <a href="#" className="blog-a btn">{item.title}</a>
+                            </>
+                        ))}
+                    </div>
+                    <div class="row mt-2">
                         <Nutrition />
                     </div>
-                    <hr className="mx-3" />
-                    <div class="row row-cols-1 row-cols-lg-4 g-2 mb-4 mt-3">
+                    <div className="row fw-bold mt-5" style={{ opacity: 0.15, fontSize: "50px" }}>Healthy Living</div>
+                    <hr className="p-0 m-0"/>
+
+                    <div className="d-flex flex-wrap justify-content-around">
+                        {HealthyLivingSubCategories.map(item => (
+                            <>
+                                <a href="#" className="blog-a btn">{item.title}</a>
+                            </>
+                        ))}
+                    </div>
+                    <div class="row mt-2">
                         <HealthyLiving />
                     </div>
-                    <hr className="mx-3" />
-                    <div class="row row-cols-1 row-cols-lg-4 g-2 mb-4 mt-3">
+                    <div className="row fw-bold mt-5" style={{ opacity: 0.15, fontSize: "50px" }}>Self-Care</div>
+                    <hr className="p-0 m-0"/>
+                    <div className="d-flex flex-wrap justify-content-around">
+                        {SelfcareSubCategories.map(item => (
+                            <>
+                                <a href="#" className="blog-a btn">{item.title}</a>
+                            </>
+                        ))}
+                    </div>
+                    <div class="row mt-2">
                         <SelfCare />
                     </div>
                     <hr className="mx-3" />
                 </div>
-                <div className="col-lg-2">
-                    <div className="sticky-lg-top" style={{ top: "165px" }}>
+
+
+
+                <div className="col-lg-3">
+                    <div className="sticky-lg-top" style={{ top: "180px" }}>
                         <div className="card mb-3">
                             <div className="card-body">
 
@@ -81,6 +179,7 @@ const WellnessBlog = (props) => {
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </>

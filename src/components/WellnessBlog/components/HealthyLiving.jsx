@@ -1,5 +1,4 @@
 import React from "react";
-import HomePageCategoryCard from "./HomePageCategoryCard";
 import HomePageBlogCard from "./HomePageBlogCard";
 
 const NutritionCategory = [
@@ -32,38 +31,9 @@ const NutritionCategory = [
     }
 ]
 
-const NutritionSubCategories = [
-    {
-        id: 1,
-        title: "Aging",
-    },
-    {
-        id: 2,
-        title: "Fitness",
-    },
-    {
-        id: 3,
-        title: "Lifestyle",
-    },
-    {
-        id: 4,
-        title: "Mind & Memory",
-    },
-    {
-        id: 5,
-        title: "Pet Health",
-    },
-    {
-        id: 6,
-        title: "Weight",
-    }
-
-]
-
 const HealthyLiving = (props) => {
     return(
         <>
-        <HomePageCategoryCard NutritionSubCategories={NutritionSubCategories} categoryTitle={"Healthy Living"}></HomePageCategoryCard>
         {NutritionCategory.map(item => (
             <>
                 <HomePageBlogCard id={item.id} title={item.title} image={item.image} body={item.body} author={item.author} category={item.category} views={item.views}></HomePageBlogCard>
