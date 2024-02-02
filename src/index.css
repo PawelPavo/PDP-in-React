@@ -20,6 +20,11 @@ body {
 p {
   font-size: 1rem;
 }
+  
+.btn:focus {
+  outline: auto 2px Highlight !important;
+  outline: auto 5px -webkit-focus-ring-color !important;
+}
 
 .text-small {
   font-size: 14px !important;
@@ -442,6 +447,7 @@ img {
   outline: auto 2px Highlight;
   outline: auto 5px -webkit-focus-ring-color;
 }
+
 
 .blog-a:hover {
   text-decoration: overline solid var(--dark_blue) 3px;

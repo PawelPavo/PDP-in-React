@@ -1,6 +1,6 @@
 import React from "react";
 
-const HealthGoals = [
+const Formulations = [
     {
         id: 1,
         name: "Non GMO",
@@ -27,10 +27,10 @@ const FormulationIcons = () => {
     return(
         <>
         <div className="row justify-content-center mb-2">
-                {HealthGoals.map(HealthGoal => (
+                {Formulations.map(HealthGoal => (
                     <>
                         <div className="col-5 mb-2 col-xl-3">
-                            <div className="border btn btn-sm my-outline-teal  text-dark rounded-2 w-100 h-100">
+                            <button className="border-0 btn btn-sm btn-outline-light text-dark rounded-2 w-100 h-100 ">
                                 <div className="row">
                                     <div className="col-2 my-auto">
                                     <img className="fs-6 ms-2" src={HealthGoal.image} alt="" style={{width:"20px"}} />
@@ -39,7 +39,7 @@ const FormulationIcons = () => {
                                     {HealthGoal.name}
                                     </div>
                                 </div>
-                            </div>
+                            </button>
                         </div>
                     </>
                 ))}

@@ -35,7 +35,7 @@ const SupplementsByHealhGoal = () => {
                 {HealthGoals.map(HealthGoal => (
                     <>
                         <div className="col-6 mb-2 col-lg-4">
-                            <div className="border shadow-sm btn btn-sm btn-light rounded-5 w-100 h-100">
+                            <button className="border shadow-sm btn btn-sm btn-light rounded-5 w-100 h-100">
                                 <div className="row">
                                     <div className="col-2 my-auto">
                                     <img className="fs-6" src={HealthGoal.image} alt="" style={{width:"35px"}} />
@@ -44,7 +44,7 @@ const SupplementsByHealhGoal = () => {
                                     {HealthGoal.name}
                                     </div>
                                 </div>
-                            </div>
+                            </button>
                         </div>
                     </>
                 ))}
