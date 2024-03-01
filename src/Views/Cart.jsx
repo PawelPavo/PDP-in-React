@@ -6,22 +6,28 @@ const Cart = (props) => {
 
     const [freeShipping, setFreeShipping] = useState(30)
     const [subTotal, setSubTotal] = useState(20)
-    const [freeShippingProgress, setFreeShippingProgress] = useState(subTotal * 2)
+
+    const [freeShippingProgress, setFreeShippingProgress] = useState(subTotal)
     const [reachedFreeShipping, setReachedFreeShipping] = useState(false)
 
     const addToFreeShipping = () => {
-        setFreeShippingProgress(freeShippingProgress + 10 * 2)
-        setFreeShipping(freeShipping - 10)
-        setSubTotal(subTotal + 10)
-        if (freeShipping === 10) {
+        setFreeShippingProgress(freeShippingProgress+10)
+        setSubTotal(subTotal+10)
+        setFreeShipping(freeShipping-10)
+        if (subTotal == 40) {
             setFreeShipping(0)
             setReachedFreeShipping(true)
         }
     }
 
     const removeToFreeShipping = () => {
-
-
+        setFreeShippingProgress(freeShippingProgress - 10)
+        setFreeShipping(freeShipping + 10)
+        setSubTotal(subTotal - 10)
+        if (subTotal == 50) {
+            setFreeShipping(60-subTotal)
+            setReachedFreeShipping(false)
+        }
     }
 
     return (
@@ -54,7 +60,7 @@ const Cart = (props) => {
                                     <div class="col-9 my-auto p-0">
                                                 <div class="progress border border-secondary rounded-5" role="progressbar"
                                                     aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style={{ height: "25px" }}>
-                                                    <div id="progress_bar" class="progress-bar text-end rounded-5" style={{ width: `${freeShippingProgress}%` }}>
+                                                    <div id="progress_bar" class="progress-bar text-end rounded-5" style={{ width: `${freeShippingProgress*2}%` }}>
                                                         <span class="text-end me-2 py-2">
                                                             <span class="fs-6">{reachedFreeShipping && "Free Shipping"} <i class="fa-solid fa-truck-fast"></i></span>
                                                         </span>
@@ -274,11 +280,11 @@ const Cart = (props) => {
                                     class="text-success fs-5 fw-bold">START5</span>
                                 </h6>
                                 <div class="">
-                                    <div class="pe-2 mb-1 text-end ">
-                                        <div class="">Add <span class="fw-bold text-success">$5.00</span> to qualify! <i
-                                            type="button" class="fa-solid fa-chevron-right" data-bs-toggle="offcanvas"
+                                    <div class="row pe-2 mb-1 justify-content-end">
+                                        <div type="button" class="text-end col-6 link" data-bs-toggle="offcanvas"
                                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
-                                            tabindex="0"></i></div>
+                                            tabindex="0">Add <span class="fw-bold text-success">$5.00</span> to qualify! <i
+                                             class="fa-solid fa-chevron-right" aria-hidden="true"></i></div>
                                     </div>
                                     <div class="progress border border-secondary" role="progressbar" aria-label="Basic example"
                                         aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style={{ height: "10px" }}>
