@@ -77,7 +77,7 @@ const EmptyCart = (props) => {
                         <div class="card-footer bg-white border-0">
                             <div className="border rounded-5 text-center p-1 shadow-sm bg-warning-subtle">Viewed 784 times in the last 6 hours</div>
                         </div>
-                    </div>
+                        </div>
                     </div>
                     {/* <!-- Card 2 --> */}
 

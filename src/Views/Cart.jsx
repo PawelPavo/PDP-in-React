@@ -18,6 +18,7 @@ const Cart = (props) => {
             setFreeShipping(0)
             setReachedFreeShipping(true)
         }
+        
     }
 
     const removeToFreeShipping = () => {
@@ -62,7 +63,7 @@ const Cart = (props) => {
                                                     aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style={{ height: "25px" }}>
                                                     <div id="progress_bar" class="progress-bar text-end rounded-5" style={{ width: `${freeShippingProgress*2}%` }}>
                                                         <span class="text-end me-2 py-2">
-                                                            <span class="fs-6">{reachedFreeShipping && "Free Shipping"} <i class="fa-solid fa-truck-fast"></i></span>
+                                                            <span class="text-small">{reachedFreeShipping && "Free Shipping"} <i class="fa-solid fa-truck-fast"></i></span>
                                                         </span>
                                                     </div>
                                                     

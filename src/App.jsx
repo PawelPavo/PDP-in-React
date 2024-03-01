@@ -6,13 +6,13 @@ import LoginModal from "./components/Modal/LoginInModal.jsx"
 import SignUp from './Views/SignUp.jsx';
 import CartRoute from './components/Loader.js';
 import WellnessBlog from './Views/WellnessBlog.jsx';
-
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom';
 
 
 
 const App = () => {
-
   const [daySupply] = useState(60)
   const [counter, setCounter] = useState(1);
   const [autoshipActive, setAutoshipActive] = useState(false)
@@ -20,6 +20,36 @@ const App = () => {
   const [cartItems, setCartItems] = useState(0)
   const [greeting, setGreeting] = useState("Hello")
   const [user, setUser] = useState("")
+
+  const Msg = ({}) => (
+    <div className='mt-2'>
+      <div className='row'>
+        <div className="card mb-2 border-0">
+        <div class="alert border alert-success m-0 p-1 text-center">
+          Successs! Item added to cart!
+        </div>
+          <div className="row justify-content-center mt-2">
+            <div className="col-2 my-auto">
+              <div className="row">
+                <img src="https://www.lifeextension.com/-/media/lifeextension/products/small/01758.png"
+                  class="img-fluid rounded-start" alt="..." style={{ width: "75px" }} />
+              </div>
+            </div>
+            <div className="col-9 my-auto mx-1">
+                <p className="free_shipping m-0 p-0">Vitamin D3</p>
+                <p class="text-extra-small m-0 p-0">125 mcg (5000 IU), 60 capsules, #01758</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="row text-center">
+        <Link to="/cart">
+          <button className='btn btn-orange-white w-75'>View Cart</button>
+        </Link>
+      </div>
+    </div>
+
+  );
 
   var today = new Date()
   var curHr = today.getHours()
@@ -76,12 +106,15 @@ const App = () => {
   const addToCart = () => {
     setCartItems(counter)
     console.log(counter + " item(s) added")
+    const notify = () => toast(<Msg />, {
+    });
+    notify();
   }
 
   return (
     <BrowserRouter>
             <LoginModal greeting={greeting} login={login} handleLogin={handleLogin} cartItems={cartItems} user={user} onSubmnit={onSubmnit} handleLogOut={handleLogOut}/>
-
+            <ToastContainer autoClose={8000}/>
       <div className="sticky-top bg-white pt-2">
       <NavBar login={login} handleLogin={handleLogin} cartItems={cartItems} greeting={greeting} user={user} onSubmnit={onSubmnit} handleLogOut={handleLogOut} />
       <div className="banner text-center no-gutters">
