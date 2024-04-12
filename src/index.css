@@ -458,3 +458,7 @@ img {
   position: relative !important;
   text-align: center !important;
 }
+
+.btn-outline-light-custom:hover {
+  background-color: #f8f9fa !important;
+}

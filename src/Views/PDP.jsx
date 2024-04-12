@@ -7,7 +7,7 @@ import AddToCartDesktop from '../components/AddToCart/AddToCartDesktop.jsx';
 import AddToCartMobile from '../components/AddToCart/AddToCartMobile.jsx';
 import SupplementsByHealhGoal from '../components/SupplementsByHealthGoal/SupplementsByHealthGoal.jsx';
 import Versions from "../components/SupplementsByHealthGoal/Versions.jsx";
-import FormulationIcons from "../components/IconPills/FormulationIcons.jsx";
+import Award from "../Images/nc_cl_award_2024_multis.webp"
 
 
 const PDP = (props) => {
@@ -22,7 +22,6 @@ const PDP = (props) => {
           <div className="col-md-9">
             <div className="row">
               {/* Mobile Title, reviews, short description*/}
-              <p className="dark-blue m-0 fw-bold d-lg-none" style={{ color: "#539800" }}>BEST SELLER</p>
               <h1 className="dark-blue fw-bold d-lg-none m-0 fs-2">Vitamin D3</h1>
               <h2 className="dark-blue d-lg-none fs-5 m-0 fw-normal">Immune, bone & whole body health</h2>
               <div className="d-lg-none mt-1"><ReviewStars /></div>
@@ -31,11 +30,14 @@ const PDP = (props) => {
               {/* Image */}
               <div className="col-md-3">
                 <ProductImageCard />
+                <div className="text-center mb-3 d-none d-lg-block">
+                  <img src={Award} alt="" />
+                </div>
               </div>
+              
 
               {/* Detials */}
               <div className="col-md-9">
-                <p className="fw-bold d-none d-lg-block m-0" style={{ color: "#539800" }}>BEST SELLER</p>
                 <h1 className="dark-blue fw-bold d-none d-lg-block m-0 fs-2" >Vitamin D3</h1>
                 <h2 className="dark-blue d-none d-lg-block m-0 fs-5 fw-normal">Immune, bone & whole body health</h2>
                 <p className="dark-blue fw-bold my-2">125 mcg (5000 IU), 60 softgels Item # 01713</p>
@@ -56,30 +58,32 @@ const PDP = (props) => {
                 </div>
                 {/* /Mobile Add To Cart */}
                 <p>Many of us don't get enough vitamin D from sunshine and diet alone—but we need this nutrient for healthy bones and a strong immune system. Our high-potency supplement fills in the gaps.</p>
-                <FormulationIcons/>
-                <div className="row">
-              <div className="accordion" id="accordionFlushExample">
-                <div className="accordion-item rounded-0 border-start-0 border-end-0" >
-                  <h2 className="accordion-header">
-                    <button className="accordion-button collapsed fw-light fs-6 rounded-0 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Available versions:
-                    </button>
-                  </h2>
+                <hr class="text-secondary"/>
+                <div className="row my-auto mx-1">
+                  <div className="col-lg-4 ps-5">
+                    <p className="m-0 p-0"><em>Other versions of this product are available:</em></p>
+                  </div>
+                  <div className="col-lg-7 border shadow-sm btn rounded-3 my-auto py-2 btn btn-outline-light-custom text-dark bg-white" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Shop other available versions <span className="ps-2"><i class="fa-solid fa-chevron-down"></i></span>
+
                   <div id="flush-collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div className="row p-3">
                     <Versions />
                     </div>
                   </div>
-                </div>
               </div>
-            </div>    
+        
+            </div>
+            <hr class="text-secondary"/>
             <div className="row mt-3 ms-2">
                       <div className="row mb-1">Supplements by Health Goal:</div>
                       <SupplementsByHealhGoal />
-                    </div>        
+                    </div>
               </div>
+                          
               {/* /Details */}
             </div>
+
 
             <Overview></Overview>
           </div>

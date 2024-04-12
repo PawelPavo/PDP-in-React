@@ -32,9 +32,11 @@ const versions = [
 const Versions = () => {
     return (
         <>
+        <hr className="mb-0"/>
                 {versions.map(version => (
                     <>
-                        <div className="row mt-2 ms-2 fw-bold">
+                    
+                        <div className="row fw-bold mt-3">
                             {version.unit}
                         </div>
                         {version.items.map(item => (

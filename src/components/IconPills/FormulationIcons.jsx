@@ -24,26 +24,21 @@ const Formulations = [
 ]
 
 const FormulationIcons = () => {
-    return(
+    return (
         <>
-        <div className="row justify-content-center mb-2">
+            <div className="row">
                 {Formulations.map(HealthGoal => (
                     <>
-                        <div className="col-5 mb-2 col-xl-3">
-                            <button className="border-0 btn btn-sm btn-outline-light text-dark rounded-2 w-100 h-100 ">
-                                <div className="row">
-                                    <div className="col-2 my-auto">
-                                    <img className="fs-6 ms-2" src={HealthGoal.image} alt="" style={{width:"20px"}} />
-                                    </div>
-                                    <div className="col-10 my-auto text-start ps-4" style={{fontSize:"11px"}}>
-                                    {HealthGoal.name}
-                                    </div>
-                                </div>
-                            </button>
+
+                        <div className="col my-auto text-center">
+                            <img className="object-fit-scale" src={HealthGoal.image} alt="" style={{ width: "45px" }} />
                         </div>
+                        {/* <div className="col-10 my-auto text-start ps-4" style={{fontSize:"11px"}}>
+                                    {HealthGoal.name}
+                                    </div> */}
                     </>
                 ))}
-                </div>
+            </div>
         </>
     )
 };

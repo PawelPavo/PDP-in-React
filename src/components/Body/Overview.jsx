@@ -1,4 +1,5 @@
 import React from "react";
+import FormulationIcons from "../IconPills/FormulationIcons";
 
 
 const Overview = (props) => {
@@ -24,6 +25,9 @@ const Overview = (props) => {
             <li>Potent formula in an easy-to-swallow softgel</li>
         </ul>
       </div>
+      <div className="col-lg-8">
+    <FormulationIcons/>
+    </div>
     </div>
   </div>
   <div className="accordion-item rounded-0 py-2 border-start-0 border-end-0">
