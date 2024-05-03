@@ -115,11 +115,12 @@ const App = () => {
     <BrowserRouter>
             <LoginModal greeting={greeting} login={login} handleLogin={handleLogin} cartItems={cartItems} user={user} onSubmnit={onSubmnit} handleLogOut={handleLogOut}/>
             <ToastContainer autoClose={8000}/>
-      <div className="sticky-top bg-white pt-2">
+      <div className="sticky-top bg-white pt-2 pb-2 site-header">
       <NavBar login={login} handleLogin={handleLogin} cartItems={cartItems} greeting={greeting} user={user} onSubmnit={onSubmnit} handleLogOut={handleLogOut} />
+
+      </div>
       <div className="banner text-center no-gutters">
         <p>FREE SHIPPING on orders $50+</p>
-      </div>
       </div>
       <Routes>
         <Route path="/" element={
@@ -143,6 +144,9 @@ const App = () => {
       <Route path="/sign-up" element={<SignUp />}></Route>
       <Route path="/wellness" element={<WellnessBlog />}></Route>
       </Routes>
+      <div className="text-center no-gutters border border-start-0 border-end-0 pt-3">
+        <p>FOOTER</p>
+      </div>
     </BrowserRouter>
   );
 };

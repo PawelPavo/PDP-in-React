@@ -17,6 +17,10 @@ body {
   overflow-x: hidden;
 }
 
+.site-header {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
 p {
   font-size: 1rem;
 }
@@ -461,4 +465,13 @@ img {
 
 .btn-outline-light-custom:hover {
   background-color: #f8f9fa !important;
+}
+
+.car-arrow {
+  cursor: pointer;
+}
+
+.car-arrow:hover {
+  color: var(--orange) !important;
+  
 }

@@ -8,6 +8,7 @@ import AddToCartMobile from '../components/AddToCart/AddToCartMobile.jsx';
 import SupplementsByHealhGoal from '../components/SupplementsByHealthGoal/SupplementsByHealthGoal.jsx';
 import Versions from "../components/SupplementsByHealthGoal/Versions.jsx";
 import Award from "../Images/nc_cl_award_2024_multis.webp"
+import ReactCarousel from "../components/Carousel/ReactCarousel.jsx";
 
 
 const PDP = (props) => {
@@ -86,6 +87,7 @@ const PDP = (props) => {
 
 
             <Overview></Overview>
+            <ReactCarousel></ReactCarousel>
           </div>
           {/* /Main Col 9 */}
 
