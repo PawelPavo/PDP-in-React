@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Diversity1 } from "@mui/icons-material";
 
 
 function SampleNextArrow(props) {
@@ -34,29 +33,46 @@ function SampleNextArrow(props) {
 function CustomSlide(props) {
     const { index, ...otherProps } = props;
     return (
-        <div {...otherProps}>
-                        <div class="card mb-2 me-2 shadow-sm">
-                            <div class="row justify-content-center">
-                            <div class="col-2 my-auto">
-                                <div class="row">
-                                    <img src="https://www.lifeextension.com/-/media/lifeextension/products/small/01758.png"
-                                        class="img-fluid rounded-start" alt="..." style={{ width: "75px" }} />
+        <div {...otherProps} className="" style={{width:"130%"}}>
+            <div className="col-9">
+                <div className="card h-100 shadow-sm">
+                    <div className="d-flex justify-content-between mt-2">
+                        <div type="button" role="button" className="border-0 ms-2">
+                            <i className="fa-regular fa-heart text-danger border p-2 rounded-5 shadow-sm"></i>
+                        </div>
+                        <img className="me-2" src="https://www.lifeextension.com/-/media/lifeextension/about/product-development/best-icons.png" alt="" style={{ width: "75px" }} />
+                    </div>
+                    <div className="over-the-image-container">
+                        <a href="">
+                        <img src="https://www.lifeextension.com/-/media/lifeextension/products/small/01758.png" className="img-fluid rounded image-hover" alt="..." style={{ width: "65px", marginLeft:"35%" }} />
+                        <div className="bg-white shadow-sm rounded px-2 bottom-right border">
+                            <div className="row text-success">
+                                <div>
+                                    <span className="fw-bold ">4.9</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" className="bi bi-star-fill mx-2 pb-1" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path></svg>
+                                    <span className="text-small">(120)</span>
                                 </div>
                             </div>
-                            <div class="col-9 m-0 p-0">
-                                <div class="card-body">
-                                    <h5 class="free_shipping">Vitamin D3 with Sea-Iodine™</h5>
-                                    <p class="card-text">125 mcg (5000 IU), 60 capsules, #01758</p>
-                                    <div class="d-flex card-text text-end justify-content-between">
-                                        <div class="my-auto fs-5"><span class="fw-bold text-danger">$5.00</span> | <span
-                                            class="text-decoration-line-through" style={{ fontSize: "16px" }}>$9.45</span></div>
-                                        <button class="btn btn-orange-white btn-sm" onClick={props.addToCart}>Add To Cart</button>
-                                    </div>
-                                </div>
-                            </div>
+
+                        </div>
+                        </a>
+                    </div>
+                    <div className="p-2 mt-1">
+                        <a href="" className="text-decoration-none"><h6 className="dark-blue">NAD+ Cell Regenerator™ and Resveratrol Elite™</h6></a>
+                        <p className="card-text text-dark">Healthy aging, energy pathway support, advanced formula</p>
+                        <p className="card-text dark-blue fw-bold">60 vegetarian capsules</p>
+                    </div>
+                    <div className="d-flex card-text text-end justify-content-center mt-2">
+                        <div className="fs-5"><span className="text-decoration-line-through fs-6 dark-blue">$10.00</span> | <span className="fs-5 fw-bold text-danger" style={{ fontFize: "16px" }}>$5.00</span> | <span className="fs-6 text-danger">Save 50%</span>
                         </div>
                     </div>
+                    <div className="card-footer bg-white border-0 mt-2"><div className="d-flex card-text justify-content-center mb-2">
+                        <button className="btn btn-orange-white w-100">Add To Cart</button>
+                    </div>
+                    </div>
+                </div>
             </div>
+        </div>
        
     );
 }
@@ -77,8 +93,8 @@ const ReactCarousel = () => {
     var settings = {
         infinite: true,
         speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         initialSlide: 0,
         responsive: [
             {
@@ -110,11 +126,11 @@ const ReactCarousel = () => {
     };
     return (
         <>
-        <div className="row  p-0 m-0 fs-2 mt-5">Related Products</div>
-            <div className="slider-container row mb-5 justify-content-center py-2">
+        <div className="row p-0 m-0 fs-2 mt-5">Related Products</div>
+            <div className="row">
                 <div className="col-1 my-auto d-none d-xl-block text-center">
-                <div className="fs-3 car-arrow" onClick={previous}>
-                <i class="fa-solid fa-chevron-left"></i>
+                    <div className="fs-3 card-arrow" onClick={previous}>
+                        <i className="fa-solid fa-chevron-left"></i>
                     </div>
                 </div>
                 <div className="col-lg-10">
@@ -133,8 +149,8 @@ const ReactCarousel = () => {
                 </Slider>
                 </div>
                 <div className="col-1 my-auto d-none d-xl-block  text-center">
-                    <div className="fs-3 car-arrow" onClick={next}>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <div className="fs-3 card-arrow" onClick={next}>
+                    <i className="fa-solid fa-chevron-right"></i>
                     </div>
                 </div>
             </div>

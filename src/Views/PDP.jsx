@@ -7,7 +7,6 @@ import AddToCartDesktop from '../components/AddToCart/AddToCartDesktop.jsx';
 import AddToCartMobile from '../components/AddToCart/AddToCartMobile.jsx';
 import SupplementsByHealhGoal from '../components/SupplementsByHealthGoal/SupplementsByHealthGoal.jsx';
 import Versions from "../components/SupplementsByHealthGoal/Versions.jsx";
-import Award from "../Images/nc_cl_award_2024_multis.webp"
 import ReactCarousel from "../components/Carousel/ReactCarousel.jsx";
 
 
@@ -31,9 +30,6 @@ const PDP = (props) => {
               {/* Image */}
               <div className="col-md-3">
                 <ProductImageCard />
-                <div className="text-center mb-3 d-none d-lg-block">
-                  <img src={Award} alt="" />
-                </div>
               </div>
               
 
@@ -42,7 +38,8 @@ const PDP = (props) => {
                 <h1 className="dark-blue fw-bold d-none d-lg-block m-0 fs-2" >Vitamin D3</h1>
                 <h2 className="dark-blue d-none d-lg-block m-0 fs-5 fw-normal">Immune, bone & whole body health</h2>
                 <p className="dark-blue fw-bold my-2">125 mcg (5000 IU), 60 softgels Item # 01713</p>
-                <div className="d-none d-lg-block my-2"><ReviewStars /></div>
+                <div className="d-none d-lg-block my-2"><ReviewStars />
+                </div>
 
                 {/* Mobile Add To Cart */}
                 <div className="row d-md-none">
@@ -114,6 +111,9 @@ const PDP = (props) => {
         
         {/* /Main Col 9 */}
         <LoginModal greeting={props.greeting} login={props.login} handleLogin={props.handleLogin} cartItems={props.cartItems} user={props.user} onSubmnit={props.onSubmnit} handleLogOut={props.handleLogOut}/>
+      </div>
+      <div className="text-center no-gutters border border-start-0 border-end-0 pt-3 mt-5">
+        <p>FOOTER</p>
       </div>
         </>
     )

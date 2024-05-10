@@ -144,9 +144,6 @@ const App = () => {
       <Route path="/sign-up" element={<SignUp />}></Route>
       <Route path="/wellness" element={<WellnessBlog />}></Route>
       </Routes>
-      <div className="text-center no-gutters border border-start-0 border-end-0 pt-3">
-        <p>FOOTER</p>
-      </div>
     </BrowserRouter>
   );
 };

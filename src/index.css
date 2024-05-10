@@ -467,11 +467,11 @@ img {
   background-color: #f8f9fa !important;
 }
 
-.car-arrow {
+.card-arrow {
   cursor: pointer;
 }
 
-.car-arrow:hover {
+.card-arrow:hover {
   color: var(--orange) !important;
   
 }
