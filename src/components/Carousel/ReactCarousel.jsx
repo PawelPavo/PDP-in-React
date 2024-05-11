@@ -33,9 +33,8 @@ function SampleNextArrow(props) {
 function CustomSlide(props) {
     const { index, ...otherProps } = props;
     return (
-        <div {...otherProps} className="" style={{width:"130%"}}>
-            <div className="col-9">
-                <div className="card h-100 shadow-sm">
+            <div {...otherProps}>
+                <div className="card h-100 shadow-sm ms-2">
                     <div className="d-flex justify-content-between mt-2">
                         <div type="button" role="button" className="border-0 ms-2">
                             <i className="fa-regular fa-heart text-danger border p-2 rounded-5 shadow-sm"></i>
@@ -72,7 +71,6 @@ function CustomSlide(props) {
                     </div>
                 </div>
             </div>
-        </div>
        
     );
 }
@@ -91,25 +89,26 @@ const ReactCarousel = () => {
     };
 
     var settings = {
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 3,
-        initialSlide: 0,
+        slidesToScroll: 1,
+        initialSlide: 2,
+        dots: true,
         responsive: [
             {
-                breakpoint: 1200,
+                breakpoint: 1400,
                 settings: {
-                  slidesToShow: 1,
+                  slidesToShow: 2,
                   slidesToScroll: 1,
                   infinite: true,
                   dots: true
                 }
               },
             {
-                breakpoint: 768,
+                breakpoint: 991,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 1.10,
                     slidesToScroll: 1,
                     dots: true,
                 }
@@ -117,7 +116,7 @@ const ReactCarousel = () => {
             {
                 breakpoint: 576,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 1.10,
                     slidesToScroll: 1,
                     dots: true,
                 }
@@ -126,9 +125,9 @@ const ReactCarousel = () => {
     };
     return (
         <>
-        <div className="row p-0 m-0 fs-2 mt-5">Related Products</div>
-            <div className="row">
-                <div className="col-1 my-auto d-none d-xl-block text-center">
+        
+            <div className="row px-3">
+                <div className="col-1 my-auto d-none d-lg-block text-center">
                     <div className="fs-3 card-arrow" onClick={previous}>
                         <i className="fa-solid fa-chevron-left"></i>
                     </div>
@@ -148,7 +147,7 @@ const ReactCarousel = () => {
                     <CustomSlide index={6} />
                 </Slider>
                 </div>
-                <div className="col-1 my-auto d-none d-xl-block  text-center">
+                <div className="col-1 my-auto d-none d-lg-block  text-center">
                     <div className="fs-3 card-arrow" onClick={next}>
                     <i className="fa-solid fa-chevron-right"></i>
                     </div>

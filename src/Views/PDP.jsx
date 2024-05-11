@@ -84,6 +84,7 @@ const PDP = (props) => {
 
 
             <Overview></Overview>
+            <div className="row ms-3 pb-2 fs-2 mt-4">Related Products</div>
             <ReactCarousel></ReactCarousel>
           </div>
           {/* /Main Col 9 */}
