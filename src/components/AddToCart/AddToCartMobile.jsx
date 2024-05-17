@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./AddToCart.module.css"
-import FormulationIcons from "../IconPills/FormulationIcons";
+
 
 const mountedStyle = {
     animation: "inAnimation 1s ease-in"
@@ -10,56 +10,56 @@ const unmountedStyle = {
     animationFillMode: "forwards"
 };
 
-const AddToCartMobile = (props) => {
 
+const AddToCartMobile = (props) => {
     return (
         <>
-           <div className="m-1">
-           <div className={`card row border-bottom-0 rounded-bottom-0 py-2 ${props.autoshipActive?"bg-body-secondary":""}`}>
-                {props.autoshipActive ?
-                    <div>
-                        <p className="dark-blue fs-6 m-0 text-decoration-line-through"><span className="fw-bold">$7.50</span></p>
-                        <p className="m-0">$0.12/count | 60 Day Supply</p>
-                        <p className="m-0"><span className="fw-bold" style={{ color: " #a41f35" }}>Save 13%</span> on 4+ Units | $6.50 each </p>
-                    </div>
-                    :
-                    <div>
-                        <p className="dark-blue fs-3 m-0 mb-1"><span className="fw-bold">$7.50</span></p>
-                        <p className="m-0">{(props.counter >= 4) ? "$0.11/count" : "$0.12/count"} | {props.counter === 0 ? "60" : props.daySupply * props.counter} Day Supply</p>
-                        <p className="m-0"><span className="fw-bold" style={{ color: " #a41f35" }}>Save 13%</span> on 4+ Units | $6.50 each </p>
-                    </div>
-                }
-            </div>
-            <div className={`card row ps-2 rounded-0 py-1 ${props.autoshipActive ? "border-bottom-0" : "border-top-0"}`}>
-            <div className="form-check my-1">
-                    <input
-                        checked={props.autoshipActive ? true : false}
-                        className="form-check-input border-dark"
-                        type="checkbox"
-                        id="flexCheckMobileMain"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseAutoShipMain"
-                        aria-expanded="false"
-                        aria-controls="collapseAutoShipMain"
-                        onChange={props.changeAutoship} />
-                    <label className="form-check-label" htmlFor="flexCheckMobileMain">
-                        Subscribe to AutoShip and <span className="fw-bold" style={{ color: "#a41f35" }}>Save 13%</span>
-                    </label>
+            <div className="m-1">
+                <div className={`card row border-bottom-0 rounded-bottom-0 py-2 ${props.autoshipActive ? "bg-body-secondary" : ""}`}>
+                    {props.autoshipActive ?
+                        <div className={`${props.autoshipActive ? styles.opacity_custom_og_2 : ""}`}>
+                            <p className="dark-blue fs-6 m-0 text-decoration-line-through"><span className="fw-bold">$7.50</span></p>
+                            <p className="m-0">$0.12/count | 60 Day Supply</p>
+                            <p className="m-0"><span className="fw-bold" style={{ color: " #a41f35" }}>Save 13%</span> on 4+ Units | $6.50 each </p>
+                        </div>
+                        :
+                        <div>
+                            <p className="dark-blue fs-3 m-0 mb-1"><span className="fw-bold">$7.50</span></p>
+                            <p className="m-0">{(props.counter >= 4) ? "$0.11/count" : "$0.12/count"} | {props.counter === 0 ? "60" : props.daySupply * props.counter} Day Supply</p>
+                            <p className="m-0"><span className="fw-bold" style={{ color: " #a41f35" }}>Save 13%</span> on 4+ Units | $6.50 each </p>
+                        </div>
+                    }
+                </div>
+                <div className={`card row ps-2 rounded-0 py-1 ${props.autoshipActive ? "border-bottom-0" : "border-top-0"}`} >
+                    <div className="form-check my-1">
+                        <input
+                            checked={props.autoshipActive ? true : false}
+                            className="form-check-input border-dark"
+                            type="checkbox"
+                            id="flexCheckMobileMain"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseAutoShipMain"
+                            aria-expanded="false"
+                            aria-controls="collapseAutoShipMain"
+                            onChange={props.changeAutoship} />
+                        <label className="form-check-label" htmlFor="flexCheckMobileMain">
+                            Subscribe to AutoShip and <span className="fw-bold" style={{ color: "#a41f35" }}>Save 13%</span>
+                        </label>
 
+                    </div>
                 </div>
-                </div>
-            <div className={`card row rounded rounded-top-0 border-top-0 py-2 ${props.autoshipActive ? "" : "bg-body-secondary " }`}>
-                    <p className={`m-0 ${props.autoshipActive ? "fs-3" : "fs-6"} ${styles.autoship_price}`}>Autoship: $6.50</p>
-                    <p className="m-0">$0.11/count | {props.counter === 0 ? "60" : props.daySupply * props.counter} Day Supply</p>
+                <div className={`card row rounded rounded-top-0 border-top-0 py-2 ${props.autoshipActive ? "" : "bg-body-secondary"}`}>
+                    <p className={`m-0 ${props.autoshipActive ? "fs-3" : `fs-6 ${styles.opacity_custom_og_2}`} ${styles.autoship_price}`}>Autoship: $6.50</p>
+                    <p className={`m-0 ${!props.autoshipActive&&styles.opacity_custom_og_2}`}>$0.11/count | {props.counter === 0 ? "60" : props.daySupply * props.counter} Day Supply</p>
                     <small className="mt-2"> Always get the lowest price and <span className="fw-bold" style={{ color: "#a41f35" }}>FREE SHIPPING</span> with AutoShip. <span href="#" className={`{text-end m-0 fw-bold} ${styles.link}`}>Learn More</span> </small>
-
-            </div>
+                </div>
             </div>
             <div id="AddToCartSticky" className="row m-0 fixed-bottom py-2 border bg-light">
 
                 {props.autoshipActive ?
 
                     <div className="mb-2 justify-content-center" style={props.autoshipActive ? mountedStyle : unmountedStyle}>
+                        
                         <div className="row">
                             <div className="col-4 my-auto bg-light">
                                 <label htmlFor="qtyInputMobile"><small className="ms-2 text-secondary">Qty:</small></label>
@@ -89,6 +89,7 @@ const AddToCartMobile = (props) => {
 
                 {!props.autoshipActive ?
                     <>
+
                         <div className="col-4 my-auto bg-light">
                             <label htmlFor="qtyInputNameMobile"><small className="ms-2 text-secondary">Qty:</small></label>
                             <div className="input-group input-group-sm shadow-sm rounded">
@@ -104,13 +105,13 @@ const AddToCartMobile = (props) => {
                     </>
                     : <></>}
                 <div className={`${!props.autoshipActive ? "col-8" : "col-12 mt-2"}`}>
-               {!props.autoshipActive && <label htmlFor="qtyInputNameMobile"><small className="ms-2 text-secondary"></small></label>}
-                    <div onClick={props.addToCart} className={`btn w-100 rounded shadow ${styles.add_to_cart}`}>{props.autoshipActive ? "Subscribe to Autoship" : "Add to Cart"}</div>
+                    {!props.autoshipActive && <label htmlFor="qtyInputNameMobile"><small className="ms-2 text-secondary"></small></label>}
+                   
+                    <div onClick={props.addToCart} className={`btn w-100 rounded shadow ${styles.add_to_cart}`}>{props.autoshipActive ? "AutoShip & Save" : "Add to Cart"}</div>
+
+                  
                 </div>
             </div>
-            
-
-            
         </>
     )
 };

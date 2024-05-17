@@ -28,6 +28,7 @@
 .autoship_price {
     color: #a41f35 !important;
     font-weight: 700;
+    
 }
 
 .link {
@@ -50,4 +51,8 @@
 .opacity_custom_og {
     opacity: 0.65;
     text-decoration: line-through;
+}
+
+.opacity_custom_og_2 {
+    opacity: 0.65;
 }
