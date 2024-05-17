@@ -42,7 +42,7 @@ const PDP = (props) => {
                 </div>
 
                 {/* Mobile Add To Cart */}
-                <div className="row d-lg-none">
+                <div className="d-lg-none mb-3">
                   <AddToCartMobile
                     counter={props.counter}
                     daySupply={props.daySupply}
