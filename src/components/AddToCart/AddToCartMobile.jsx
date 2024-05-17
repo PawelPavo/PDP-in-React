@@ -14,8 +14,8 @@ const unmountedStyle = {
 const AddToCartMobile = (props) => {
     return (
         <>
-            <div className="m-1">
-                <div className={`card row border-bottom-0 rounded-bottom-0 py-2 ${props.autoshipActive ? "bg-body-secondary" : ""}`}>
+            <div className="mx-2">
+                <div className={`card shadows-sm row border-bottom-0 rounded-bottom-0 py-2 border-light-subtle ${props.autoshipActive ? "bg-body-secondary border-0" : ""}`}>
                     {props.autoshipActive ?
                         <div className={`${props.autoshipActive ? styles.opacity_custom_og_2 : ""}`}>
                             <p className="dark-blue fs-6 m-0 text-decoration-line-through"><span className="fw-bold">$7.50</span></p>
@@ -30,7 +30,7 @@ const AddToCartMobile = (props) => {
                         </div>
                     }
                 </div>
-                <div className={`card row ps-2 rounded-0 py-1 ${props.autoshipActive ? "border-bottom-0" : "border-top-0"}`} >
+                <div className={`card shadow-sm row ps-2 border-bottom-0 border-top-0 rounded-0 py-1 border-light-subtle`} >
                     <div className="form-check my-1">
                         <input
                             checked={props.autoshipActive ? true : false}
@@ -48,7 +48,7 @@ const AddToCartMobile = (props) => {
 
                     </div>
                 </div>
-                <div className={`card row rounded rounded-top-0 border-top-0 py-2 ${props.autoshipActive ? "" : "bg-body-secondary"}`}>
+                <div className={`card shadow-sm row rounded rounded-top-0 border-top-0 py-2 border-light-subtle ${props.autoshipActive ? "" : "bg-body-secondary border-0"}`}>
                     <p className={`m-0 ${props.autoshipActive ? "fs-3" : `fs-6 ${styles.opacity_custom_og_2}`} ${styles.autoship_price}`}>Autoship: $6.50</p>
                     <p className={`m-0 ${!props.autoshipActive&&styles.opacity_custom_og_2}`}>$0.11/count | {props.counter === 0 ? "60" : props.daySupply * props.counter} Day Supply</p>
                     <small className="mt-2"> Always get the lowest price and <span className="fw-bold" style={{ color: "#a41f35" }}>FREE SHIPPING</span> with AutoShip. <span href="#" className={`{text-end m-0 fw-bold} ${styles.link}`}>Learn More</span> </small>

@@ -19,7 +19,7 @@ const AddToCartDesktop = (props) => {
     return (
         <>
 
-            <div className={`card rounded shadow-sm border-bottom-0 rounded-bottom-0 ${props.autoshipActive ? "bg-body-secondary" : ""}`}>
+            <div className={`card shadow-sm rounded border-bottom-0 rounded-bottom-0 border-light-subtle ${props.autoshipActive ? "bg-body-secondary" : ""}`}>
                 <div className="card-body p-2">
                     <p className={`card-title dark-blue text-end fs-5 m-0 ${props.autoshipActive ? styles.opacity_custom_og : ""}`}><span>Price:</span> <span className="fw-bold">$7.50</span></p>
                     {props.autoshipActive ?
@@ -54,7 +54,7 @@ const AddToCartDesktop = (props) => {
                 </div>
             </div>
 
-            <div className={`card shadow-sm rounded-0 ${props.autoshipActive? "border-bottom-0": "border-top-0"}`}>
+            <div className={`card shadow-sm rounded-0 border-bottom-0 border-light-subtle ${props.autoshipActive? "border-bottom-0": "border-top-0"}`}>
                 <div className="form-check my-2">
                     <input
                         checked={props.autoshipActive ? true : false}
@@ -72,7 +72,7 @@ const AddToCartDesktop = (props) => {
                 </div>
                 </div>
 
-            <div className={`card shadow-sm pb-2 border-top-0 rounded-top-0 pt-2 ${props.autoshipActive ? "" : "bg-body-secondary"}`}>
+            <div className={`card shadow-sm pb-2 border-top-0 rounded-top-0 pt-2 border-light-subtle ${props.autoshipActive ? "" : "bg-body-secondary border-0"}`}>
                 <div className="card-body p-0">
                     <div className="row">
                         <p className={`m-0 text-end fs-5 ${styles.autoship_price} ${props.autoshipActive ? "" : styles.opacity_custom}`}>Autoship: $6.50</p>
