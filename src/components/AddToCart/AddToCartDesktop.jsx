@@ -54,11 +54,14 @@ const AddToCartDesktop = (props) => {
                 </div>
             </div>
 
-            <div className={`card shadow-sm rounded-0 border-bottom-0 border-light-subtle ${props.autoshipActive? "border-bottom-0": "border-top-0"}`}>
-                <div className="form-check my-2">
+
+
+            <div className={`card shadow-sm pb-2 border-top-0 rounded-top-0 pt-2 border-light-subtle ${props.autoshipActive ? "" : "bg-body-secondary border-0"}`}>
+            <div className={`rounded border border-3 border-white justify-content-center p-1 mb-1`}>
+                <div className="form-check">
                     <input
                         checked={props.autoshipActive ? true : false}
-                        className="form-check-input border-dark"
+                        className="form-check-input border-dark border-2"
                         type="checkbox"
                         id="flexCheckDesktop"
                         data-bs-toggle="collapse"
@@ -66,13 +69,11 @@ const AddToCartDesktop = (props) => {
                         aria-expanded="false"
                         aria-controls="AddToCartAutoship"
                         onChange={props.changeAutoship} />
-                    <label className="form-check-label" htmlFor="flexCheckDesktop" style={{fontSize:"14.5px" }}>
-                        Subscribe to AutoShip and <span className="fw-bold" style={{ color: "#a41f35", fontSize:"16px" }}>Save 13%</span>
+                    <label className="form-check-label" htmlFor="flexCheckDesktop" style={{fontSize:"14px" }}>
+                        Subscribe to AutoShip and <span className="fw-bold" style={{ color: "#a41f35", fontSize:"14px" }}>Save 13%</span>
                     </label>
                 </div>
                 </div>
-
-            <div className={`card shadow-sm pb-2 border-top-0 rounded-top-0 pt-2 border-light-subtle ${props.autoshipActive ? "" : "bg-body-secondary border-0"}`}>
                 <div className="card-body p-0">
                     <div className="row">
                         <p className={`m-0 text-end fs-5 ${styles.autoship_price} ${props.autoshipActive ? "" : styles.opacity_custom}`}>Autoship: $6.50</p>
