@@ -12,6 +12,8 @@
     font-weight: 700;
     border-radius: 0%;
     transition: 0.5s;
+    border-radius: 5px;
+    /* padding: 3px 15px 3px 15px; */
 }
 
 .add_to_cart:hover {
@@ -20,6 +22,8 @@
     font-weight: 700;
     border: 1px solid var(--orange);
 }
+
+
 
 .add_to_cart:focus-visible {      
     outline: 2px solid black !important;
@@ -56,3 +60,4 @@
 .opacity_custom_og_2 {
     opacity: 0.65;
 }
+
