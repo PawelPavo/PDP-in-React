@@ -278,6 +278,10 @@ img {
   height: 65% !important;
 }
 
+.bottom-offCanvas_AS {
+  height: 20% !important;
+}
+
   /* .accordion-button {
     color: var(--dark_blue);
   } */
@@ -477,46 +481,85 @@ img {
 }
 
 /* Toogle */
-.toggle-switch {
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 5.2em;
+  height: 2em;
+  overflow: hidden;
 }
 
-.toggle-input {
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.onoffswitch {
+  position: relative;
+  width: 90px;
+  user-select: none;
+}
+.onoffswitch-checkbox {
   display: none;
 }
-
-.toggle-label {
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid var(--dark_blue);
+  border-radius: 20px;
+}
+.onoffswitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 10px;
+  background-color: var(--teal);
+  color: #ffffff;
+}
+.onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 10px;
+  background-color: var(--lightTeal);
+  color: var(--dark_blue);
+  text-align: right;
+}
+.onoffswitch-switch {
+  width: 21px;
+  margin: 6px;
+  background: #ffffff;
+  border: 2px solid var(--dark_blue);
+  border-radius: 30px;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 60px;
-  height: 34px;
-  border-radius: 17px;
-  background-color: #ccc;
-  cursor: pointer;
-  transition: background-color 0.4s ease;
+  bottom: 0;
+  right: 56px;
+  transition: all 0.3s ease-in 0s;
 }
-
-.toggle-label:before {
-  content: '';
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: transform 0.4s ease;
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
 }
-
-.toggle-input:checked + .toggle-label {
-  background-color: #86d993;
-}
-
-.toggle-input:checked + .toggle-label:before {
-  transform: translateX(26px);
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
 }

@@ -32,7 +32,7 @@ const AddToCartMobile = (props) => {
                 </div>
 
                 <div className={`px-2 card shadow-sm row rounded rounded-top-0 border-top-0 py-2 border-light-subtle ${props.autoshipActive ? "" : "bg-body-secondary border-0"}`}>
-                    <div className={`ps-2 border border-white border-3 rounded`} >
+                    <div className={`ps-2 border bg-light border-2 rounded`} >
                         <div className="form-check my-1">
                             <input
                                 checked={props.autoshipActive ? true : false}
@@ -117,20 +117,37 @@ const AddToCartMobile = (props) => {
                 </div>
             </div>
 
-            <div className="offcanvas offcanvas-bottom rounded-top-4" tabindex="-1" id="offcanvasBottom_AS" aria-labelledby="offcanvasBottomLabel">
+            <div className="offcanvas offcanvas-bottom rounded-top-4 bottom-offCanvas_AS" tabindex="-1" id="offcanvasBottom_AS" aria-labelledby="offcanvasBottomLabel">
+               
                 <div className="offcanvas-header">
-                    <div></div>
+                <div className="row">
+                    <div className="col-6 my-auto text-end">
+                    <h4 className="m-0 p-0">Autoship</h4>
+                    </div>
+                    <div className="col-6">
+                <div class="onoffswitch">
+                    <input
+                        checked={props.autoshipActive ? true : false}
+                        onChange={props.changeAutoship}
+                        id="myonoffswitch"
+                        class="onoffswitch-checkbox"
+                        name="onoffswitch"
+                        type="checkbox"
+                    />
+                    <label for="myonoffswitch" class="onoffswitch-label">
+                        <div class="onoffswitch-inner"></div>
+                        <div class="onoffswitch-switch"></div>
+                    </label>
+                    </div>
+                </div>
+                </div>
+
 
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div className="offcanvas-body">
-                    <div className="d-flex justify-content-around py-auto">
-                    <h5 className="offcanvas-title my-auto" id="offcanvasBottomLabel">AutoShip is {props.autoshipActive ? "On" : "Off"}</h5>
-                        <div class="toggle-switch">
-                            <input class="toggle-input" id="toggle" type="checkbox" onChange={props.changeAutoship} />
-                            <label class="toggle-label" for="toggle"></label>
-                        </div>
-                    </div>
+
+                <div className="offcanvas-body py-0">
+                    <div className=""> Always get the lowest price and <span className="fw-bold" style={{ color: "#a41f35" }}>FREE SHIPPING</span> with AutoShip. <span href="#" className={`text-end m-0 fw-bold ${styles.link}`}>Learn More</span> </div>
 
                     {/* <div className="form-check">
                         <input
@@ -148,8 +165,7 @@ const AddToCartMobile = (props) => {
                         </label>
 
                     </div> */}
-                    <hr></hr>
-                    <div className="mt-2"> Always get the lowest price and <span className="fw-bold" style={{ color: "#a41f35" }}>FREE SHIPPING</span> with AutoShip. <span href="#" className={`{text-end m-0 fw-bold} ${styles.link}`}>Learn More</span> </div>
+
                 </div>
             </div>
 

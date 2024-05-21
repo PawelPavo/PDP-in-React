@@ -57,7 +57,7 @@ const AddToCartDesktop = (props) => {
 
 
             <div className={`card shadow-sm pb-2 border-top-0 rounded-top-0 pt-2 border-light-subtle ${props.autoshipActive ? "" : "bg-body-secondary border-0"}`}>
-            <div className={`rounded border border-3 border-white justify-content-center p-1 mb-1`}>
+            <div className={`rounded bg-light border border-2 justify-content-center p-1 mb-1`}>
                 <div className="form-check">
                     <input
                         checked={props.autoshipActive ? true : false}
