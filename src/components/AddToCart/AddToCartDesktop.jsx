@@ -70,7 +70,7 @@ const AddToCartDesktop = (props) => {
                         aria-controls="AddToCartAutoship"
                         onChange={props.changeAutoship} />
                     <label className="form-check-label" htmlFor="flexCheckDesktop" style={{fontSize:"14px" }}>
-                        Subscribe to AutoShip and <span className="fw-bold" style={{ color: "#a41f35", fontSize:"14px" }}>Save 13%</span>
+                        Subscribe to <span class="free-shipping fw-bold"> AutoShip</span> and <span className="fw-bold" style={{ color: "#a41f35", fontSize:"14px" }}>Save 13%</span>
                     </label>
                 </div>
                 </div>

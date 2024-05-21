@@ -45,7 +45,7 @@ const AddToCartMobile = (props) => {
                                 aria-controls="collapseAutoShipMain"
                                 onChange={props.changeAutoship} />
                             <label className="form-check-label" htmlFor="flexCheckMobileMain">
-                                Subscribe to AutoShip and <span className="fw-bold" style={{ color: "#a41f35" }}>Save 13%</span>
+                                Subscribe to <span class="fw-bold"> AutoShip</span> and <span className="fw-bold" style={{ color: "#a41f35" }}>Save 13%</span>
                             </label>
 
                         </div>
@@ -117,29 +117,39 @@ const AddToCartMobile = (props) => {
                 </div>
             </div>
 
-            <div className="offcanvas offcanvas-bottom rounded-top-4"  tabindex="-1" id="offcanvasBottom_AS" aria-labelledby="offcanvasBottomLabel">
+            <div className="offcanvas offcanvas-bottom rounded-top-4" tabindex="-1" id="offcanvasBottom_AS" aria-labelledby="offcanvasBottomLabel">
                 <div className="offcanvas-header">
-                    <h5 className="offcanvas-title" id="offcanvasBottomLabel">AutoShip is {props.autoshipActive ? "On" : "Off"}</h5>
+                    <div></div>
+
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div className="offcanvas-body">
-                        <div className="form-check">
-                            <input
-                                checked={props.autoshipActive ? true : false}
-                                className="form-check-input border-dark border-2"
-                                type="checkbox"
-                                id="flexCheckMobileMain"
-                                data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasBottom_AS"
-                                aria-expanded="false"
-                                aria-controls="offcanvasBottom_AS"
-                                onChange={props.changeAutoship} />
-                            <label className="form-check-label" htmlFor="flexCheckMobileMain">
-                                Subscribe to AutoShip and <span className="fw-bold" style={{ color: "#a41f35" }}>Save 13%</span>
-                            </label>
+                    <div className="d-flex justify-content-around py-auto">
+                    <h5 className="offcanvas-title my-auto" id="offcanvasBottomLabel">AutoShip is {props.autoshipActive ? "On" : "Off"}</h5>
+                        <div class="toggle-switch">
+                            <input class="toggle-input" id="toggle" type="checkbox" onChange={props.changeAutoship} />
+                            <label class="toggle-label" for="toggle"></label>
                         </div>
-                   <hr></hr>
-                <div className="mt-2"> Always get the lowest price and <span className="fw-bold" style={{ color: "#a41f35" }}>FREE SHIPPING</span> with AutoShip. <span href="#" className={`{text-end m-0 fw-bold} ${styles.link}`}>Learn More</span> </div>
+                    </div>
+
+                    {/* <div className="form-check">
+                        <input
+                            checked={props.autoshipActive ? true : false}
+                            className="form-check-input border-dark border-2"
+                            type="checkbox"
+                            id="flexCheckMobileMain"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom_AS"
+                            aria-expanded="false"
+                            aria-controls="offcanvasBottom_AS"
+                            onChange={props.changeAutoship} />
+                        <label className="form-check-label" htmlFor="flexCheckMobileMain">
+                            Subscribe to <span class="fw-bold"> AutoShip</span> and <span className="fw-bold" style={{ color: "#a41f35" }}>Save 13%</span>
+                        </label>
+
+                    </div> */}
+                    <hr></hr>
+                    <div className="mt-2"> Always get the lowest price and <span className="fw-bold" style={{ color: "#a41f35" }}>FREE SHIPPING</span> with AutoShip. <span href="#" className={`{text-end m-0 fw-bold} ${styles.link}`}>Learn More</span> </div>
                 </div>
             </div>
 
