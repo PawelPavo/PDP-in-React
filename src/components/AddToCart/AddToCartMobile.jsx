@@ -32,7 +32,7 @@ const AddToCartMobile = (props) => {
                 </div>
 
                 <div className={`px-2 card shadow-sm row rounded rounded-top-0 border-top-0 py-2 border-light-subtle ${props.autoshipActive ? "" : "bg-body-secondary border-0"}`}>
-                    <div className={`ps-2 border bg-light border-2 rounded`} >
+                    <div className={`ps-2`} >
                         <div className="form-check my-1">
                             <input
                                 checked={props.autoshipActive ? true : false}
@@ -50,6 +50,7 @@ const AddToCartMobile = (props) => {
 
                         </div>
                     </div>
+                    <hr className="p-0 m-0"/>
                     <p className={`m-0 ${props.autoshipActive ? "fs-3" : `fs-6 ${styles.opacity_custom_og_2}`} ${styles.autoship_price}`}>Autoship: $6.50</p>
                     <p className={`m-0 ${!props.autoshipActive && styles.opacity_custom_og_2}`}>$0.11/count | {props.counter === 0 ? "60" : props.daySupply * props.counter} Day Supply</p>
                     <small className="mt-2"> Always get the lowest price and <span className="fw-bold" style={{ color: "#a41f35" }}>FREE SHIPPING</span> with AutoShip. <span href="#" className={`{text-end m-0 fw-bold} ${styles.link}`}>Learn More</span> </small>
