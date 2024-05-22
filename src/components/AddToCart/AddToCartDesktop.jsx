@@ -57,7 +57,7 @@ const AddToCartDesktop = (props) => {
 
 
             <div className={`card shadow-sm pb-2 border-top-0 rounded-top-0 pt-2 border-light-subtle ${props.autoshipActive ? "" : "bg-body-secondary border-0"}`}>
-            <div className={`rounded bg-light border border-2 justify-content-center p-1 mb-1`}>
+            <div className={`rounded 2 justify-content-center p-1 mb-1`}>
                 <div className="form-check">
                     <input
                         checked={props.autoshipActive ? true : false}
@@ -74,6 +74,7 @@ const AddToCartDesktop = (props) => {
                     </label>
                 </div>
                 </div>
+                <hr className="p-0 m-0"/>
                 <div className="card-body p-0">
                     <div className="row">
                         <p className={`m-0 text-end fs-5 ${styles.autoship_price} ${props.autoshipActive ? "" : styles.opacity_custom}`}>Autoship: $6.50</p>
