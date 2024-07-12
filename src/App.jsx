@@ -6,6 +6,7 @@ import LoginModal from "./components/Modal/LoginInModal.jsx"
 import SignUp from './Views/SignUp.jsx';
 import CartRoute from './components/Loader.js';
 import WellnessBlog from './Views/WellnessBlog.jsx';
+import Search from './Views/Search.jsx'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Link } from 'react-router-dom';
@@ -140,9 +141,10 @@ const App = () => {
             autoshipActive={autoshipActive}
             changeAutoship={changeAutoship}/>
         }/>
-          <Route path="/cart" element={<CartRoute cartItems={cartItems} addToCart={addToCart}/>}/>
+      <Route path="/cart" element={<CartRoute cartItems={cartItems} addToCart={addToCart}/>}/>
       <Route path="/sign-up" element={<SignUp />}></Route>
       <Route path="/wellness" element={<WellnessBlog />}></Route>
+      <Route path="/search" element={<Search />}></Route>
       </Routes>
     </BrowserRouter>
   );

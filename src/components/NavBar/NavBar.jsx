@@ -55,7 +55,9 @@ const NavBar = (props) => {
                                             </span>
                                         </div>
                                         <input type="text" className="form-control rounded-start border-dark search" placeholder="Search LE Supplements" aria-label="Recipient's username" aria-describedby="button-addon2" />
-                                        <button className="btn btn-outline-secondary rounded-end my-search" type="button" id="button-addon2"><i className="fa-solid fa-magnifying-glass"></i></button>
+                                        <Link type="submit" role="button" to="/search" class="btn btn-outline-secondary rounded-end my-search">
+                                        <i className="fa-solid fa-magnifying-glass"></i>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="row justify-content-end mt-2">
