@@ -146,6 +146,7 @@ const App = () => {
       <Route path="/wellness" element={<WellnessBlog />}></Route>
       <Route path="/search" element={<Search />}></Route>
       </Routes>
+      
     </BrowserRouter>
   );
 };
