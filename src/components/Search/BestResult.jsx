@@ -1,9 +1,8 @@
-import React from "react";
-import { useEffect } from "react";
-import ReviewStars from "../../ReviewStars/ReviewStars";
+import React, {useEffect} from "react";
+import ReviewStars from "../ReviewStars/ReviewStars";
 
+const BestResult = () => {
 
-const LoaderListCard = () => {
 
     const [show, setShow] = React.useState(true);
 
@@ -17,7 +16,7 @@ const LoaderListCard = () => {
     if (show) {
         return (
             <>
-
+                
                 <div class="card mb-3 mt-3">
                     <div class="row g-0">
                         <div class="col-md-4 placeholder-glow">
@@ -44,13 +43,12 @@ const LoaderListCard = () => {
         );
     }
 
-
     if (!show) {
-        return (
-            <>
-                
-                <div className="col mt-3">
-                    <div className="card mb-3  rounded">
+        return(
+        <>
+        
+                <div className="col mt-3 mb-5">
+                    <div className="card mb-3  rounded shadow bg-light-blue ">
                         <div className="row justify-content-center">
                             <div className="col-lg-2 p-3">
                                 <div className="row justify-content-center">
@@ -84,14 +82,11 @@ const LoaderListCard = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
-            </>
-        );
+        </>
+        )
     }
 }
 
-
-export default LoaderListCard;
+export default BestResult;
