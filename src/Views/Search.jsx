@@ -3,7 +3,7 @@ import LoaderGridCard from "../components/Search/Loader/LoaderGridCard";
 import LoaderListCard from "../components/Search/Loader/LoaderListCard";
 import BestResult from "../components/Search/BestResult";
 import BestResultsGrid from "../components/Search/Loader/BestResultsGrid";
-
+import Filters from "../components/Search/Filters/Filters";
 
 
 const Search = () => {
@@ -12,35 +12,37 @@ const Search = () => {
   const [toggleProducts, setToggleProducts] = useState(true)
   const [toggleMagazines, setToggleMagazines] = useState(false)
   const [toggleNews, setToggleNews] = useState(false)
+  const [filters, setFilters] = useState("product")
 
   const activateProducts = () => {
     setToggleProducts(true)
     setToggleMagazines(false)
     setToggleNews(false)
+    setFilters("product")
   }
 
   const activateMagz = () => {
     setToggleProducts(false)
     setToggleMagazines(true)
     setToggleNews(false)
+    setFilters("magazines")
   }
 
   const activateNews = () => {
     setToggleProducts(false)
     setToggleMagazines(false)
     setToggleNews(true)
+    setFilters("news")
   }
 
 
   return (
     <>
       <div className="container">
-
-
         <div className="row">
-          <div className="col-lg-3 mb-3 mb-lg-0 border">
+          <div className="col-lg-3 mb-3 mb-lg-0 border d-lg-block d-none">
             
-            <div className="d-lg-block d-none">
+            <div className="">
             <div>Filters:</div>
               <div className="row">
                 <div className="border rounded">Health Concerns</div>
@@ -58,17 +60,6 @@ const Search = () => {
                 <div className="border rounded">Content Type</div>
               </div>
             </div>
-
-            <div className="d-lg-block d-lg-none my-2">
-              <div className="d-flex">
-              <button className="btn btn-sm border btn-light">Health Concerns</button>
-              <button className="btn btn-sm border btn-light mx-1">Types</button>
-              <button className="btn btn-sm border btn-light">Attributes</button>
-              <button className="btn btn-sm border btn-light mx-1">Brand</button>
-              <button className="btn btn-sm border btn-light">Content Type</button>
-              </div>
-            </div>
-
           </div>
           <div className="col-lg-9">
             <div className="d-flex border rounded justify-content-end">
@@ -81,12 +72,20 @@ const Search = () => {
             <div className="d-flex ms-1 rounded justify-content-end mb-2">
             </div>
             <div className="row">
-              <div className="col text-center text-lg-start ms-lg-2 my-auto">
-                <button type="button" class={`btn btn-sm add_to_list  ${!toggleProducts ? "" : "add_to_list_active"}`} onClick={activateProducts}>Products</button>
-                <button type="button" class={`btn btn-sm add_to_list mx-3 ${!toggleMagazines ? "" : "add_to_list_active"}`} onClick={activateMagz}>Magazines</button>
-                <button type="button" class={`btn btn-sm add_to_list  ${!toggleNews ? "" : "add_to_list_active"}`} onClick={activateNews}>News & Protocols</button>
+              <div className="col mt-2">
+                <div className="d-flex justify-content-between">
+                <button type="button" class={`btn add_to_list  ${!toggleProducts ? "" : "add_to_list_active"}`} onClick={activateProducts}>Products</button>
+                <button type="button" class={`btn add_to_list  ${!toggleMagazines ? "" : "add_to_list_active"}`} onClick={activateMagz}>Magazines</button>
+                <button type="button" class={`btn add_to_list  ${!toggleNews ? "" : "add_to_list_active"}`} onClick={activateNews}>News & Protocols</button>
+                </div>
               </div>
-              <div className="col-lg-7 mt-2">
+              <div className="d-lg-block d-lg-none my-2">
+              <div className="d-flex">
+                <Filters filters={filters}/>
+              </div>
+          </div>
+
+              <div className="col-lg-7 mt-2 d-lg-block d-none">
                 <img src="https://www.lifeextension.com/-/media/lifeextension/lpages/2024/summer-clearance/nc_summersale_searchbann.jpg?rev=6d9b434767c34b949d0dabafd4091270&h=102&w=653&la=en&hash=E4C426999C46B3E400317D31BEF79CFA" alt="" class="img-fluid rounded" />
               </div>
             </div>
