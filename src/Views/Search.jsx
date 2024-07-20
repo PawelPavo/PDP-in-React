@@ -81,11 +81,11 @@ const Search = () => {
               </div>
               <div className="d-lg-block d-lg-none my-2">
               <div className="d-flex">
-                <Filters filters={filters}/>
+                <Filters filters={filters} />
               </div>
           </div>
 
-              <div className="col-lg-7 mt-2 d-lg-block d-none">
+              <div className="col-lg-7 mt-2">
                 <img src="https://www.lifeextension.com/-/media/lifeextension/lpages/2024/summer-clearance/nc_summersale_searchbann.jpg?rev=6d9b434767c34b949d0dabafd4091270&h=102&w=653&la=en&hash=E4C426999C46B3E400317D31BEF79CFA" alt="" class="img-fluid rounded" />
               </div>
             </div>
@@ -122,6 +122,7 @@ const Search = () => {
       <div className="text-center no-gutters border border-start-0 border-end-0 pt-3 mt-5">
         <p>FOOTER</p>
       </div>
+
     </>
   )
 }
