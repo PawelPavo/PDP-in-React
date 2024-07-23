@@ -56,8 +56,8 @@ const Filters = (props) => {
             <>
                 <span className="input-group-text"><i class="bi bi-sliders2 fs-5"></i></span>
                 <div className="d-flex mx-2">
-                  <button className="btn btn-sm border btn-light" onClick={sortRelevancy}>Relevancy {relevancyFilter ? <i class="bi bi-sort-down-alt fs-6 ms-2"></i> : <i class="bi bi-sort-up fs-6 ms-2"></i>}</button>
-                  <button className="btn btn-sm border btn-light mx-1" onClick={sortDate}>Date {!dateFilter ? <i class="bi bi-sort-numeric-up-alt fs-6 ms-2"></i>: <i class="bi bi-sort-numeric-down fs-6 ms-2"></i>}</button>
+                  <button className="btn btn-sm border btn-light rounded-pill" onClick={sortRelevancy}>Relevancy {relevancyFilter ? <i class="bi bi-sort-down-alt fs-6 ms-2"></i> : <i class="bi bi-sort-up fs-6 ms-2"></i>}</button>
+                  <button className="btn btn-sm border btn-light rounded-pill mx-1" onClick={sortDate}>Date {!dateFilter ? <i class="bi bi-sort-numeric-up-alt fs-6 ms-2"></i>: <i class="bi bi-sort-numeric-down fs-6 ms-2"></i>}</button>
                 </div>
             </>
         )
@@ -68,7 +68,7 @@ const Filters = (props) => {
             <>
                 <span className="input-group-text"><i class="bi bi-sliders2 fs-5"></i></span>
                 <div className="d-flex mx-2">
-                  <button className="btn btn-sm border btn-light">Content Type</button>
+                  <button className="btn btn-sm border btn-light rounded-pill">Content Type</button>
                 </div>
             </>
         )
