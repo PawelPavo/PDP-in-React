@@ -572,3 +572,43 @@ img {
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
   right: 0px;
 }
+
+.search-result-option {
+  background: none;
+	border: none;
+	cursor: pointer;
+  border-bottom: 5px solid var(--dark_blue) !important;
+  border-radius: 0;
+  font-weight: 500;
+  color: var(--dark_blue)
+}
+
+.search-result-option:hover {
+  background: none;
+	border: none;
+	cursor: pointer;
+  border-bottom: 5px solid var(--teal) !important;
+  border-radius: 0;
+  font-weight: 500;
+  color: var(--teal)
+}
+
+.search-result-option_active {
+  background: none;
+	border: none;
+	cursor: pointer;
+  border-bottom: 5px solid var(--teal) !important;
+  border-radius: 0;
+  font-weight: 500;
+  color: var(--teal);
+};
+
+.search-result-option_active:hover {
+  background: none;
+	border: none;
+	cursor: pointer;
+  border-bottom: 5px solid var(--teal) !important;
+  border-radius: 0;
+  font-weight: 500;
+  color: var(--teal);
+};

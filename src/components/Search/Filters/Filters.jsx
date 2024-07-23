@@ -38,12 +38,12 @@ const Filters = (props) => {
         return (
             <>
                 <span className="input-group-text"><i class="bi bi-sliders2 fs-5"></i></span>
-                <div className="row flex-nowrap overflow-scroll mx-2">
-                  <button className="btn btn-sm border btn-light w-50" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom" onClick={()=>selectOption(1)}>Health Concerns</button>
-                  <button className="btn btn-sm border btn-light w-25 mx-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom" onClick={()=>selectOption(2)}>Types</button>
-                  <button className="btn btn-sm border btn-light w-25">Attributes</button>
-                  <button className="btn btn-sm border btn-light w-25 mx-1">Brand</button>
-                  <button className="btn btn-sm border btn-light w-50">Content Type</button>
+                <div className="row flex-nowrap overflow-scroll mx-2 w-100 p-1">
+                  <button className="btn btn-sm border btn-light w-50 rounded-pill" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom" onClick={()=>selectOption(1)}>Health Concerns</button>
+                  <button className="btn btn-sm border btn-light w-25 rounded-pill mx-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom" onClick={()=>selectOption(2)}>Types</button>
+                  <button className="btn btn-sm border btn-light w-25 rounded-pill">Attributes</button>
+                  <button className="btn btn-sm border btn-light w-25 rounded-pill mx-1">Brand</button>
+                  <button className="btn btn-sm border btn-light w-50 rounded-pill">Content Type</button>
                 </div>
                 {/* offCanvas */}
                 <FilterOffCanvas filterNameOption={filterNameOption}  filterOptions={filterOptions}/>

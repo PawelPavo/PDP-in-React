@@ -72,11 +72,11 @@ const Search = () => {
             <div className="d-flex ms-1 rounded justify-content-end mb-2">
             </div>
             <div className="row">
-              <div className="col mt-2">
+              <div className="col my-auto">
                 <div className="d-flex justify-content-between">
-                <button type="button" class={`btn add_to_list  ${!toggleProducts ? "" : "add_to_list_active"}`} onClick={activateProducts}>Products</button>
-                <button type="button" class={`btn add_to_list  ${!toggleMagazines ? "" : "add_to_list_active"}`} onClick={activateMagz}>Magazines</button>
-                <button type="button" class={`btn add_to_list  ${!toggleNews ? "" : "add_to_list_active"}`} onClick={activateNews}>News & Protocols</button>
+                <button type="button" class={`btn search-result-option  ${!toggleProducts ? "" : "search-result-option_active"}`} onClick={activateProducts}>Products</button>
+                <button type="button" class={`btn search-result-option  ${!toggleMagazines ? "" : "search-result-option_active"}`} onClick={activateMagz}>Magazines</button>
+                <button type="button" class={`btn search-result-option  ${!toggleNews ? "" : "search-result-option_active"}`} onClick={activateNews}>News & Protocols</button>
                 </div>
               </div>
               <div className="d-lg-block d-lg-none my-2">
