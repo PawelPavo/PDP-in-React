@@ -7,7 +7,7 @@ const LoaderGridCard = () => {
     const [show, setShow] = React.useState(true);
 
     useEffect(() => {
-        let showTimer = setTimeout(() => setShow(false), 4000);
+        let showTimer = setTimeout(() => setShow(false), 2500);
         return () => {
             clearTimeout(showTimer);
         };
@@ -18,7 +18,7 @@ const LoaderGridCard = () => {
             <>
 
 
-                <div className="col mt-3">
+                <div className="col mt-4">
                     <div className="card" aria-hidden="true">
                         <span className="placeholder-glow">
                             <span className="placeholder col-7 rounded " style={{ width: "100%", height: "200px" }}></span>
@@ -48,8 +48,9 @@ const LoaderGridCard = () => {
         return (
             <>
                 
-                <div className="col mt-3">
+                <div className="col mt-4">
                     <div className="card">
+                        
                         <div className="d-flex justify-content-between mt-2">
                             <div type="button" role="button" className="border-0 ms-2">
                                 <i className="fa-regular fa-heart text-danger border p-2 rounded-5 shadow-sm"></i>

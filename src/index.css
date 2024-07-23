@@ -148,7 +148,7 @@ img {
 }
 
 .my-warning-reverse:hover{
-  color: var(--white) ;
+  color: var(--white) !;
   border: 1px solid var(--orange) !important;
   background-color: var(--orange);
 }
@@ -468,6 +468,8 @@ img {
   bottom: 8px;
   right: 8px;
 }
+
+
 
 .over-the-image-container {
   position: relative !important;

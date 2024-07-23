@@ -4,26 +4,31 @@ import React from "react";
 
 const FilterOffCanvas = (props) => {
 
-    const Health_Concerns = ["Anti-Aging & Longevity","Bone Health","Immune Support","Inflammation Health Support","General Health & Wellness","Woman's Health", "Thyroid / Adrenal", "Nerve Health & Comfort Support", "Heart Health", "Muscle Health", "Active Lifestyle & Fitness", "Pet Health", "Hormone Balance", "Energy Management", "Men's Health"]
-    const Types = ["Vitamins","Specialty Blends", "Multivitamins", "Targeted Nutrients", "Kits", "Protein","Pet Care", "Herns / Botanicals", "Book / Media", "Minerals", "Fatty Acids", "Food / Drink", "Miscellaneous"]
-
-
     return (
         <>
-                <div class="offcanvas offcanvas-bottom rounded rounded-bottom-0" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" style={{ height: "75%" }}>
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">{props.filterNameOption}</h5>
+                <div className="offcanvas offcanvas-bottom rounded rounded-bottom-0" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" style={{ height: "90%" }}>
+                    <div className="offcanvas-header border px-3 py-2 rounded rounded-bottom-0">
+                        <h5 className="offcanvas-title" id="offcanvasBottomLabel">{props.filterNameOption}</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
+                    
                         {props.filterOptions.map((option)=>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                <label class="form-check-label" for="flexCheckDefault">
+                           <div class="form-check ms-3 " key={option}>
+                                <input className="form-check-input fs-4 border-dark" type="checkbox" value={option} id={option} />
+                                <label className="form-check-label fw-bold py-1" for={option}>
                                     {option}
                                 </label>
                             </div>
+                            
                         )}
+               
+                    </div>
+                    <div className="d-flex px-3 py-2 border">
+
+                        <button className="btn my-warning-reverse w-75 me-2" data-bs-dismiss="offcanvas">Cancel</button>
+                        <button className="btn btn-orange-white w-100" data-bs-dismiss="offcanvas">Submit</button>
+
                     </div>
                 </div>
         

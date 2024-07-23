@@ -95,6 +95,7 @@ const Search = () => {
 
                 <div className="row row-cols-1 row-cols-lg-3">
                   <BestResultsGrid></BestResultsGrid>
+                  
                   <LoaderGridCard></LoaderGridCard>
                   <LoaderGridCard></LoaderGridCard>
                   <LoaderGridCard></LoaderGridCard>
@@ -106,7 +107,9 @@ const Search = () => {
               </div>
             ) : (
               <div className="ms-1 justify-content-center">
+                
                 <BestResult></BestResult>
+
                 <LoaderListCard></LoaderListCard>
                 <LoaderListCard></LoaderListCard>
                 <LoaderListCard></LoaderListCard>
