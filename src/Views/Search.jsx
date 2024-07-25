@@ -78,7 +78,7 @@ const Search = () => {
                 <button type="button" class={`btn search-result-option  ${!toggleNews ? "" : "search-result-option_active"}`} onClick={activateNews}>News & Protocols</button>
                 </div>
               </div>
-            <div className="d-lg-block d-lg-none mt-1 mb-2 py-2">
+            <div className="d-lg-block d-lg-none mt-2 mb-2 py-2">
               <div className="d-flex">
                 <Filters filters={filters} />
               </div>
