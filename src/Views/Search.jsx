@@ -71,20 +71,21 @@ const Search = () => {
           </div>
           <div className="col-lg-9">
             <div className="row mb-3">
-              <div className="col mt-5">
+              <div className="col my-auto">
                 <div className="d-flex justify-content-between">
                 <button type="button" class={`btn search-result-option  ${!toggleProducts ? "" : "search-result-option_active"}`} onClick={activateProducts}>Products</button>
                 <button type="button" class={`btn search-result-option  ${!toggleMagazines ? "" : "search-result-option_active"}`} onClick={activateMagz}>Magazines</button>
                 <button type="button" class={`btn search-result-option  ${!toggleNews ? "" : "search-result-option_active"}`} onClick={activateNews}>News & Protocols</button>
                 </div>
               </div>
-              <div className="d-lg-block d-lg-none my-2">
+            <div className="d-lg-block d-lg-none mt-1 mb-2 py-2">
               <div className="d-flex">
                 <Filters filters={filters} />
               </div>
-          </div>
+              
+            </div>
 
-              <div className="col-lg-7 mt-2">
+              <div className="col-lg-7 my-auto">
                 <img src="https://www.lifeextension.com/-/media/lifeextension/lpages/2024/summer-clearance/nc_summersale_searchbann.jpg?rev=6d9b434767c34b949d0dabafd4091270&h=102&w=653&la=en&hash=E4C426999C46B3E400317D31BEF79CFA" alt="" class="img-fluid rounded" />
               </div>
             </div>

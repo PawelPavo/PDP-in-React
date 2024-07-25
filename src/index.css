@@ -601,7 +601,6 @@ img {
   border-radius: 0;
   font-weight: 500;
   color: var(--teal);
-  position:relative;
 };
 
 .search-result-option_active:hover {
@@ -614,20 +613,5 @@ img {
   color: var(--teal);
 };
 
-div {
-  border:3px solid var(--teal);
-  width:500px;
-  text-align:center;
-}
 
-.search-result-option_active:before{
-  content:"";
-  display:block;
-  width:0;
-  border:12.5px solid var(--teal);
-  border-color:var(--teal)  transparent transparent transparent;
-  position:absolute;
-  top:100%;
-  left:20%;
-  margin-left:-10px;
-}
+
