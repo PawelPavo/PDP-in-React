@@ -13,12 +13,16 @@ const Search = () => {
   const [toggleMagazines, setToggleMagazines] = useState(false)
   const [toggleNews, setToggleNews] = useState(false)
   const [filters, setFilters] = useState("product")
+  const [numberOfPages, setNumberOfPages] = useState("1-25")
+  const [numberOfResults, setNumberOfResults] = useState("343")
 
   const activateProducts = () => {
     setToggleProducts(true)
     setToggleMagazines(false)
     setToggleNews(false)
     setFilters("product")
+    setNumberOfPages("1-25")
+    setNumberOfResults("343")
   }
 
   const activateMagz = () => {
@@ -26,6 +30,8 @@ const Search = () => {
     setToggleMagazines(true)
     setToggleNews(false)
     setFilters("magazines")
+    setNumberOfPages("1-10")
+    setNumberOfResults("115")
   }
 
   const activateNews = () => {
@@ -33,6 +39,8 @@ const Search = () => {
     setToggleMagazines(false)
     setToggleNews(true)
     setFilters("news")
+    setNumberOfPages("1-10")
+    setNumberOfResults("97")
   }
 
 
@@ -62,17 +70,8 @@ const Search = () => {
             </div>
           </div>
           <div className="col-lg-9">
-            <div className="d-flex border rounded justify-content-end">
-              <div className="col my-auto ms-2">
-                <p className="m-0 p-0">Results <strong>1-25</strong> of <strong>343</strong> for <strong>NAD</strong></p>
-              </div>
-              <i className={`btn bi bi-list-task fs-4 ${!toggleView && "text-primary bg-light"}`} onClick={() => setToggleView(false)}></i>
-              <i className={`btn bi bi-columns-gap fs-4 ${toggleView && "text-primary bg-light"}`} onClick={() => setToggleView(true)}></i>
-            </div>
-            <div className="d-flex ms-1 rounded justify-content-end mb-2">
-            </div>
-            <div className="row">
-              <div className="col my-auto">
+            <div className="row mb-3">
+              <div className="col mt-5">
                 <div className="d-flex justify-content-between">
                 <button type="button" class={`btn search-result-option  ${!toggleProducts ? "" : "search-result-option_active"}`} onClick={activateProducts}>Products</button>
                 <button type="button" class={`btn search-result-option  ${!toggleMagazines ? "" : "search-result-option_active"}`} onClick={activateMagz}>Magazines</button>
@@ -89,6 +88,15 @@ const Search = () => {
                 <img src="https://www.lifeextension.com/-/media/lifeextension/lpages/2024/summer-clearance/nc_summersale_searchbann.jpg?rev=6d9b434767c34b949d0dabafd4091270&h=102&w=653&la=en&hash=E4C426999C46B3E400317D31BEF79CFA" alt="" class="img-fluid rounded" />
               </div>
             </div>
+
+            <div className="d-flex border rounded justify-content-end ms-1">
+              <div className="col my-auto ms-2">
+                <p className="m-0 p-0">Results <strong>{numberOfPages}</strong> of <strong>{numberOfResults}</strong> for <strong>NAD</strong></p>
+              </div>
+              <i className={`btn bi bi-list-task fs-4 ${!toggleView && "text-primary bg-light"}`} onClick={() => setToggleView(false)}></i>
+              <i className={`btn bi bi-columns-gap fs-4 ${toggleView && "text-primary bg-light"}`} onClick={() => setToggleView(true)}></i>
+            </div>
+
             {toggleView ? (
 
               <div className="ms-1 justify-content-center">

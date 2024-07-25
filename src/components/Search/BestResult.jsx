@@ -48,7 +48,7 @@ const BestResult = () => {
         <>
         
                 <div className="col mt-4">
-                    <div className="card mb-3  rounded shadow bg-light-blue d-none d-lg-block position-relative">
+                    <div className="card mb-4  rounded shadow-sm bg-light-blue d-none d-lg-block position-relative">
                     <span className="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger fs-6">
                             Best Match
                         </span>

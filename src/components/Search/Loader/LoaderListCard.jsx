@@ -49,8 +49,8 @@ const LoaderListCard = () => {
         return (
             <>
                 
-                <div className="col mt-3">
-                    <div className="card mb-3  rounded d-none d-lg-block">
+                <div className="col mt-2">
+                    <div className="card  rounded d-none d-lg-block">
                         <div className="row justify-content-center">
                             <div className="col-lg-2 p-3">
                                 <div className="row justify-content-center">
