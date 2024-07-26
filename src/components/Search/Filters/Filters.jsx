@@ -2,18 +2,26 @@ import React from "react";
 import { useState } from "react";
 import FilterOffCanvas from "./FilterOffCanvas";
 
+
 const Filters = (props) => {
 
     // const Health_Concerns = [{name:"Anti-Aging & Longevity", id:1}]
 
-    const Health_Concerns = ["Bone Health", "Immune Support", "Inflammation Health Support", "General Health & Wellness", "Woman's Health", "Thyroid / Adrenal", "Nerve Health & Comfort Support", "Heart Health", "Muscle Health", "Active Lifestyle & Fitness", "Pet Health", "Hormone Balance", "Energy Management", "Men's Health"]
 
+    const Health_Concerns = ["Bone Health", "Immune Support", "Inflammation Health Support", "General Health & Wellness", "Woman's Health", "Thyroid / Adrenal", "Nerve Health & Comfort Support", "Heart Health", "Muscle Health", "Active Lifestyle & Fitness", "Pet Health", "Hormone Balance", "Energy Management", "Men's Health"]
     const Types = ["Vitamins", "Specialty Blends", "Multivitamins", "Targeted Nutrients", "Kits", "Protein", "Pet Care", "Herbs / Botanicals", "Books / Media", "Minerals", "Fatty Acids", "Food / Drink", "Miscellaneous"]
 
     const [relevancyFilter, setRelevancyFilter] = useState(true)
     const [dateFilter, setDateFilter] = useState(true)
     const [filterOptions, setFilterOptions] = useState([])
     const [filterNameOption, setFilterNameOption] = useState("")
+    const [allFilters, setAllFilterts] = useState(true)
+    const [filterCount, setFilterCount] = useState(0)
+
+
+    const amountOfFilters = (FCcount) => {
+        setFilterCount(FCcount)
+    }
 
     const sortRelevancy = () => {
         setRelevancyFilter(!relevancyFilter)
@@ -27,21 +35,31 @@ const Filters = (props) => {
         if (option === 1) {
             setFilterOptions(Health_Concerns)
             setFilterNameOption("Health Concerns")
+            setAllFilterts(false)
         }
         if (option === 2) {
             setFilterOptions(Types)
             setFilterNameOption("Types")
+            setAllFilterts(false)
+        }
+
+        if (option === 3) {
+            setFilterNameOption("All Filters")
+            setAllFilterts(true)
         }
     }
+
+ 
+
 
     if (props.filters === "product") {
         return (
             <>
 
-                <button type="button" className="input-group-text position-relative">
+                <button type="button" className="input-group-text position-relative" onClick={() => selectOption(3)} data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">
                     <i class="bi bi-sliders2 fs-5"></i>
                     <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light border text-dark">
-                        0
+                        {filterCount}
                         <span className="visually-hidden">unread messages</span>
                     </span>
                 </button>
@@ -53,7 +71,7 @@ const Filters = (props) => {
                     <button className="btn btn-sm border btn-light w-50 rounded-pill">Content Type</button>
                 </div>
                 {/* offCanvas */}
-                <FilterOffCanvas filterNameOption={filterNameOption} filterOptions={filterOptions} />
+                <FilterOffCanvas filterNameOption={filterNameOption} filterOptions={filterOptions} allFilters={allFilters} filterCount={filterCount} amountOfFilters={amountOfFilters}/>
             </>
         )
     }
@@ -82,7 +100,7 @@ const Filters = (props) => {
                 <button type="button" className="input-group-text position-relative">
                     <i className="bi bi-sliders2 fs-5"></i>
                     <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light border text-dark">
-                        0
+                        {filterCount}
                         <span className="visually-hidden">unread messages</span>
                     </span>
                 </button>

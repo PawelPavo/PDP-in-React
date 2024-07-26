@@ -35,33 +35,33 @@ const Cart = (props) => {
         <>
         {props.cartItems != 0 ?
         <>
-            <div class="container">
-            <div class="row mt-4 border border-end-0 border-start-0 border-top-0 border-2">
-                    <div class="col">
-                        <h2 class="my-cart p-0 m-0 fs-1">My Cart</h2>
+            <div className="container">
+            <div className="row mt-4 border border-end-0 border-start-0 border-top-0 border-2">
+                    <div className="col">
+                        <h2 className="my-cart p-0 m-0 fs-1">My Cart</h2>
                     </div>
                 </div>
-                <div class="row mt-3">
+                <div className="row mt-3">
                     {/* <!-- Start body col --> */}
-                    <div class="col-lg-8">
-                        <div class="card mb-3 shadow-sm border-0 rounded-0 py-2" id="card">
-                            <div class="row g-0">
-                                <div class="col-lg-5 my-auto px-3">
-                                    <div class="d-flex justify-content-center">
-                                        <img class="pe-2 mt-1"
+                    <div className="col-lg-8">
+                        <div className="card mb-3 shadow-sm border-0 rounded-0 py-2" id="card">
+                            <div className="row g-0">
+                                <div className="col-lg-5 my-auto px-3">
+                                    <div className="d-flex justify-content-center">
+                                        <img className="pe-2 mt-1"
                                             src="https://mycart.lifeextension.com/assets/images/premier_rewards.svg" alt=""
                                             style={{ height: "90px" }} />
-                                        <div class="mt-3 mb-2">
-                                            <p class="roboto fs-3 text-uppercase p-0 m-0"
+                                        <div className="mt-3 mb-2">
+                                            <p className="roboto fs-3 text-uppercase p-0 m-0"
                                                 style={{ color: "#0D95A5", fontWeight: "500" }}>Premier</p>
-                                            <p class="text-uppercase rewards_style p-0 m-0">Rewards</p>
+                                            <p className="text-uppercase rewards_style p-0 m-0">Rewards</p>
                                         </div>
                                     </div>
                                     <div className="row px-2">
-                                    <div class="col-9 my-auto p-0">
+                                    <div className="col-9 my-auto p-0">
                                                 <div class="progress border border-secondary rounded-5" role="progressbar"
                                                     aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style={{ height: "25px" }}>
-                                                    <div id="progress_bar" class="progress-bar text-end rounded-5" style={{ width: `${freeShippingProgress*2}%` }}>
+                                                    <div id="progress_bar" className="progress-bar text-end rounded-5" style={{ width: `${freeShippingProgress*2}%` }}>
                                                         <span class="text-end me-2 py-2">
                                                             <span class="text-small">{reachedFreeShipping && "Free Shipping"} <i class="fa-solid fa-truck-fast"></i></span>
                                                         </span>
