@@ -11,14 +11,39 @@ const Home = () => {
                             <div className="col-12">
                                 <img className="img-fluid rounded" src="https://www.lifeextension.com/-/media/lifeextension/lpages/2024/summer-clearance/nc_summersale_lp_mobile.jpg?rev=c1455227701b412b845a13fa62f4589e&w=767&la=en&hash=9E86757A96B380B12E555FD30A41E399" alt="" />
                             </div>
-                            <div className="col-lg-4 border title">1
-                                <div className="card">Card 1</div>
+                            {/* card 1 */}
+                            <div className="col-lg-4">
+                                <a href="" className="hp-tile">
+                                <div className="card mt-4 bg-light" style={{minHeight:"21em"}}>
+                                    <img src="https://www.lifeextension.com/-/media/lifeextension/homepage/tileads/new/02320_nitrovasc-boost_tilead.jpg" className="card-img-top img-fluid" alt="..."/>
+                                    <div className="card-body p-0 px-3 py-2">
+                                        <h5 className="card-title">Highway to Heart Health</h5>
+                                        <p className="card-text text-small">Ready to live life at full speed? Stay on the cardio health fast track with this new & improved formula for healthy blood flow.</p>
+                                    </div>
+                                </div>
+                                </a>
                             </div>
-                            <div className="col-lg-4 border">2
-                                <div className="card">Card 1</div>
+                            <div className="col-lg-4">
+                                <a href="" className="hp-tile">
+                            <div className="card mt-4 bg-light" style={{minHeight:"21em"}}>
+                                    <img src="https://www.lifeextension.com/-/media/lifeextension/homepage/tileads/new/01929_super_ubiquinol_tilead.jpg" className="card-img-top img-fluid" alt="..."/>
+                                    <div className="card-body p-0 px-3 py-2">
+                                        <h5 className="card-title">Heart-Pumping Savings on Award-Winning CoQ10</h5>
+                                        <p className="card-text text-small">It’s a sweetheart of a deal! Take 35% off this ConsumerLab.com six-time award winner.</p>
+                                    </div>
+                                </div>
+                                </a>
                             </div>
-                            <div className="col-lg-4 border">3
-                                <div className="card">Card 1</div>
+                            <div className="col-lg-4">
+                                <a href="" className="hp-tile">
+                            <div className="card my-4 bg-light" style={{minHeight:"21em"}}>
+                                    <img src="https://www.lifeextension.com/-/media/lifeextension/homepage/tileads/new/nc_testimonials_page.jpg" className="card-img-top img-fluid" alt="..."/>
+                                    <div className="card-body p-0 px-3 py-2">
+                                        <h5 className="card-title">Sometimes, It's OK to Play Favorites</h5>
+                                        <p className="card-text text-small">These vitamins and supplements are at the top of our customers’ lists…and they’ll be on yours, too.</p>
+                                    </div>
+                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -52,7 +77,7 @@ const Home = () => {
                             <div className="col-lg-6">
                                 <>
                                     <div className="col">
-                                        <div className="card shadow-sm bg-light-blue position-relative">
+                                        <div className="card shadow-sm bg-light-blue position-relative mb-4">
                                             <div className="over-the-image-container mt-4">
                                                 <a href="/pdp">
                                                     <span className="position-absolute top-0 start-50 translate-middle badge rounded-pill border  border-dark  bg-white dark-blue text-small">
@@ -111,10 +136,21 @@ const Home = () => {
 
                                 </>
                             </div>
-                            <div className="col border">6</div>
+                            <div className="col">
+                                <div class="card mb-3 bg-dark-blue p-0 m-0">
+                                    <img src="https://www.lifeextension.com/-/media/lifeextension/lpages/2024/best-of-le/launch/nc_logo_bole_awards.png" class="card-img-top img-fluid px-5 pt-2" alt="..." />
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-light">Select Savings on Winning Supplements</h5>
+                                        <a href="#" class="btn btn-orange-white w-50 mt-2">Shop Now!</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div className="row border">OTHER STUFF</div>                                        
+
             </div>
         </>
     )
