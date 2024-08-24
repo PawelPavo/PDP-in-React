@@ -1,27 +1,29 @@
 const Types = [
     {   
-        id:1,
+        id:101,
         name:"Vitamins",
         isChecked: false,
     },
     {   
-        id:2,
+        id:202,
         name: "Specialty Blends", 
         isChecked: false,
     }, 
     {   
-        id:3,
+        id:303,
         name:"Multivitamins", 
         isChecked: false,
     }, 
     {   
-        id:4,
+        id:404,
         name: "Targeted Nutrients", 
         isChecked: false,
     }, 
     {   
-        id:5,
+        id:505,
         name:"Kits", 
         isChecked: false,
     }, 
 ]
+
+export default Types;

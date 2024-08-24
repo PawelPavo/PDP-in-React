@@ -309,8 +309,22 @@ img {
     color: #0e2d52; 
     font-family: "Zilla Slab";
     font-size: 19px;
-    line-height: 40%;
     font-weight: 600;
+}
+
+.wellness_style_hp {
+  color: #539800; 
+  font-family: "Roboto";
+  font-size:1.6rem;
+  line-height: 40%;
+  font-weight: 600;
+}
+
+.wellness_style_hp_blog {
+  color: #0e2d52; 
+  font-family: "Zilla Slab";
+  font-size: 1.4rem !important;
+  font-weight: 600;
 }
 
 .my-cart {
@@ -612,6 +626,3 @@ img {
   font-weight: 500;
   color: var(--teal);
 };
-
-
-

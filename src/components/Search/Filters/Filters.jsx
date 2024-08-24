@@ -5,11 +5,10 @@ import FilterOffCanvas from "./FilterOffCanvas";
 
 const Filters = (props) => {
 
-    // const Health_Concerns = [{name:"Anti-Aging & Longevity", id:1}]
 
 
-    const Health_Concerns = ["Bone Health", "Immune Support", "Inflammation Health Support", "General Health & Wellness", "Woman's Health", "Thyroid / Adrenal", "Nerve Health & Comfort Support", "Heart Health", "Muscle Health", "Active Lifestyle & Fitness", "Pet Health", "Hormone Balance", "Energy Management", "Men's Health"]
-    const Types = ["Vitamins", "Specialty Blends", "Multivitamins", "Targeted Nutrients", "Kits", "Protein", "Pet Care", "Herbs / Botanicals", "Books / Media", "Minerals", "Fatty Acids", "Food / Drink", "Miscellaneous"]
+    // const Health_Concerns = ["Bone Health", "Immune Support", "Inflammation Health Support", "General Health & Wellness", "Woman's Health", "Thyroid / Adrenal", "Nerve Health & Comfort Support", "Heart Health", "Muscle Health", "Active Lifestyle & Fitness", "Pet Health", "Hormone Balance", "Energy Management", "Men's Health"]
+    // const Types = ["Vitamins", "Specialty Blends", "Multivitamins", "Targeted Nutrients", "Kits", "Protein", "Pet Care", "Herbs / Botanicals", "Books / Media", "Minerals", "Fatty Acids", "Food / Drink", "Miscellaneous"]
 
     const [relevancyFilter, setRelevancyFilter] = useState(true)
     const [dateFilter, setDateFilter] = useState(true)
@@ -33,12 +32,16 @@ const Filters = (props) => {
 
     const selectOption = (option) => {
         if (option === 1) {
-            setFilterOptions(Health_Concerns)
+            const data = localStorage.getItem("Health Concerns")
+            console.log(JSON.parse(data))
+            setFilterOptions(JSON.parse(data))
             setFilterNameOption("Health Concerns")
             setAllFilterts(false)
         }
         if (option === 2) {
-            setFilterOptions(Types)
+            const data = localStorage.getItem("Types")
+            console.log(JSON.parse(data))
+            setFilterOptions(JSON.parse(data))
             setFilterNameOption("Types")
             setAllFilterts(false)
         }

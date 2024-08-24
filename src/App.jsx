@@ -7,6 +7,7 @@ import SignUp from './Views/SignUp.jsx';
 import CartRoute from './components/Loader.js';
 import WellnessBlog from './Views/WellnessBlog.jsx';
 import Search from './Views/Search.jsx'
+import Home from './Views/Home.jsx';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Link } from 'react-router-dom';
@@ -22,7 +23,7 @@ const App = () => {
   const [greeting, setGreeting] = useState("Hello")
   const [user, setUser] = useState("")
 
-  const Msg = ({}) => (
+  const Msg = () => (
     <div className='mt-2'>
       <div className='row'>
         <div className="card mb-2 border-0">
@@ -124,7 +125,8 @@ const App = () => {
         <p>FREE SHIPPING on orders $50+</p>
       </div>
       <Routes>
-        <Route path="/" element={
+      <Route path="/" element={<Home />}></Route>
+        <Route path="/pdp" element={
         <PDP
             greeting={greeting} 
             ogin={login} 

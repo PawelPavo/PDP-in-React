@@ -20,7 +20,7 @@ const MyOffcanvs = (props) => {
                 </div>
                 <div className="offcanvas-body">
                     <div data-bs-dismiss="offcanvas" aria-label="Close">
-                    <Link to="/" >Back to PDP</Link> <br/>
+                    <Link to="/pdp" >PDP</Link> <br/>
                     <Link to="/sign-up" >Sign Up</Link>
                     </div>
                 </div>

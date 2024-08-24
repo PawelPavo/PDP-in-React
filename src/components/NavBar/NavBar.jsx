@@ -9,7 +9,7 @@ const NavBar = (props) => {
             <div className="container ">
                 <div className="row mb-2 mt-3">
                     <div className="col-2">
-                        <a href="#">
+                        <a href="/">
                             <img src="https://www.lifeextension.com/-/media/project/lifeextension/images/logo/le-logo-svg.svg" className="img-fluid d-none d-lg-block" alt="LE Logo" style={{ width: "20vh", height: "auto" }} />
                             <img src="https://www.lifeextension.com/-/media/project/lifeextension/images/logo/le-logo-svg-no-tag.svg" className="p-1 d-lg-none" alt="LE Logo" style={{ width: "30vw", height: "auto" }} />
                         </a>

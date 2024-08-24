@@ -1,12 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LoaderGridCard from "../components/Search/Loader/LoaderGridCard";
 import LoaderListCard from "../components/Search/Loader/LoaderListCard";
 import BestResult from "../components/Search/BestResult";
 import BestResultsGrid from "../components/Search/Loader/BestResultsGrid";
 import Filters from "../components/Search/Filters/Filters";
+import Types from ".././helpers/types"
+import Health_Concerns from ".././helpers/health_concerns"
+
 
 
 const Search = () => {
+  useEffect(() => {
+    localStorage.setItem("Types", JSON.stringify(Types))
+    localStorage.setItem("Health Concerns", JSON.stringify(Health_Concerns))
+  }, []);
 
   const [toggleView, setToggleView] = useState(false)
   const [toggleProducts, setToggleProducts] = useState(true)
