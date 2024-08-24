@@ -1,5 +1,5 @@
 import React from "react";
-import ReviewStars from "../components/ReviewStars/ReviewStars";
+import HomePageBlogCard from "../components/WellnessBlog/components/HomePageBlogCard";
 
 const Home = () => {
     return (
@@ -42,11 +42,12 @@ const Home = () => {
                                 <div className="card my-4 bg-light">
                                     <img src="https://www.lifeextension.com/-/media/lifeextension/wellness/fitness/top-five-yoga-poses-to-increase-flexibility/top-five-yoga-poses-to-increase-flexibility_promo.jpg" className="card-img-top img-fluid" alt="..."/>
                                     <div className="card-body">
-                                        <h5 className="card-title">Ten Yoga Poses to Increase Flexibility</h5>
+                                        <h6 className="card-title dark-blue-hp">Ten Yoga Poses to Increase Flexibility</h6>
                                         <p className="card-text text-small">These 10 yoga poses will help you say “namaste” to a more comfortable, flexible body!</p>
                                     </div>
                                 </div>
                                 </a>
+
                             </div>
                             <div className="col-lg-6">
                                 <>
@@ -55,7 +56,7 @@ const Home = () => {
 
                                         <div className="card shadow-sm bg-light-blue position-relative">
                                             <div className="over-the-image-container mt-4">
-                                                <a href="">
+                                                <a href="/pdp">
                                                     <span className="position-absolute top-0 start-50 translate-middle badge rounded-pill border  border-dark  bg-white dark-blue text-small">
                                                         Our Recommendation
                                                     </span>
@@ -74,7 +75,7 @@ const Home = () => {
                                                 </a>
                                             </div>
                                             <div className="p-2 mt-1">
-                                                <a href="" className="text-decoration-none"><h6 className="dark-blue">NAD+ Cell Regenerator™ and Resveratrol Elite™</h6></a>
+                                                <a href="/pdp" className="text-decoration-none"><h6 className="dark-blue-hp">NAD+ Cell Regenerator™ and Resveratrol Elite™</h6></a>
                                                 <p className="card-text text-dark">Healthy aging, energy pathway support, advanced formula</p>
                                             </div>
                                             <div className="row fs-4 fw-bold text-success">

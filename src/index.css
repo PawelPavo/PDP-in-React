@@ -43,6 +43,15 @@ p {
   color: var(--dark_blue);
 }
 
+.dark-blue-hp {
+  color: var(--dark_blue);
+}
+
+.dark-blue-hp:hover {
+  text-decoration: underline;
+  
+}
+
 .orange {
   color: var(--orange);
 }
@@ -482,8 +491,6 @@ img {
   bottom: 8px;
   right: 8px;
 }
-
-
 
 .over-the-image-container {
   position: relative !important;
