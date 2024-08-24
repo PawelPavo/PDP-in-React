@@ -40,8 +40,8 @@ const Home = () => {
                                 </div>
                                 <a href="#" className="navlink">
                                 <div className="card my-4 bg-light">
-                                    <img src="https://www.lifeextension.com/-/media/lifeextension/wellness/fitness/top-five-yoga-poses-to-increase-flexibility/top-five-yoga-poses-to-increase-flexibility_promo.jpg" className="card-img-top img-fluid" alt="..."/>
-                                    <div className="card-body">
+                                    <img src="https://www.lifeextension.com/-/media/lifeextension/wellness/fitness/top-five-yoga-poses-to-increase-flexibility/top-five-yoga-poses-to-increase-flexibility_promo.jpg" className="card-img-top img-fluid" style={{height:"131px"}} alt="..."/>
+                                    <div className="card-body p-0 px-3 py-2">
                                         <h6 className="card-title dark-blue-hp">Ten Yoga Poses to Increase Flexibility</h6>
                                         <p className="card-text text-small">These 10 yoga poses will help you say “namaste” to a more comfortable, flexible body!</p>
                                     </div>
@@ -51,9 +51,7 @@ const Home = () => {
                             </div>
                             <div className="col-lg-6">
                                 <>
-
                                     <div className="col">
-
                                         <div className="card shadow-sm bg-light-blue position-relative">
                                             <div className="over-the-image-container mt-4">
                                                 <a href="/pdp">
@@ -112,9 +110,6 @@ const Home = () => {
                                     </div>
 
                                 </>
-                                <div className="card mt-4">card 2</div>
-                                <div className="card">card 3</div>
-                                <div className="card">card 4</div>
                             </div>
                             <div className="col border">6</div>
                         </div>
