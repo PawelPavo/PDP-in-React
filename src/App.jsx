@@ -4,6 +4,7 @@ import NavBar from './components/NavBar/NavBar.jsx';
 import PDP from './Views/PDP.jsx';
 import LoginModal from "./components/Modal/LoginInModal.jsx"
 import SignUp from './Views/SignUp.jsx';
+import A_Z from './Views/A-Z.jsx';
 import CartRoute from './components/Loader.js';
 import WellnessBlog from './Views/WellnessBlog.jsx';
 import Search from './Views/Search.jsx'
@@ -145,6 +146,7 @@ const App = () => {
         }/>
       <Route path="/cart" element={<CartRoute cartItems={cartItems} addToCart={addToCart}/>}/>
       <Route path="/sign-up" element={<SignUp />}></Route>
+      <Route path="/a-z" element={<A_Z/>}></Route>
       <Route path="/wellness" element={<WellnessBlog />}></Route>
       <Route path="/search" element={<Search />}></Route>
       </Routes>
