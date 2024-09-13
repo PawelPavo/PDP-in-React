@@ -1,43 +1,118 @@
 const A_Z = [
-    {
-        letter: "0-9",
-        items: [
-            {
-                title: "5-LOX Inhibitor with AprèsFlex®, 100 mg, 60 vegetarian capsules",
-            },
-            {
-                title: "7-Keto® DHEA Metabolite, 100 mg, 60 vegetarian capsules",
-            }]
-    },
-    {
-        letter: "A",
-        items: [
-            {
-                title: "Acetyl-L-Carnitine, 500 mg, 100 vegetarian capsules",
-            },
-            {
-                title: "Acetyl-L-Carnitine Arginate, 90 capsules",
-            },
-            {
-                title: "Adrenal Energy Formula, 120 vegetarian capsules",
-            },
-            {
-                title: "Adrenal Energy Formula, 60 vegetarian capsules",
-            },
-            {
-                title: "Advanced Curcumin Elite™ Turmeric Extract, Ginger & Turmerones, 30 softgels",
-            },
-            {
-                title: "Advanced Lipid Control, 60 vegetarian capsules",
-            },
-            {
-                title: "Advanced Milk Thistle, 120 softgels",
-            },
-            {
-                title: "Advanced Milk Thistle, 60 softgels",
-            }
-        ]
-    }
-]
+  {
+    letter: "0-9",
+    items: [
+      { title:"5-LOX Inhibitor with AprèsFlex®, 100 mg, 60 vegetarian capsules"},
+      { title: "7-Keto® DHEA Metabolite, 100 mg, 60 vegetarian capsules"},
+    ],
+  },
+  {
+    letter: "A",
+    items: [
+      { title: "Acetyl-L-Carnitine, 500 mg, 100 vegetarian capsules"},
+      { title: "Acetyl-L-Carnitine Arginate, 90 capsules"},
+      { title: "Adrenal Energy Formula, 120 vegetarian capsules"},
+      { title: "Adrenal Energy Formula, 60 vegetarian capsules"},
+      { title:"Advanced Curcumin Elite™ Turmeric Extract, Ginger & Turmerones, 30 softgels"},
+      { title: "Advanced Lipid Control, 60 vegetarian capsules"},
+      { title: "Advanced Milk Thistle, 120 softgels"},
+      { title: "Advanced Milk Thistle, 60 softgels"},
+      { title: "Advanced Olive Leaf Vascular Support, 60 vegetarian capsules"},
+      { title: "Aged Black Garlic, 30 vegetarian capsules"},
+      { title: "Alpha-Lipoic Acid with Biotin, 60 capsules"},
+      { title: "AMPK Metabolic Activator, 30 vegetarian tablets" },
+      { title: "Anti-Alcohol Complex, 60 capsules"},
+      { title: "AppleWise, 600 mg, 30 vegetarian capsules" },
+      { title: "Arginine Ornithine Powder, 150 grams" },
+      { title: "Arterial Protect, 30 vegetarian capsules" },
+      { title: "Arthro-Immune Joint Support, 60 vegetarian capsules" },
+      { title:"ArthroMax® Advanced with NT2 Collagen™ & AprèsFlex®, 60 capsules"},
+      { title: "ArthroMax® Elite, 30 vegetarian tablets" },
+      { title: "Ascorbyl Palmitate, 500 mg, 100 vegetarian capsules" },
+      { title: "Ashwagandha Plus Calm & Focus, 60 vegetarian capsules" },
+      { title: "Astaxanthin with Phospholipids, 4 mg, 30 softgels" },
+    ],
+  },
+  {
+    letter: "B",
+    items: [
+      { title: "B12 Elite, 60 vegetarian lozenges" },
+      { title: "Benfotiamine with Thiamine, 100 mg, 120 vegetarian capsules" },
+      { title: "Bifido GI Balance, 60 vegetarian capsules" },
+      { title: "BioActive Complete B-Complex, 60 vegetarian capsules" },
+      { title: "BioActive Folate & Vitamin B12, 90 vegetarian capsules" },
+      { title: "Bioactive Milk Peptides, 30 vegetarian capsules" },
+      { title: "Bio-Fisetin, 30 vegetarian capsules" },
+      { title: "Bio-Quercetin, 30 vegetarian capsules" },
+      { title: "Biotin, 600 mcg, 100 capsules" },
+      { title: "Black Cumin Seed Oil, 60 softgels" },
+      { title: "Black Cumin Seed Oil and Curcumin Elite™ , 60 softgels" },
+      { title: "Black Elderberry + Vitamin C, 60 vegetarian capsules" },
+      { title: "Bloat Relief, 60 softgels" },
+      { title: "Blueberry Extract and Pomegranate, 60 vegetarian capsules" },
+      { title: "Blueberry Extract Capsules, 60 vegetarian capsules" },
+      { title: "Body Trim and Appetite Control, 30 vegetarian capsules" },
+      { title: "Bone Restore, 120 capsules" },
+      { title: "Bone Restore Chewable Tablets (Chocolate), 60 chewable tablets"},
+      { title: "Bone Restore Elite with Super Potent K2, 120 capsules" },
+      { title: "Bone Restore with Vitamin K2, 120 capsules" },
+      { title: "Bone Strength Collagen Formula, 120 capsules" },
+      { title: "Boron, 3 mg, 100 vegetarian capsules" },
+      { title: "Brain Fog Relief, 30 softgels" },
+      { title: "Branched Chain Amino Acids, 90 capsules" },
+      { title: "Breast Health Formula, 60 capsules" },
+      { title: "Buffered Vitamin C Powder, 454 grams" },
+    ],
+  },
+  {
+    letter: "S",
+    items: [
+        {title:"SAMe, 400 mg, 30 enteric-coated vegetarian tablets"},
+        {title:"SAMe, 400 mg, 60 enteric-coated vegetarian tablets"},
+        {title:"SAMe, 200 mg, 30 enteric-coated vegetarian tablets"},
+        {title:"Sea-Iodine™, 1000 mcg, 60 vegetarian capsules"},
+        {title:"Se-Methyl L-Selenocysteine, 200 mcg, 90 vegetarian capsules"},
+        {title:"Senolytic Activator® , 36 vegetarian capsules"},
+        {title:"Serene Sleep, 30 softgels"},
+        {title:"Shade Factor™, 120 vegetarian capsules"},
+        {title:"Silymarin, 100 mg, 90 vegetarian capsules"},
+        {title:"Skin Care Collection Anti-Aging Serum, 1.75 fl oz"},
+        {title:"Skin Care Collection Day Cream, 1.65 oz"},
+        {title:"Skin Care Collection Night Cream, 1.65 oz"},
+        {title:"Skin Restoring Ceramides, 30 liquid vegetarian capsules"},
+        {title:"SOD Booster, 30 vegetarian capsules"},
+        {title:"Soy Isoflavones, 30 vegetarian capsules"},
+        {title:"Specially-Coated Bromelain, 500 mg, 60 enteric-coated vegetarian tablets"},
+        {title:"Standardized Cistanche, 30 vegetarian capsules"},
+        {title:"Standardized European Bilberry Extract, 100 mg, 90 vegetarian capsules"},
+        {title:"Strontium Caps, 750 mg, 90 vegetarian capsules"},
+        {title:"Super Absorbable Tocotrienols, 60 softgels"},
+        {title:"Super Bio-Curcumin® Turmeric Extract, 400 mg, 60 vegetarian capsules"},
+        {title:"Super Carnosine, 500 mg, 60 vegetarian capsules"},
+        {title:"Super K , 90 softgels"},
+        {title:"Super Miraforte with Standardized Lignans, 120 vegetarian capsules"},
+        {title:"Super Omega-3 EPA/DHA Fish Oil, Sesame Lignans & Olive Extract, 120 sofgels"},
+        {title:"Super Omega-3 EPA/DHA Fish Oil, Sesame Lignans & Olive Extract, 240 easy-to-swallow softgels"},
+        {title:"Super Omega-3 EPA/DHA Fish Oil, Sesame Lignans & Olive Extract, 60 softgels"},
+        {title:"Super Omega-3 EPA/DHA Fish Oil, Sesame Lignans & Olive Extract (Enteric Coated), 60 enteric-coated softgels"},
+        {title:"Super Omega-3 EPA/DHA Fish Oil, Sesame Lignans & Olive Extract (Enteric Coated), 120 enteric-coated softgels"},
+        {title:"Super Omega-3 Plus EPA/DHA Fish Oil, Sesame Lignans, Olive Extract, Krill & Astaxanthin, 120 softgels"},
+        {title:"Super R-Lipoic Acid, 240 mg, 60 vegetarian capsules"},
+        {title:"Super Selenium Complex, 200 mcg, 100 vegetarian capsules"},
+        {title:"Super Ubiquinol CoQ10, 100 mg, 60 softgels"},
+        {title:"Super Ubiquinol CoQ10 with Enhanced Mitochondrial Support™, 100 mg, 30 s}oftgels"},
+        {title:"Super Ubiquinol CoQ10 with Enhanced Mitochondrial Support™, 50 mg, 100 s}oftgels"},
+        {title:"Super Ubiquinol CoQ10 with Enhanced Mitochondrial Support™, 50 mg, 30 so}ftgels"},
+        {title:"Super Ubiquinol CoQ10 with Enhanced Mitochondrial Support™, 100 mg, 60 s}oftgels"},
+        {title:"Super Ubiquinol CoQ10 with Enhanced Mitochondrial Support™, 200 mg, 30 s}oftgels"},
+        {title:"Super Ubiquinol CoQ10 with PQQ, 100 mg, 30 softgels"},
+        {title:"Super Vitamin E, 268 mg (400 IU), 90 softgels"},
+        {title:"Super-Absorbable CoQ10 (Ubiquinone) with d-Limonene, 50 mg, 60 softgels"},
+        {title:"Super-Absorbable CoQ10 (Ubiquinone) with d-Limonene, 100 mg, 60 softgels"}
+    ],
+  },
+];
 
 export default A_Z;
+
+
