@@ -5,14 +5,27 @@ const A_Z = [
       { title:"5-LOX Inhibitor with AprèsFlex®, 100 mg, 60 vegetarian capsules"},
       { title: "7-Keto® DHEA Metabolite, 100 mg, 60 vegetarian capsules"},
     ],
+    add_unit:0,
+    add_unit_name:"",
+    add_unit_image:""
   },
   {
     letter: "A",
     items: [
       { title: "Acetyl-L-Carnitine, 500 mg, 100 vegetarian capsules"},
-      { title: "Acetyl-L-Carnitine Arginate, 90 capsules"},
+      { title: "Acetyl-L-Carnitine Arginate, 90 capsules",
+        new:0,
+        trending:1,
+        hot:0,
+        sale:0
+      },
       { title: "Adrenal Energy Formula, 120 vegetarian capsules"},
-      { title: "Adrenal Energy Formula, 60 vegetarian capsules"},
+      { title: "Adrenal Energy Formula, 60 vegetarian capsules",
+        new:0,
+        trending:0,
+        hot:0,
+        sale:1
+      },
       { title:"Advanced Curcumin Elite™ Turmeric Extract, Ginger & Turmerones, 30 softgels"},
       { title: "Advanced Lipid Control, 60 vegetarian capsules"},
       { title: "Advanced Milk Thistle, 120 softgels"},
@@ -20,18 +33,31 @@ const A_Z = [
       { title: "Advanced Olive Leaf Vascular Support, 60 vegetarian capsules"},
       { title: "Aged Black Garlic, 30 vegetarian capsules"},
       { title: "Alpha-Lipoic Acid with Biotin, 60 capsules"},
-      { title: "AMPK Metabolic Activator, 30 vegetarian tablets" },
+      { title: "AMPK Metabolic Activator, 30 vegetarian tablets",
+        new:1,
+        trending:0,
+        hot:0,
+        sale:0
+       },
       { title: "Anti-Alcohol Complex, 60 capsules"},
       { title: "AppleWise, 600 mg, 30 vegetarian capsules" },
       { title: "Arginine Ornithine Powder, 150 grams" },
       { title: "Arterial Protect, 30 vegetarian capsules" },
       { title: "Arthro-Immune Joint Support, 60 vegetarian capsules" },
       { title:"ArthroMax® Advanced with NT2 Collagen™ & AprèsFlex®, 60 capsules"},
-      { title: "ArthroMax® Elite, 30 vegetarian tablets" },
+      { title: "ArthroMax® Elite, 30 vegetarian tablets",
+        new:0,
+        trending:0,
+        hot:1,
+        sale:0
+       },
       { title: "Ascorbyl Palmitate, 500 mg, 100 vegetarian capsules" },
       { title: "Ashwagandha Plus Calm & Focus, 60 vegetarian capsules" },
       { title: "Astaxanthin with Phospholipids, 4 mg, 30 softgels" },
     ],
+    add_unit:1,
+    add_unit_name:"Advanced Curcumin Elite™ Turmeric Extract, Ginger & Turmerones",
+    add_unit_image:"https://www.lifeextension.com/-/media/lifeextension/products/large/02324.png"
   },
   {
     letter: "B",
@@ -44,7 +70,12 @@ const A_Z = [
       { title: "Bioactive Milk Peptides, 30 vegetarian capsules" },
       { title: "Bio-Fisetin, 30 vegetarian capsules" },
       { title: "Bio-Quercetin, 30 vegetarian capsules" },
-      { title: "Biotin, 600 mcg, 100 capsules" },
+      { title: "Biotin, 600 mcg, 100 capsules",
+        new:0,
+        trending:1,
+        hot:0,
+        sale:0
+       },
       { title: "Black Cumin Seed Oil, 60 softgels" },
       { title: "Black Cumin Seed Oil and Curcumin Elite™ , 60 softgels" },
       { title: "Black Elderberry + Vitamin C, 60 vegetarian capsules" },
@@ -63,6 +94,9 @@ const A_Z = [
       { title: "Breast Health Formula, 60 capsules" },
       { title: "Buffered Vitamin C Powder, 454 grams" },
     ],
+    add_unit:0,
+    add_unit_name:"",
+    add_unit_image:""
   },
   {
     letter: "S",
@@ -80,7 +114,12 @@ const A_Z = [
         {title:"Skin Care Collection Day Cream, 1.65 oz"},
         {title:"Skin Care Collection Night Cream, 1.65 oz"},
         {title:"Skin Restoring Ceramides, 30 liquid vegetarian capsules"},
-        {title:"SOD Booster, 30 vegetarian capsules"},
+        {title:"SOD Booster, 30 vegetarian capsules",
+            new:0,
+            trending:0,
+            hot:1,
+            sale:0
+        },
         {title:"Soy Isoflavones, 30 vegetarian capsules"},
         {title:"Specially-Coated Bromelain, 500 mg, 60 enteric-coated vegetarian tablets"},
         {title:"Standardized Cistanche, 30 vegetarian capsules"},
@@ -110,6 +149,9 @@ const A_Z = [
         {title:"Super-Absorbable CoQ10 (Ubiquinone) with d-Limonene, 50 mg, 60 softgels"},
         {title:"Super-Absorbable CoQ10 (Ubiquinone) with d-Limonene, 100 mg, 60 softgels"}
     ],
+    add_unit:1,
+    add_unit_name:"Super Ubiquinol CoQ10 with Enhanced Mitochondrial Support™",
+    add_unit_image:"https://www.lifeextension.com/-/media/lifeextension/products/large/01437.png"
   },
 ];
 
