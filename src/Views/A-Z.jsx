@@ -1,16 +1,13 @@
 import React from "react";
 import AZ_componenet from "../components/A-Z/AZ_component";
-import TrendingNow from "../components/A-Z/TrendingNow";
 
 const A_Z = (props) => {
 
     return (
         <>
             <div className="container">
-
                 <div className="row text-center bg-white sticky-top" style={{ zIndex: 1, top: "118px" }}>
                     <h1 className="dark-blue fw-bold mt-2">Supplements A-Z</h1>
-                    
                     <div className="d-flex gap-1 flex-nowrap overflow-x-auto py-2 border justify-content-xl-center mb-3">
                         <a href="#catalog-0-9" class="btn btn-light border text-nowrap">0-9</a>
                         <a href="#catalog-A" class="btn btn-light border">A</a>
@@ -42,8 +39,6 @@ const A_Z = (props) => {
                     </div>
                 </div>
                 <AZ_componenet addToCart={props.addToCart} />
-
-
                 <div className="text-center no-gutters border border-start-0 border-end-0 pt-3 mt-5">
                     <p>FOOTER</p>
                 </div>

@@ -1,12 +1,12 @@
 import React from "react";
 import a_z from "./a_z"
 import TrendingNow from "./TrendingNow";
-
+import A_Z_TrendingNow from "./A_Z_TrendingNow"
 
 const AZ_componenet = (props) => {
     return (
         <>
-                        <TrendingNow addToCart={props.addToCart}/>
+        <A_Z_TrendingNow addToCart={props.addToCart} />
 
             {a_z.map((filter) =>
                 <>
