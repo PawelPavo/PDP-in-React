@@ -31,7 +31,7 @@ function SampleNextArrow(props) {
 
 
 function CustomSlide(props) {
-    const { index, ...otherProps } = props;
+    const { index, view, purchase, current, ...otherProps } = props;
     return (
             <div {...otherProps}>
             <div class="card mx-2 p-2 bg-light" style={{minHeight:"200px"}}>
@@ -61,9 +61,9 @@ function CustomSlide(props) {
 
                 </div>
                 <div class="card-footer bg-white border-0 p-0">
-                    {props.view==1&&<div className="border rounded-5 text-center p-1 shadow-sm bg-warning-subtle text-small">Viewed 784 times in the last 6 hours</div>}
-                    {props.purchase==1&&<div className="border rounded-5 text-center p-1 shadow-sm bg-primary-subtle text-small">Last purchased Nov 24, 2023</div>}
-                    {props.current==1&&<div className="border rounded-5 text-center p-1 shadow-sm bg-info-subtle text-small">Currently in 127 carts</div>}
+                    {view==1&&<div className="border rounded-5 text-center p-1 shadow-sm bg-warning-subtle text-small">Viewed 784 times in the last 6 hours</div>}
+                    {purchase==1&&<div className="border rounded-5 text-center p-1 shadow-sm bg-primary-subtle text-small">Last purchased Nov 24, 2023</div>}
+                    {current==1&&<div className="border rounded-5 text-center p-1 shadow-sm bg-info-subtle text-small">Currently in 127 carts</div>}
                 </div>
             </div>
         </div>
@@ -132,7 +132,7 @@ const ReactCarousel = (props) => {
                         <i className="fa-solid fa-chevron-left"></i>
                     </div>
                 </div>
-                <div className="col-10">
+                <div className="col-lg-10">
                 <Slider
                     ref={slider => {
                         sliderRef = slider;
