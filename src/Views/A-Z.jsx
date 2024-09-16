@@ -8,7 +8,7 @@ const A_Z = (props) => {
             <div className="container">
                 <div className="row text-center bg-white sticky-top" style={{ zIndex: 1, top: "118px" }}>
                     <h1 className="dark-blue fw-bold mt-2">Supplements A-Z</h1>
-                    <div className="d-flex gap-1 flex-nowrap overflow-x-auto py-2 border justify-content-xl-center mb-3">
+                    <div className="d-flex gap-1 flex-nowrap overflow-x-auto py-2 justify-content-xl-center mb-3">
                         <a href="#catalog-0-9" class="btn btn-light border text-nowrap">0-9</a>
                         <a href="#catalog-A" class="btn btn-light border">A</a>
                         <a href="#catalog-B" class="btn btn-light border">B</a>
