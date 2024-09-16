@@ -10,7 +10,7 @@ const AZ_componenet = (props) => {
 
             {a_z.map((filter) =>
                 <>
-                    <div id={`catalog-${filter.letter}`} className="justify-content-center" style={{ scrollMarginTop: "255px" }}>
+                    <div id={`catalog-${filter.letter}`} className="justify-content-center px-2" style={{ scrollMarginTop: "255px" }}>
                         <hr />
                         <h2 className="ms-3">{filter.letter}</h2>
                         <hr />
