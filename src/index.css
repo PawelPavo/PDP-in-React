@@ -74,6 +74,17 @@ p {
   color: var(--teal) !important;
 }
 
+.teal-more {
+  color: var(--teal) !important;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.teal-more:hover {
+  color: var(--dark_blue) !important;
+  cursor: pointer;
+}
+
 img {
   max-width: 120px; 
   height: auto; 
@@ -649,7 +660,7 @@ img {
   border-radius: 0;
   font-weight: 500;
   color: var(--teal);
-};
+}
 
 .search-result-option_active:hover {
   background: none;
@@ -659,5 +670,5 @@ img {
   border-radius: 0;
   font-weight: 500;
   color: var(--teal);
-};
+}
 

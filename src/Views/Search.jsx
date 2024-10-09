@@ -6,6 +6,8 @@ import BestResultsGrid from "../components/Search/Loader/BestResultsGrid";
 import Filters from "../components/Search/Filters/Filters";
 import Types from ".././helpers/types"
 import Health_Concerns from ".././helpers/health_concerns"
+import DesktopFilters from "../components/Search/Filters/DesktopFilters";
+import ContentTypes from "../components/Search/Filters/ContentTypes";
 
 
 
@@ -22,6 +24,16 @@ const Search = () => {
   const [filters, setFilters] = useState("product")
   const [numberOfPages, setNumberOfPages] = useState("1-25")
   const [numberOfResults, setNumberOfResults] = useState("343")
+  const [relevancyFilter, setRelevancyFilter] = useState(true)
+  const [dateFilter, setDateFilter] = useState(true)
+
+  const sortRelevancy = () => {
+      setRelevancyFilter(!relevancyFilter)
+  }
+
+  const sortDate = () => {
+      setDateFilter(!dateFilter)
+  }
 
   const activateProducts = () => {
     setToggleProducts(true)
@@ -53,28 +65,21 @@ const Search = () => {
 
   return (
     <>
+
       <div className="container">
         <div className="row">
-          <div className="col-lg-3 mb-3 mb-lg-0 border d-lg-block d-none">
-            
-            <div className="">
-            <div>Filters:</div>
-              <div className="row">
-                <div className="border rounded">Health Concerns</div>
-              </div>
-              <div className="row">
-                <div className="border rounded">Types</div>
-              </div>
-              <div className="row">
-                <div className="border rounded">Attributes</div>
-              </div>
-              <div className="row">
-                <div className="border rounded">Brand</div>
-              </div>
-              <div className="row">
-                <div className="border rounded">Content Type</div>
-              </div>
+          <div className="col-lg-3 mb-3 mb-lg-0 d-lg-block d-none bg-white">
+          <div className="border rounded py-2 px-3 bg-light-subtle">
+            {!toggleProducts && <div>
+            <div className="fs-5 dark-blue mt-2">Sort by:</div>
+            <div className="d-flex justify-content-around mt-2">
+                    <button className="btn border btn-light px-4" onClick={sortRelevancy}>Relevancy {relevancyFilter ? <i class="bi bi-sort-down-alt fs-6 ms-2"></i> : <i class="bi bi-sort-up fs-6 ms-2"></i>}</button>
+                    <button className="btn border btn-light px-4" onClick={sortDate}>Date {!dateFilter ? <i class="bi bi-sort-numeric-up-alt fs-6 ms-2"></i> : <i class="bi bi-sort-numeric-down fs-6 ms-2"></i>}</button>
             </div>
+            </div>}
+                {toggleProducts&&<DesktopFilters />}
+                {toggleNews&& <ContentTypes/>}
+          </div>
           </div>
           <div className="col-lg-9">
             <div className="row mb-3">
@@ -86,6 +91,7 @@ const Search = () => {
                 </div>
               </div>
             <div className="d-lg-block d-lg-none mt-2 mb-2 py-2">
+
               <div className="d-flex">
                 <Filters filters={filters} />
               </div>
@@ -111,7 +117,7 @@ const Search = () => {
 
                 <div className="row row-cols-1 row-cols-lg-3">
                   <BestResultsGrid></BestResultsGrid>
-                  
+
                   <LoaderGridCard></LoaderGridCard>
                   <LoaderGridCard></LoaderGridCard>
                   <LoaderGridCard></LoaderGridCard>
