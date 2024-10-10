@@ -105,7 +105,7 @@ const Search = () => {
 
             <div className="d-flex border rounded justify-content-end ms-1">
               <div className="col my-auto ms-2">
-                <p className="m-0 p-0">Results <strong>{numberOfPages}</strong> of <strong>{numberOfResults}</strong> for <strong>NAD</strong></p>
+                <p className="m-0 p-0">Results <strong>{numberOfPages}</strong> of <strong>{numberOfResults}</strong> for <strong>Vitamin D3</strong></p>
               </div>
               <i className={`btn bi bi-list-task fs-4 ${!toggleView && "text-primary bg-light"}`} onClick={() => setToggleView(false)}></i>
               <i className={`btn bi bi-columns-gap fs-4 ${toggleView && "text-primary bg-light"}`} onClick={() => setToggleView(true)}></i>

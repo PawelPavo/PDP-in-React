@@ -24,6 +24,26 @@ const Types = [
         name:"Kits", 
         isChecked: false,
     }, 
+    {   
+        id:606,
+        name:"Protein", 
+        isChecked: false,
+    }, 
+    {   
+        id:707,
+        name:"Books / Media", 
+        isChecked: false,
+    }, 
+    {   
+        id:808,
+        name:"Food/Drink", 
+        isChecked: false,
+    }, 
+    {   
+        id:909,
+        name:"Fatty Acids",
+        isChecked: false,
+    }, 
 ]
 
 export default Types;

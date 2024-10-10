@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const DesktopFilters = () => {
 
   const HC = ["Anti-Aging & Longevity", "Attention & Focus", "Brain Health","Blood Pressure", "Bone Health"]
-  const HC_more = ["Cholesterol Management", "Digestive Health", "Energy Management", "Eye Health", "Fitness & Active", "Gastric Discomfort", "General Health", "Glucose Management", "Hair & Nails", "Heart Health", "Hormone Balance", "Immune Health", "Inflammation Management", "Joint Health", "Kidney, Bladder & Urinary Health", "Liver Health", "Memory & Cognition", "Men's Health", "Mood Support", "Nerve Health", "Oral Care", "Seasonal Immune &amp; Nasal", "Sexual Health", "Skin Care", "Sleep", "Stress Management", "Thyroid Adrenal", "Weight Management", "Women's Health"]
+  const HC_more = ["Cholesterol Management", "Digestive Health", "Energy Management", "Eye Health", "Fitness & Active", "Gastric Discomfort", "General Health", "Glucose Management", "Hair & Nails", "Heart Health", "Hormone Balance", "Immune Health", "Inflammation Management", "Joint Health", "Kidney, Bladder & Urinary Health", "Liver Health", "Memory & Cognition", "Men's Health", "Mood Support", "Nerve Health", "Oral Care", "Seasonal Immune & Nasal", "Sexual Health", "Skin Care", "Sleep", "Stress Management", "Thyroid Adrenal", "Weight Management", "Women's Health"]
 
     const Type = ["Vitamins", "Specialty Blends", "Multivitamins","Targeted Nutrients", "Kits"]
     const Type_more = ["Protein", "Books / Media", "Food/Drink", "Minerals","Fatty Acids"]
