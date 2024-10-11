@@ -26,6 +26,9 @@ const Search = () => {
   const [numberOfResults, setNumberOfResults] = useState("343")
   const [relevancyFilter, setRelevancyFilter] = useState(true)
   const [dateFilter, setDateFilter] = useState(true)
+  const [radioValue, setRadioValue] = useState('')
+  const [showFilters, setShowFilters] = useState(false)
+
 
   const sortRelevancy = () => {
       setRelevancyFilter(!relevancyFilter)
@@ -61,6 +64,14 @@ const Search = () => {
     setNumberOfPages("1-10")
     setNumberOfResults("97")
   }
+  const getRadioValue = (e) => {
+    setRadioValue(e.target.value)
+    setShowFilters(true)
+  }
+
+  const hideFilters = () => {
+    setShowFilters(false)
+  }
 
 
   return (
@@ -77,7 +88,7 @@ const Search = () => {
                     <button className="btn border btn-light px-4" onClick={sortDate}>Date {!dateFilter ? <i class="bi bi-sort-numeric-up-alt fs-6 ms-2"></i> : <i class="bi bi-sort-numeric-down fs-6 ms-2"></i>}</button>
             </div>
             </div>}
-                {toggleProducts&&<DesktopFilters />}
+                {toggleProducts&&<DesktopFilters getRadioValue={getRadioValue} />}
                 {toggleNews&& <ContentTypes/>}
           </div>
           </div>
@@ -110,7 +121,13 @@ const Search = () => {
               <i className={`btn bi bi-list-task fs-4 ${!toggleView && "text-primary bg-light"}`} onClick={() => setToggleView(false)}></i>
               <i className={`btn bi bi-columns-gap fs-4 ${toggleView && "text-primary bg-light"}`} onClick={() => setToggleView(true)}></i>
             </div>
-
+            {showFilters && 
+            <div className="ms-2 d-flex my-3">
+                <p className="m-0 p-0 fw-bold my-auto">Filters:</p>
+                <button className="btn btn-sm btn-outline-secondary rounded-pill mx-2 px-3 py-0" onClick={hideFilters}>{radioValue} <i class="bi bi-x-circle ms-2"></i></button>
+            </div>
+            }
+            
             {toggleView ? (
 
               <div className="ms-1 justify-content-center">

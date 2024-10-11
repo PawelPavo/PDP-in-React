@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-const DesktopFilters = () => {
+const DesktopFilters = (props) => {
 
   const HC = ["Anti-Aging & Longevity", "Attention & Focus", "Brain Health","Blood Pressure", "Bone Health"]
   const HC_more = ["Cholesterol Management", "Digestive Health", "Energy Management", "Eye Health", "Fitness & Active", "Gastric Discomfort", "General Health", "Glucose Management", "Hair & Nails", "Heart Health", "Hormone Balance", "Immune Health", "Inflammation Management", "Joint Health", "Kidney, Bladder & Urinary Health", "Liver Health", "Memory & Cognition", "Men's Health", "Mood Support", "Nerve Health", "Oral Care", "Seasonal Immune & Nasal", "Sexual Health", "Skin Care", "Sleep", "Stress Management", "Thyroid Adrenal", "Weight Management", "Women's Health"]
@@ -19,6 +19,7 @@ const DesktopFilters = () => {
     const [Type_flag, setTypeFlag] = useState(false);
     const [Attributes_flag, setAttributesFlag] = useState(false);
     const [Brand_flag, setBrandFlag] = useState(false);
+    
 
     const HC_toggle = () => {
       setHCFlag(!HC_flag)
@@ -36,16 +37,20 @@ const DesktopFilters = () => {
       setBrandFlag(!Brand_flag)
     }
 
+
+
     return (
         <>
+
             <div className="">
               <div className="row mt-3">
                 <div className="fs-5 dark-blue">Health Concerns</div>
                 <div class="ms-3 my-1">
                     {HC.map((option) => 
                         <>
+                        
                         <div className="form-check">
-                            <input className="form-check-input" type="checkbox" value="" id={option} />
+                            <input className="form-check-input" type="radio" value={option} id={option} name="flexRadioDefault" onClick={props.getRadioValue}/>
                             <label className="form-check-label" for={option}>
                             {option}
                             </label>
@@ -56,7 +61,7 @@ const DesktopFilters = () => {
                         <>
                         {HC_flag &&
                         <div className="form-check">
-                            <input className="form-check-input" type="checkbox" value="" id={option} />
+                            <input className="form-check-input" type="radio" value={option} id={option} name="flexRadioDefault" onClick={props.getRadioValue}/>
                             <label className="form-check-label" for={option}>
                             {option}
                             </label>
