@@ -74,7 +74,7 @@ const DesktopFilters = (props) => {
                         <>
                         <div className="form-check">
                             <input className="form-check-input" type="checkbox" value="" id={option} />
-                            <label className="form-check-label" for={option}>
+                            <label className="form-check-label hc-filter" for={option}>
                             {option}
                             </label>
                         </div>
@@ -85,7 +85,7 @@ const DesktopFilters = (props) => {
                         {Type_flag &&
                         <div className="form-check">
                             <input className="form-check-input" type="checkbox" value="" id={option} />
-                            <label className="form-check-label" for={option}>
+                            <label className="form-check-label hc-filter" for={option}>
                             {option}
                             </label>
                         </div>
@@ -104,7 +104,7 @@ const DesktopFilters = (props) => {
                         <>
                         <div className="form-check">
                             <input className="form-check-input" type="checkbox" value="" id={option} />
-                            <label className="form-check-label" for={option}>
+                            <label className="form-check-label hc-filter" for={option}>
                             {option}
                             </label>
                         </div>
@@ -115,7 +115,7 @@ const DesktopFilters = (props) => {
                         {Attributes_flag &&
                         <div className="form-check">
                             <input className="form-check-input" type="checkbox" value="" id={option} />
-                            <label className="form-check-label" for={option}>
+                            <label className="form-check-label hc-filter" for={option}>
                             {option}
                             </label>
                         </div>
@@ -134,7 +134,7 @@ const DesktopFilters = (props) => {
                         <>
                         <div className="form-check">
                             <input className="form-check-input" type="checkbox" value="" id={option} />
-                            <label className="form-check-label" for={option}>
+                            <label className="form-check-label hc-filter" for={option}>
                             {option}
                             </label>
                         </div>
@@ -145,7 +145,7 @@ const DesktopFilters = (props) => {
                         {Brand_flag &&
                         <div className="form-check">
                             <input className="form-check-input" type="checkbox" value="" id={option} />
-                            <label className="form-check-label" for={option}>
+                            <label className="form-check-label hc-filter" for={option}>
                             {option}
                             </label>
                         </div>

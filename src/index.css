@@ -674,6 +674,7 @@ img {
 
 .hc-filter {
   cursor: pointer;
+  color: var(--dark_blue);
 }
 
 .hc-filter:hover {
