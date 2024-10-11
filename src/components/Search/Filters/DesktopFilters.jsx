@@ -60,6 +60,8 @@ const DesktopFilters = (props) => {
                             <div className="hc-filter" value={option} onClick={props.getRadioValue}>{option}</div>
                         </div>
                         }
+                        {HC_flag &&
+                        <>
                         {option=="Immune Health" ? 
                         <>
                           <div className={`form-check ms-4 ${!props.immuneSupportFlag ? "d-none" : "d-block"}`}>
@@ -73,6 +75,7 @@ const DesktopFilters = (props) => {
                           <></>
                         }
 
+
                         {option=="Heart Health" ? 
                         <>
                           <div className={`form-check ms-4 ${!props.heartHealthFlag ? "d-none" : "d-block"}`}>
@@ -85,7 +88,7 @@ const DesktopFilters = (props) => {
                           :
                           <></>
                         }
-
+                        </>}
                         </>
                     )}
                   
