@@ -13,7 +13,7 @@ const ContentTypes = () => {
                         <>
                         <div className="form-check">
                             <input className="form-check-input" type="checkbox" value="" id={option} />
-                            <label className="form-check-label" for={option}>
+                            <label className="form-check-label hc-filter" for={option}>
                             {option}
                             </label>
                         </div>
