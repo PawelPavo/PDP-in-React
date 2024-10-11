@@ -65,8 +65,9 @@ const Search = () => {
     setNumberOfResults("97")
   }
   const getRadioValue = (e) => {
-    setRadioValue(e.target.value)
+    setRadioValue(e.target.innerText)
     setShowFilters(true)
+    console.log(e.target)
   }
 
   const hideFilters = () => {

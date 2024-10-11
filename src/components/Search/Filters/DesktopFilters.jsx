@@ -48,12 +48,8 @@ const DesktopFilters = (props) => {
                 <div class="ms-3 my-1">
                     {HC.map((option) => 
                         <>
-                        
                         <div className="form-check">
-                            <input className="form-check-input" type="radio" value={option} id={option} name="flexRadioDefault" onClick={props.getRadioValue}/>
-                            <label className="form-check-label" for={option}>
-                            {option}
-                            </label>
+                            <div className="hc-filter" value={option} onClick={props.getRadioValue}>{option}</div>
                         </div>
                         </>
                     )}
@@ -61,10 +57,7 @@ const DesktopFilters = (props) => {
                         <>
                         {HC_flag &&
                         <div className="form-check">
-                            <input className="form-check-input" type="radio" value={option} id={option} name="flexRadioDefault" onClick={props.getRadioValue}/>
-                            <label className="form-check-label" for={option}>
-                            {option}
-                            </label>
+                            <div className="hc-filter" value={option} onClick={props.getRadioValue}>{option}</div>
                         </div>
                           }
                         </>

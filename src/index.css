@@ -672,3 +672,10 @@ img {
   color: var(--teal);
 }
 
+.hc-filter {
+  cursor: pointer;
+}
+
+.hc-filter:hover {
+  font-weight: 700;  
+}
