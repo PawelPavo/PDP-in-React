@@ -28,6 +28,8 @@ const Search = () => {
   const [dateFilter, setDateFilter] = useState(true)
   const [radioValue, setRadioValue] = useState('')
   const [showFilters, setShowFilters] = useState(false)
+  const [immuneSupportFlag, setImmuneSupportFlag] = useState(false)
+  const [heartHealthFlag, setHeartHealthFlag] = useState(false)
 
 
   const sortRelevancy = () => {
@@ -67,7 +69,18 @@ const Search = () => {
   const getRadioValue = (e) => {
     setRadioValue(e.target.innerText)
     setShowFilters(true)
-    console.log(e.target)
+    if(e.target.innerText == "Immune Health" || e.target.innerText == "Immune Seasonal Support" || e.target.innerText == "Nasal Support"){
+      setImmuneSupportFlag(true)
+    } else {
+      setImmuneSupportFlag(false)
+    }
+
+    if(e.target.innerText == "Heart Health" || e.target.innerText == "Blood Pressure / Vascular Health" || e.target.innerText == "Cholesterol Management"){
+      setHeartHealthFlag(true)
+    } else {
+      setHeartHealthFlag(false)
+    }
+
   }
 
   const hideFilters = () => {
@@ -89,7 +102,7 @@ const Search = () => {
                     <button className="btn border btn-light px-4" onClick={sortDate}>Date {!dateFilter ? <i class="bi bi-sort-numeric-up-alt fs-6 ms-2"></i> : <i class="bi bi-sort-numeric-down fs-6 ms-2"></i>}</button>
             </div>
             </div>}
-                {toggleProducts&&<DesktopFilters getRadioValue={getRadioValue} />}
+                {toggleProducts&&<DesktopFilters getRadioValue={getRadioValue} immuneSupportFlag={immuneSupportFlag} heartHealthFlag={heartHealthFlag}/>}
                 {toggleNews&& <ContentTypes/>}
           </div>
           </div>

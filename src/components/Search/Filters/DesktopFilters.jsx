@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const DesktopFilters = (props) => {
 
   const HC = ["Anti-Aging & Longevity", "Attention & Focus", "Brain Health","Blood Pressure", "Bone Health"]
-  const HC_more = ["Cholesterol Management", "Digestive Health", "Energy Management", "Eye Health", "Fitness & Active", "Gastric Discomfort", "General Health", "Glucose Management", "Hair & Nails", "Heart Health", "Hormone Balance", "Immune Health", "Inflammation Management", "Joint Health", "Kidney, Bladder & Urinary Health", "Liver Health", "Memory & Cognition", "Men's Health", "Mood Support", "Nerve Health", "Oral Care", "Seasonal Immune & Nasal", "Sexual Health", "Skin Care", "Sleep", "Stress Management", "Thyroid Adrenal", "Weight Management", "Women's Health"]
+  const HC_more = ["Cholesterol Management", "Digestive Health", "Energy Management", "Eye Health", "Fitness & Active", "Gastric Discomfort", "General Health", "Glucose Management", "Hair & Nails", "Heart Health", "Hormone Balance", "Immune Health" , "Inflammation Management", "Joint Health", "Kidney, Bladder & Urinary Health", "Liver Health", "Memory & Cognition", "Men's Health", "Mood Support", "Nerve Health", "Oral Care", "Seasonal Immune & Nasal", "Sexual Health", "Skin Care", "Sleep", "Stress Management", "Thyroid Adrenal", "Weight Management", "Women's Health"]
 
     const Type = ["Vitamins", "Specialty Blends", "Multivitamins","Targeted Nutrients", "Kits"]
     const Type_more = ["Protein", "Books / Media", "Food/Drink", "Minerals","Fatty Acids"]
@@ -59,7 +59,33 @@ const DesktopFilters = (props) => {
                         <div className="form-check">
                             <div className="hc-filter" value={option} onClick={props.getRadioValue}>{option}</div>
                         </div>
-                          }
+                        }
+                        {option=="Immune Health" ? 
+                        <>
+                          <div className={`form-check ms-4 ${!props.immuneSupportFlag ? "d-none" : "d-block"}`}>
+                            <div className="hc-filter" value={option} onClick={props.getRadioValue}>Immune Seasonal Support</div>
+                          </div>
+                          <div className={`form-check ms-4 ${!props.immuneSupportFlag ? "d-none" : "d-block"}`}>
+                            <div className="hc-filter" value={option} onClick={props.getRadioValue}>Nasal Support</div>
+                          </div>
+                         </> 
+                          :
+                          <></>
+                        }
+
+                        {option=="Heart Health" ? 
+                        <>
+                          <div className={`form-check ms-4 ${!props.heartHealthFlag ? "d-none" : "d-block"}`}>
+                            <div className="hc-filter" value={option} onClick={props.getRadioValue}>Blood Pressure / Vascular Health</div>
+                          </div>
+                          <div className={`form-check ms-4 ${!props.heartHealthFlag ? "d-none" : "d-block"}`}>
+                            <div className="hc-filter" value={option} onClick={props.getRadioValue}>Cholesterol Management</div>
+                          </div>
+                         </> 
+                          :
+                          <></>
+                        }
+
                         </>
                     )}
                   
