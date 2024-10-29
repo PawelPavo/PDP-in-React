@@ -74,8 +74,7 @@ const DesktopFilters = (props) => {
                           :
                           <></>
                         }
-
-
+                        
                         {option=="Heart Health" ? 
                         <>
                           <div className={`form-check ms-4 ${!props.heartHealthFlag ? "d-none" : "d-block"}`}>

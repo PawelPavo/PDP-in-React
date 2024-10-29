@@ -126,7 +126,7 @@ const App = () => {
         <p>FREE SHIPPING on orders $50+</p>
       </div>
       <Routes>
-      <Route path="/" element={<Home />}></Route>
+      <Route path="/" element={<Home addToCart={addToCart}/>}></Route>
         <Route path="/pdp" element={
         <PDP
             greeting={greeting} 
