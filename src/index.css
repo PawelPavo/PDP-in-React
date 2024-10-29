@@ -161,11 +161,7 @@ img {
 
 }
  
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-}
+
 
 .add_to_list {
   background-color: var(--white) !important;
@@ -498,17 +494,6 @@ img {
 	border: 1px solid #0D95A5;
 }
 
-@media only screen and (max-width: 992px) {
-    .pr-col {
-        border-left: none;
-    }
-
-    body {
-        padding-bottom: 100px;
-    }
-}
-
-
 .blog-a {
   text-decoration: none;
   color: var(--dark_blue);
@@ -680,3 +665,34 @@ img {
 .hc-filter:hover {
   font-weight: 700;  
 }
+
+.align-bottom-custom {
+  margin-top: 43%;
+}
+
+.main-ad:hover .btn-white-orange{
+  background-color: var(--orange) !important;
+  color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .pr-col {
+      border-left: none;
+  }
+
+  body {
+      padding-bottom: 100px;
+  }
+  .align-bottom-custom {
+    margin-top: 31%;
+  }
+}
+
+
+

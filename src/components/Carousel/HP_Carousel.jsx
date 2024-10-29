@@ -59,7 +59,7 @@ function HP_Carousel(props) {
                                 <div class="d-flex card-text text-end justify-content-between">
                                     <div class="my-auto fs-5"><span class="fw-bold text-danger">$12.00</span> | <span
                                         class="text-decoration-line-through" style={{ fontSize: "16px" }}>$18.00</span></div>
-                                    <button class="btn btn-orange-white btn-sm" onClick={props.addToCart}>Add To Cart</button>
+                                    <button class="btn btn-orange-white btn-sm fw-bold" onClick={props.addToCart}>Add To Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +111,7 @@ function HP_Carousel(props) {
                                         <span class="fw-bold">$15.00</span>
                                         {/* | <span class="text-decoration-line-through" style={{ fontSize: "16px" }}>$9.45</span> */}
                                     </div>
-                                    <button class="btn btn-orange-white btn-sm" onClick={props.addToCart}>Add To Cart</button>
+                                    <button class="btn btn-orange-white btn-sm fw-bold" onClick={props.addToCart}>Add To Cart</button>
 
                                 </div>
                             </div>
@@ -125,13 +125,18 @@ function HP_Carousel(props) {
                     <div class="row justify-content-center">
                         <div class="col-2 my-auto">
                             <div class="row">
+                                <a href="/pdp">
                                 <img src="https://www.lifeextension.com/-/media/lifeextension/products/small/01758.png"
                                     class="img-fluid rounded-start" alt="..." style={{ width: "75px" }} />
+                                </a>
                             </div>
                         </div>
                         <div class="col-9 m-0 p-0">
                             <div class="card-body">
-                                <h5 class="free_shipping">Calm Mag</h5>
+                                <div className="row"></div>
+                                <a href="/pdp" className="text-decoration-none">
+                                <h5 class="dark-blue-hp">Calm Mag</h5>
+                                </a>
                                 <div className="row fs-4 fw-bold text-success">
                                                 <div className="col-12">
 
@@ -157,7 +162,7 @@ function HP_Carousel(props) {
                                 <div class="d-flex card-text text-end justify-content-between">
                                     <div class="my-auto fs-5"><span class="fw-bold text-danger">$6.60</span> | <span
                                         class="text-decoration-line-through" style={{ fontSize: "16px" }}>$9.72</span></div>
-                                    <button class="btn btn-orange-white btn-sm" onClick={props.addToCart}>Add To Cart</button>
+                                    <button class="btn btn-orange-white btn-sm fw-bold" onClick={props.addToCart}>Add To Cart</button>
                                 </div>
                             </div>
                         </div>

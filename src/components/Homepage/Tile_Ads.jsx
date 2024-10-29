@@ -5,9 +5,14 @@ const Tile_Ads = () => {
     return (
         <>
                 <div className="col-lg-6">
-                <a href="/pdp" className="">
+                <a href="/pdp" className="main-ad">
                     <div class="card h-100">
                         <img className="img-fluid rounded" src="https://www.lifeextension.com/-/media/lifeextension/lpages/2023/best-sellers/10-31/nc_gs_lp_1031_hero_mobile.jpg" alt="" />
+                        <div class="card-img-overlay align-bottom-custom">
+                            <div className="text-end">
+                                <div class="btn btn-lg btn-white-orange fw-bold text-nowrap rounded-1">Shop Now!</div>
+                            </div>
+                        </div>
                     </div>
                 </a>
                 </div>
