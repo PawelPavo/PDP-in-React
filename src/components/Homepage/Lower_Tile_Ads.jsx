@@ -38,7 +38,7 @@ const Lower_Tile_Ads = () => {
                         </div>
                 
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 mt-3 mt-lg-0">
                 <div class="card bg-dark-blue"><img src="https://www.lifeextension.com/-/media/lifeextension/lpages/2024/best-of-le/launch/nc_logo_bole_awards.png" class="card-img-top img-fluid px-5 pt-2" alt="..." /><div class="card-body text-center"><h5 class="card-title text-light">Select Savings on Winning Supplements</h5><a href="#" class="btn btn-orange-white w-50 mt-2">Shop Now!</a></div></div>
                 </div>
 
