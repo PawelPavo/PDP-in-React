@@ -39,7 +39,7 @@ const Tile_Ads = () => {
                                 </div>
                                 <div className="card-body p-0 px-3 py-2">
                                     <h5 className="card-title fs-6" style={{minHeight:"29px"}}>Why are celebs taking NAD?</h5>
-                                    <p className="card-text text-small">It’s a sweetheart of a deal! Take 35% off this ConsumerLab.com six-time award winner.</p>
+                                    <p className="card-text text-small">NAD supplements are popular for good reason! Ready to give this healthy aging fave a try?</p>
                                 </div>
                             </div>
                         </a>
