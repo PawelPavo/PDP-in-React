@@ -45,7 +45,7 @@ const Tile_Ads = () => {
                         </a>
                     </div>
                 </div>
-                <img src="https://www.lifeextension.com/-/media/lifeextension/lpages/2024/lab-test-special/nov/nov-lab-test_srchbann.jpg" alt="" class="img-fluid rounded mt-4" />
+                <img src="https://www.lifeextension.com/-/media/lifeextension/lpages/2024/lab-test-special/nov/nov-lab-test_srchbann.jpg" alt="" class="img-fluid rounded mt-4 border border-secondary-subtle" />
 
             </div>
 
