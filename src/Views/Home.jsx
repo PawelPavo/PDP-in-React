@@ -2,6 +2,7 @@ import React from "react";
 import HP_Carousel from "../components/Carousel/HP_Carousel";
 import Tile_Ads from "../components/Homepage/Tile_Ads";
 import Lower_Tile_Ads from "../components/Homepage/Lower_Tile_Ads";
+import HP_TrendingNow from "../components/Homepage/HP_TrendingNow"
 
 const Home = (props) => {
     return (
@@ -10,8 +11,9 @@ const Home = (props) => {
                 <div className="row">
                         <Tile_Ads></Tile_Ads>
                 </div>
-                <div className="d-flex mt-4">
-                    <HP_Carousel addToCart={props.addToCart} />
+                <div className="mt-4">
+                    {/* <HP_Carousel addToCart={props.addToCart} /> */}
+                    <HP_TrendingNow addToCart={props.addToCart} />
                 </div>
 
                 <div className="row mt-4">
